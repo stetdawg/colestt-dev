@@ -1,14 +1,44 @@
 $color1: #880000;
 
 
+html {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  z-index: 0;
+}
+
 main{
-  .container{
-    display: block;
-    position: relative;
-    width: 100%;
-    height: auto;
-    max-width: 1160px;
-    padding: 1em;
-    margin: auto;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: auto;
+
+  section{
+    .container{
+      display: block;
+      position: relative;
+      width: 100%;
+      height: auto;
+      // padding: 1em;
+      margin: auto;
+
+      .content{
+        display: block;
+        position: relative;
+        width: 100%;
+        max-width: 1160px;
+        padding: 1em;
+        margin: auto;
+      }
+    }
+    &#hero{
+      .content{
+        //max-width: none;
+      }
+    }
   }
+
 }

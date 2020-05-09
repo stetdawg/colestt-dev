@@ -1,0 +1,50 @@
+Cole's Table Tennis
+
+
+Navigation
+
+	Home
+	About Us
+		Policies
+	Shop
+		Pre-built
+		Custom
+	Ready2Play // Premade Packs
+	Videos
+	Contact Us
+
+
+Site Map
+	Home
+		- Landing header
+		- Featured
+		- Quick bio / about
+	Shop
+		- Pre-built
+		- Customized
+
+
+
+
+WE NEED:
+
+- a logo
+	- colors?
+	- design?
+	- marketablility
+- to design the actual store
+	- how do we set an efficient store up?
+	- are there any deals / combos?
+	- whats the most profitable item(s), and how can we make that a selling point?
+
+
+IN THE WORKS:
+
+- UX/UI
+	- simple, minimal, but FUNCTIONAL
+	- easy to navigate
+	- points visitors where we want them to go
+- Database management
+	- users / accounts?
+	- inventory of items
+- a logo (cisbell)

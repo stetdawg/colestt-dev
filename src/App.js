@@ -1,25 +1,30 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
 import './css/structure.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          THIS MOTHAFUQQA CRITTIN
-        </a>
-      </header>
+      <main>
+        <section id="hero">
+          <div className="container">
+            <div className="content">
+              <div className="flex">
+                <div className="panel" style={{backgroundImage: 'url(https://cdn.discordapp.com/attachments/333107318835249152/708619198582226964/gambler-oversize-kevlar.png)'}}>
+                  <p>Basics</p>
+                </div>
+                <div className="panel" style={{backgroundImage: 'url(https://cdn.discordapp.com/attachments/333107318835249152/708619315821412392/yinhe-venus3.png)'}}>
+                  <p>Customs</p>
+                </div>
+                <div className="panel" style={{backgroundImage: 'url(https://cdn.discordapp.com/attachments/333107318835249152/708619382112124998/index2.png)'}}>
+                  <p>Accessories</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
