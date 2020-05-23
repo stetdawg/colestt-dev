@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './css/App.css';
 import './css/structure.css';
 
+import Shop from './comp/Shop';
+
 function App() {
   return (
     <div className="App">
@@ -23,6 +25,9 @@ function App() {
               </div>
             </div>
           </div>
+        </section>
+        <section>
+          <Shop />
         </section>
       </main>
     </div>
