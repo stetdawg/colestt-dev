@@ -1,20 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import '../css/shop.css'
 
 import ShopItem from './ShopItem';
 import ShopCustom from './ShopCustom';
 
-=======
-import router from 'react-router'
-import ShopItem from './ShopItem';
->>>>>>> origin/stetdawg
-=======
-import router from 'react-router'
-import ShopItem from './ShopItem';
->>>>>>> master
+
+import Router from 'react-router';
+
 import merchandise from '../json/merchandise.json';
 
 
