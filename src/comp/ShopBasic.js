@@ -11,7 +11,6 @@ import merchandise from '../json/merchandise.json';
 
 // components
 import ShopBasicItem from './ShopBasicItem';
-import ShopCustom from './ShopCustom';
 
 
 
