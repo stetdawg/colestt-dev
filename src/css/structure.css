@@ -24,5 +24,7 @@ main section .container .content {
   max-width: 1160px;
   padding: 1em;
   margin: auto; }
+main section#hero {
+  display: none; }
 
 /*# sourceMappingURL=structure.css.map */

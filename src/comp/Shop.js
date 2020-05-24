@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../css/shop.css'
 
 import ShopItem from './ShopItem';
 import ShopCustom from './ShopCustom';
@@ -12,7 +13,7 @@ class Shop extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-
+      
     }
   }
 

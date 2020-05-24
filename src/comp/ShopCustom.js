@@ -10,7 +10,7 @@ class ShopCustom extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      blades = ['Matrix (Flared Orange)','Martix (Straight Green)']
+      
     }
   }
 
