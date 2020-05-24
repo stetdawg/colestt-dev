@@ -18,7 +18,7 @@ class ShopLanding extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      basicShop : true // set to null when done
+      basicShop : null // set to null when done
     }
   }
 
