@@ -10,7 +10,7 @@ Lets start with three pages. Landing Page, Home, and Shop.
     SIDE_BAR: RUBBERS BLADES COMBOS BALLS ACCESSORIES
 
     FOOTER: POLICIES SERVICES MATERIALS
-    
+
     CURRENT SPECIALS:
 
 
@@ -21,17 +21,17 @@ Lets start with three pages. Landing Page, Home, and Shop.
      Nav Bar, Side Panel (?), Current Specials
 
     Shop Components:
-     Filter, Nav, Purchase Button, 
+     Filter, Nav, Purchase Button,
 
 
     Landing Page:
         Contents: Landing page (?)
         Actions: Scroll down or click to be taken to the next page.
         Animations: (?)
-    
+
     Home:
         Contents: Nav Bar, Side Panel, Current Specials
-        Actions: Scroll changes item. 
+        Actions: Scroll changes item.
             Action
 
 
@@ -45,12 +45,12 @@ Lets start with three pages. Landing Page, Home, and Shop.
 
 Router
 ----------
-Single-page applications are all the rage these days. These are web 
-pages that load once, and when the user clicks on a link or a button, 
+Single-page applications are all the rage these days. These are web
+pages that load once, and when the user clicks on a link or a button,
 JavaScript running on the page updates the address bar, but the web page
  is not refreshed. Management of the address bar is done by something called a router.
 
-The most popular router in the React ecosystem is react-router. 
+The most popular router in the React ecosystem is react-router.
 If you’re building a single-page application, use it unless you have a good reason not to.
                         ________________________
 
@@ -66,5 +66,3 @@ If you’re building a single-page application, use it unless you have a good re
 
 Handling Actions
 --------
-
-
