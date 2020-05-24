@@ -1,30 +1,34 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import logo from './logo.svg';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
-import Landing from './comp/Landing.js'
-import './css/App.css';
+import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
+import Landing from './comp/Landing'
+import NavBar from './comp/Nav'
+import ShopBasic from './comp/ShopBasic'
+import ShopCustom from './comp/ShopCustom'
+import './css/app.css';
 import './css/structure.css';
 
 
-import Shop from './comp/Shop';
-import ShopLanding from './comp/ShopLanding';
-
-
-
-function App() {
-  return (     
-    <div className="App">
-    <Landing>
-      <h1>lol</h1>
-    </Landing>
-      <main>
-        <section>
-
-         <Shop /> 
-        </section>
-      </main>
-    </div>
-  );
+class App extends React.Component{
+ render(){
+   return(
+   <><NavBar />
+    <Switch>
+    <Route exact path="/">
+      <Landing> 
+        Hi!
+      </Landing>
+    </Route>
+    <Route path="/Shop">
+      <ShopBasic />
+    </Route>
+    <Route path="/ShopCustom">
+      <ShopCustom />
+    </Route>
+    </Switch></>
+    );
+  }
 }
 
 export default App;

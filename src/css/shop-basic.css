@@ -1,0 +1,15 @@
+/*
+
+  Name:   shop-basic.scss -> shop-basic.css
+  Site:   Coles TT
+  Auth:   Anthony Isbell
+  Crtd:   5/23/2020
+  Mod:    5/23/2020
+
+*/
+.shop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em; }
+
+/*# sourceMappingURL=shop-basic.css.map */

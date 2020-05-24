@@ -1,25 +1,66 @@
+// react
 import React from 'react';
+import ReactDOM from 'react-dom';
+//import { BrowserRouter, Route, Link } from 'react-router-dom'
 
-import '../css/shop.css'
+// css
+import '../css/structure.css';
+import '../css/shop-landing.css';
+
+// assets
+
+// components
+import ShopBasic from './ShopBasic';
+import ShopCustom from './ShopCustom';
 
 class ShopLanding extends React.Component{
 
+  constructor(props){
+    super(props);
+    this.state = {
+      basicShop : null // set to null when done
+    }
+  }
+
+  toggleShopCounter(bool){
+
+    if (bool == true){
+      this.setState({
+        basicShop : true
+      })
+    } else if (bool == false){
+      this.setState({
+        basicShop : false
+      })
+    }
+  }
+
+  chooseShop(){
+    if (this.state.basicShop == true){
+      return(<ShopBasic />)
+    } else if (this.state.basicShop == false) {
+      return(<ShopCustom />)
+    } else {
+      return(<p>Welcome to Cole's Table Tennis! Select an option to get started.</p>)
+    }
+  }
 
   render(){
     return(
-      <div className="flex">
-        <div className="panel" style={{backgroundImage: 'url(https://cdn.discordapp.com/attachments/333107318835249152/708619198582226964/gambler-oversize-kevlar.png)'}}>
-          <p>Basics</p>
-        </div>
-        <div className="panel" style={{backgroundImage: 'url(https://cdn.discordapp.com/attachments/333107318835249152/708619315821412392/yinhe-venus3.png)'}}>
-          <p>Customs</p>
-        </div>
-        <div className="panel" style={{backgroundImage: 'url(https://cdn.discordapp.com/attachments/333107318835249152/708619382112124998/index2.png)'}}>
-          <p>Accessories</p>
+      <div>
+        <button onClick={() => {this.toggleShopCounter(true)}}>
+          Basic Shop
+        </button>
+        <button onClick={() => {this.toggleShopCounter(false)}}>
+          Custom Shop
+        </button>
+        <div className="shop-container">
+          {this.chooseShop()}
         </div>
       </div>
     );
   }
+
 }
 
 export default ShopLanding;

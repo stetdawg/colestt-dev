@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import '../css/Landing.css'
+import '../css/landing.css'
 
 function Landing(props) {
         return (

@@ -1,0 +1,53 @@
+/*
+
+  Name:   landing.scss -> landing.css
+  Site:   Coles TT
+  Auth:   Stetson Baber
+  Crtd:   5/23/2020
+  Mod:    5/23/2020
+
+*/
+
+.landingPage h1{
+    color: black;
+}
+
+/*
+
+section#hero
+  .container
+    .content
+      div.flex
+        div.panel*3
+
+*/
+
+#hero{
+  .flex{
+    display: flex;
+    height: 30vh;
+
+    & .flex:nth-child(1){
+
+    }
+
+    &:hover .panel{
+      width: 15%;
+    }
+
+    .panel{
+      width: calc(100% / 3);
+      height: 100%;
+      background-color: rgba(0,220,0,1);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: width 1s;
+
+      &:hover{
+        width: 70%;
+        background-color: rgba(0,0,0,0.2);
+      }
+    }
+  }
+}
