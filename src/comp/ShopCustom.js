@@ -10,13 +10,13 @@ class ShopCustom extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      
+
     }
   }
 
-  displayCustomItem(itemName){
+  displayCustomItem(itemName, itemPrice, itemWeight){
     return(
-      <ShopCustomItem name={itemName} />
+      <ShopCustomItem name={itemName} price={itemPrice} weight={itemWeight} />
     );
   }
 
@@ -26,7 +26,7 @@ class ShopCustom extends React.Component{
         {
           merchandise.map(item => (
             <form>
-              {this.displayCustomItem(item.name)}
+              {this.displayCustomItem(item.name, item.price, item.weight)}
             </form>
           ))
         }
