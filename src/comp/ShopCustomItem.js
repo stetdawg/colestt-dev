@@ -8,13 +8,17 @@ class ShopCustomItem extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-
+      
     }
   }
 
   render() {
     return(
-      <h1>Item is: {this.props.name}</h1>
+      <div>
+        <h1>Item: {this.props.name}</h1>
+        <p className="item-price">${this.props.price}</p>
+        <p className="item-weight">{this.props.weight} kg</p>
+      </div>
     );
   }
 }
