@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import ShopItem from './ShopItem';
+import ShopCustom from './ShopCustom';
 
 import merchandise from '../json/merchandise.json';
 
@@ -17,16 +18,21 @@ class Shop extends React.Component{
 
   render() {
     return(
-      <div className="shop">
-        {
-          merchandise.map(item => (
-            <ShopItem
-              name={item.name}
-              price={item.price}
-              weight={item.weight}
-            />
-          ))
-        }
+      <div>
+        <div className="shop">
+          {
+            merchandise.map(item => (
+              <ShopItem
+                name={item.name}
+                price={item.price}
+                weight={item.weight}
+              />
+            ))
+          }
+        </div>
+        <div className="custom-shop">
+          <ShopCustom />
+        </div>
       </div>
     );
   }
