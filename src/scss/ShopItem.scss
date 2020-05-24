@@ -1,0 +1,8 @@
+.shop-item {
+    display: flex;
+
+}
+.shop-item:nth-child(1) {
+    flex-direction: row;
+    width: 5em;
+}
