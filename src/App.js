@@ -12,15 +12,14 @@ import ShopLanding from './comp/ShopLanding';
 
 
 function App() {
-  return (     
+  return (
     <div className="App">
     <Landing>
       <h1>lol</h1>
     </Landing>
       <main>
         <section>
-
-         <Shop /> 
+         <Shop />
         </section>
       </main>
     </div>
