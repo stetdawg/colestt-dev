@@ -23,6 +23,7 @@ class ShopCustom extends React.Component{
   render() {
     return(
       <div className="shop-custom">
+        <h1>This is the Custom Shop</h1>
         {
           merchandise.map(item => (
             <form>
