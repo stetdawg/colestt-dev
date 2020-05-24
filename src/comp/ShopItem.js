@@ -11,8 +11,6 @@ class ShopItem extends React.Component{
     }
   }
 
-
-
   render() {
     return(
       <div className="shop-item" onClick={this.props.onClick}>
