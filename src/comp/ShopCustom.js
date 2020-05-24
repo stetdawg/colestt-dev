@@ -1,7 +1,13 @@
+// react
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// css
+
+// assets
 import merchandise from '../json/merchandise.json';
+
+// components
 import ShopCustomItem from './ShopCustomItem';
 
 
@@ -22,15 +28,17 @@ class ShopCustom extends React.Component{
 
   render() {
     return(
-      <div className="shop-custom">
+      <div>
         <h1>This is the Custom Shop</h1>
-        {
-          merchandise.map(item => (
-            <form>
-              {this.displayCustomItem(item.name, item.price, item.weight)}
-            </form>
-          ))
-        }
+        <div className="shop-custom">
+          {
+            merchandise.map(item => (
+              <form>
+                {this.displayCustomItem(item.name, item.price, item.weight)}
+              </form>
+            ))
+          }
+        </div>
       </div>
     );
   }

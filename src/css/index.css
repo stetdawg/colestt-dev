@@ -7,33 +7,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
 
-/*
-
-section#hero
-  .container
-    .content
-      div.flex
-        div.panel*3
-
-*/
-.empty {
-  height: 4em; }
-
-#hero .flex {
-  display: flex;
-  height: 30vh; }
-#hero .flex:hover .panel {
-  width: 15%; }
-#hero .flex .panel {
-  width: calc(100% / 3);
-  height: 100%;
-  background-color: #00dc00;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  transition: width 1s; }
-#hero .flex .panel:hover {
-  width: 70%;
-  background-color: rgba(0, 0, 0, 0.2); }
-
 /*# sourceMappingURL=index.css.map */

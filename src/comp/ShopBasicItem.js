@@ -1,5 +1,13 @@
+// react
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+// css
+import '../css/shop-basic-item.css';
+
+// assets
+
+// components
 
 
 class ShopItem extends React.Component{
@@ -13,11 +21,11 @@ class ShopItem extends React.Component{
 
   render() {
     return(
-      <div className="shop-item" onClick={this.props.onClick}>
+      <a className="shop-item" onClick={this.props.onClick}>
         <h2 className="item-name">{this.props.name}</h2>
         <p className="item-price">${this.props.price}</p>
         <p className="item-weight">{this.props.weight} kg</p>
-      </div>
+      </a>
     );
   }
 }
