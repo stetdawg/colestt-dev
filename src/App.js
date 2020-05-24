@@ -16,18 +16,19 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      basicShop : false
+      basicShop : null
     }
   }
 
-  toggleShopCounter(){
-    if (this.state.basicShop == true){
-      this.setState({
-        basicShop : false
-      })
-    } else if (this.state.basicShop == false){
+  toggleShopCounter(bool){
+
+    if (bool == true){
       this.setState({
         basicShop : true
+      })
+    } else if (bool == false){
+      this.setState({
+        basicShop : false
       })
     }
   }
@@ -35,16 +36,21 @@ class App extends React.Component{
   chooseShop(){
     if (this.state.basicShop == true){
       return(<Shop />)
-    } else {
+    } else if (this.state.basicShop == false) {
       return(<ShopCustom />)
+    } else {
+      return(<p>Welcome to Cole's Table Tennis! Select an option to get started.</p>)
     }
   }
 
   render(){
     return(
       <div>
-        <button onClick={() => {this.toggleShopCounter()}}>
-          Toggle Shop
+        <button onClick={() => {this.toggleShopCounter(true)}}>
+          Basic Shop
+        </button>
+        <button onClick={() => {this.toggleShopCounter(false)}}>
+          Custom Shop
         </button>
         {this.chooseShop()}
       </div>
