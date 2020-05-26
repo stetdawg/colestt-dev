@@ -16,14 +16,14 @@ class App extends React.Component{
    <><NavBar />
     <Switch>
     <Route exact path="/">
-      <Landing> 
+      <Landing>
         Hi!
       </Landing>
     </Route>
     <Route path="/Shop">
       <ShopBasic />
     </Route>
-    <Route path="/ShopCustom">
+    <Route path="/Shop-Custom">
       <ShopCustom />
     </Route>
     </Switch></>
