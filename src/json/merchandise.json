@@ -1,23 +1,23 @@
 [
   {
-    "name" : "Paddle1",
+    "name" : "Light Paddle",
+    "price" : 15.99,
+    "weight" : 0.1,
+    "thumb" : "https://images-na.ssl-images-amazon.com/images/I/61jry8NvyzL._AC_SL1500_.jpg"
+  },{
+    "name" : "Regular Paddle",
     "price" : 9.99,
     "weight" : 0.5,
     "thumb" : "https://images-na.ssl-images-amazon.com/images/I/61jry8NvyzL._AC_SL1500_.jpg"
-  },{
-      "name" : "Light Paddle",
-      "price" : 15.99,
-      "weight" : 0.1,
-      "thumb" : "https://images-na.ssl-images-amazon.com/images/I/61jry8NvyzL._AC_SL1500_.jpg"
   },{
     "name" : "Heavy Paddle",
     "price" : 19.99,
     "weight" : 1.5,
     "thumb" : "https://images-na.ssl-images-amazon.com/images/I/61jry8NvyzL._AC_SL1500_.jpg"
   },{
-    "name" : "Light Paddle",
+    "name" : "Super Heavy Paddle",
     "price" : 15.99,
-    "weight" : 0.1,
+    "weight" : 2.1,
     "thumb" : "https://images-na.ssl-images-amazon.com/images/I/61jry8NvyzL._AC_SL1500_.jpg"
   }
 
@@ -27,41 +27,41 @@
     "name" : "Paddle1",
     "price" : 9.99,
     "weight" : 0.5,
-    "thumb" : "https://images-na.ssl-images-amazon.com/images/I/61jry8NvyzL._AC_SL1500_.jpg"
+    "thumb" : "https://picsum.photos/200"
   },{
       "name" : "Light Paddle",
       "price" : 15.99,
       "weight" : 0.1,
-      "thumb" : "https://images-na.ssl-images-amazon.com/images/I/61jry8NvyzL._AC_SL1500_.jpg"
+      "thumb" : "https://picsum.photos/201"
   },{
     "name" : "Heavy Paddle",
     "price" : 19.99,
     "weight" : 1.5,
-    "thumb" : "https://images-na.ssl-images-amazon.com/images/I/61jry8NvyzL._AC_SL1500_.jpg"
+    "thumb" : "https://picsum.photos/202"
   },{
     "name" : "Light Paddle",
     "price" : 15.99,
     "weight" : 0.1,
-    "thumb" : "https://images-na.ssl-images-amazon.com/images/I/61jry8NvyzL._AC_SL1500_.jpg"
+    "thumb" : "https://picsum.photos/203"
   },{
     "name" : "Paddle1",
     "price" : 9.99,
     "weight" : 0.5,
-    "thumb" : "https://images-na.ssl-images-amazon.com/images/I/61jry8NvyzL._AC_SL1500_.jpg"
+    "thumb" : "https://picsum.photos/204"
   },{
       "name" : "Light Paddle",
       "price" : 15.99,
       "weight" : 0.1,
-      "thumb" : "https://images-na.ssl-images-amazon.com/images/I/61jry8NvyzL._AC_SL1500_.jpg"
+      "thumb" : "https://picsum.photos/205"
   },{
     "name" : "Heavy Paddle",
     "price" : 19.99,
     "weight" : 1.5,
-    "thumb" : "https://images-na.ssl-images-amazon.com/images/I/61jry8NvyzL._AC_SL1500_.jpg"
+    "thumb" : "https://picsum.photos/206"
   },{
     "name" : "Light Paddle",
     "price" : 15.99,
     "weight" : 0.1,
-    "thumb" : "https://images-na.ssl-images-amazon.com/images/I/61jry8NvyzL._AC_SL1500_.jpg"
+    "thumb" : "https://picsum.photos/207"
   }
 ]

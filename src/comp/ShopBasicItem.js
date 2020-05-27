@@ -19,16 +19,29 @@ class ShopItem extends React.Component{
     }
   }
 
-  render() {
+  checkWeight = (weight) => {
+    if (weight < 1){
+      // weight is greater than 0
+      return(<span className="item-weight" style={{color: "#ABABAB"}}>{this.props.weight} kg</span>);
+    } else if (weight >= 1 && weight < 2) {
+      // weight is greater than 1
+      return(<span className="item-weight" style={{color: "#777"}}>{this.props.weight} kg</span>);
+    } else if (weight >= 2) {
+      // weight is greater than 1
+      return(<span className="item-weight" style={{color: "#090909"}}>{this.props.weight} kg</span>);
+    }
+  }
+
+  render(){
     return(
       <a className="shop-item" onClick={this.props.onClick}>
         <div className="item-media">
           <img src={this.props.thumb} />
         </div>
-        <h2 className="item-name">{this.props.name}</h2>
-        <p className="item-price">${this.props.price}</p>
-        <p className="item-weight">{this.props.weight} kg</p>
-        <button className="btn">Add to Cart</button>
+        <span className="item-name">{this.props.name}</span>
+        <span className="item-price">${this.props.price}</span>
+        {this.checkWeight(this.props.weight)}
+        <button className="item-btn">Add to Cart</button>
       </a>
     );
   }
