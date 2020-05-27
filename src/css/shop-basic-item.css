@@ -7,6 +7,29 @@
   Mod:    5/23/2020
 
 */
+.shop-item {
+  padding: 0.5em 1em;
+  border: 2px solid red; }
+.shop-item .item-media {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding: 0;
+  padding-bottom: 100%; }
+.shop-item .item-media img {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  padding: 0; }
+
 /*
 .shop-item:nth-child(1) {
     flex-direction: row;

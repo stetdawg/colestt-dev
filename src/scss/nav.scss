@@ -29,24 +29,29 @@ $nav-height: 50px;
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: flex-end;
     position: relative;
     width: 100%;
     max-width: 1160px;
     height: auto;
     max-height: $nav-height;
-    padding: 1em;
+    padding: 0 1em;
     margin: auto;
     list-style: none;
 
     li{
-
+      box-sizing: border-box;
+      padding: 1em;
       a{
+        padding: 0.25em;
+        border-bottom: 2px solid rgba(0,0,0,0);
         color: inherit;
         text-decoration: none;
-        transition: color 200ms;
+        transition: 200ms;
         &:hover{
+          border-bottom: 2px solid blue;
           color: blue;
+          transition: 200ms;
         }
       }
     }

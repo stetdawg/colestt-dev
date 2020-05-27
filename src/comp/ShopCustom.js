@@ -20,21 +20,26 @@ class ShopCustom extends React.Component{
     }
   }
 
-  displayCustomItem(itemName, itemPrice, itemWeight){
+  displayCustomItem(itemName, itemPrice, itemWeight, itemThumb){
     return(
-      <ShopCustomItem name={itemName} price={itemPrice} weight={itemWeight} />
+      <ShopCustomItem
+        name={itemName}
+        price={itemPrice}
+        weight={itemWeight}
+        thumb={itemThumb}
+      />
     );
   }
 
   render() {
     return(
       <div>
-        <h1>This is the Custom Shop</h1>
+        <h1>Custom Shop</h1>
         <div className="shop-custom">
           {
             merchandise.map(item => (
               <form>
-                {this.displayCustomItem(item.name, item.price, item.weight)}
+                {this.displayCustomItem(item.name, item.price, item.weight, item.thumb)}
               </form>
             ))
           }
