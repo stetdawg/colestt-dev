@@ -23,24 +23,28 @@ export default class Nav extends Component {
     render() {
         return (
             <nav className="navRouter">
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/Shop">Shop</Link>
-                    </li>
-                    <li>
-                    {/* This will be a child element of Shop */}
-                        <Link to="/Shop-Custom"> Customize</Link>
-                    </li>
-                    <li>
-                        <Link to="/About">About Cole</Link>
-                    </li>
-                    <li>
-                        <Link to="/Contact">Contact Us</Link>
-                    </li>
+              <div className="nav-container">
+                <div className="nav-logo">
+                  Cole's
+                </div><ul>
+                  <li>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/Shop">Shop</Link>
+                  </li>
+                  <li>
+                  {/* This will be a child element of Shop */}
+                    <Link to="/Shop-Custom"> Customize</Link>
+                  </li>
+                  <li>
+                    <Link to="/About">About Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/Contact">Contact Us</Link>
+                  </li>
                 </ul>
+              </div>
             </nav>
         )
     }

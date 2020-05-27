@@ -42,7 +42,7 @@ class ShopBasic extends React.Component{
   render() {
     return(
       <div>
-        <h1>This is the Basic Shop</h1>
+        <h1>Cole's Table Tennis</h1>
         {this.dialogBox()}
         <div className="shop">
           {
@@ -52,6 +52,7 @@ class ShopBasic extends React.Component{
                 name={item.name}
                 price={item.price}
                 weight={item.weight}
+                thumb={item.thumb}
               />
             ))
           }

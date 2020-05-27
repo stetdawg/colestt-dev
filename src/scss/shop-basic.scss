@@ -8,6 +8,7 @@
 
 */
 
+.dialog{display: none;} // was only for testing the click function
 .shop{
   display: grid;
   grid-template-columns: repeat(3, 1fr);

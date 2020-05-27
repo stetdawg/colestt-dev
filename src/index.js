@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom'
+import './css/structure.css';
 import './css/index.css';
 import App from './App';
+import NavBar from './comp/Nav'
 import * as serviceWorker from './serviceWorker';
 
 //Wrap the root of the application in a Router
 //Continue to Nav.js
 ReactDOM.render(
   <React.StrictMode>
-
   <Router>
-    <App />
+    <NavBar />
+    <main>
+      <App />
+    </main>
   </Router>
   </React.StrictMode>,
   document.getElementById('root')
