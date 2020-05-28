@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, NavLink as Link } from 'react-router-dom'
-import '../scss/nav.scss'
+import '../css/nav.css'
 
 /* 
 <Link to="/">
