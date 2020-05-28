@@ -20,15 +20,28 @@ class ShopBasic extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      dialog: null,
-      randomValue: "hello"
+      dialog : null,
+      randomValue : "hello",
+      shop : []
     }
   }
 
-  myAlert = (props) => {
+  componentDidMount(){
+
+  }
+
+  btnClick = (props) => {
     this.setState({
         dialog: props
     })
+    // open the #cart element
+    // pass info into shop.array
+  }
+
+  handleShop = () => {
+    // call the shop.array
+    // calculate the cost of the cart
+    // display the cost in the #buy-now
   }
 
   dialogBox = (props) => {
@@ -48,7 +61,7 @@ class ShopBasic extends React.Component{
           {
             merchandise.map(item => (
               <ShopBasicItem
-                onClick={() => {this.myAlert(item.name)}}
+                onClick={() => {this.btnClick(item.name)}}
                 name={item.name}
                 price={item.price}
                 weight={item.weight}

@@ -4,7 +4,6 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import './css/structure.css';
 import './css/index.css';
 import App from './App';
-import NavBar from './comp/Nav'
 import * as serviceWorker from './serviceWorker';
 
 //Wrap the root of the application in a Router
@@ -12,10 +11,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
   <Router>
-    <NavBar />
-    <main>
-      <App />
-    </main>
+    <App />
   </Router>
   </React.StrictMode>,
   document.getElementById('root')
