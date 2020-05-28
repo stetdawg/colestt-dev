@@ -35,9 +35,12 @@ main {
   display: block;
   position: relative;
   width: 100%;
+  max-width: 1160px;
   height: auto;
-  padding: 0;
-  margin: auto; }
+  padding: 1em;
+  padding-top: calc(1em + 50px);
+  margin: auto;
+  z-index: 0; }
 main section .container {
   display: block;
   position: relative;

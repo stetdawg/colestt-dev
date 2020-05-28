@@ -36,7 +36,7 @@ code {
 
 */
 
-$color1: #880000;
+$color1: #3a424a; //#789
 
 
 html {
@@ -50,9 +50,12 @@ main{
   display: block;
   position: relative;
   width: 100%;
+  max-width: 1160px;
   height: auto;
-  padding: 0;
+  padding: 1em;
+  padding-top: calc(1em + 50px);
   margin: auto;
+  z-index: 0;
 
   section{
     .container{

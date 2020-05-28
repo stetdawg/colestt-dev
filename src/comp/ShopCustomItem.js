@@ -22,6 +22,7 @@ class ShopCustomItem extends React.Component{
   render() {
     return(
       <div>
+        <img src={this.props.thumb} />
         <h1>Item: <b style={{textDecoration: "underline"}}>Custom</b> {this.props.name}</h1>
         <p className="item-price">${this.props.price}</p>
         <p className="item-weight">{this.props.weight} kg</p>
