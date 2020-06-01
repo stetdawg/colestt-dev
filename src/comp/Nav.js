@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, NavLink as Link } from 'react-router-dom'
-import '../scss/nav.scss'
+import '../css/nav.css'
 
 /*
 <Link to="/">
@@ -35,7 +35,7 @@ export default class Nav extends Component {
                   </li>
                   <li>
                   {/* This will be a child element of Shop */}
-                    <Link to="/Shop-Custom"> Customize</Link>
+                    <Link to="/Combos"> Combos</Link>
                   </li>
                   <li>
                     <Link to="/About">About Us</Link>

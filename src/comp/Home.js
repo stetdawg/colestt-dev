@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import '../css/landing.css'
 
-function Landing(props) {
+
+
+
+function Home(props) {
         return (
             <div>
                  <div className="landingPage">
@@ -13,4 +15,4 @@ function Landing(props) {
 
 }
 
-export default Landing;
+export default Home;
