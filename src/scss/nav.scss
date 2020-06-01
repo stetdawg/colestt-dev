@@ -13,13 +13,8 @@ $nav-height: 50px;
 $max-width: 1160px;
 
 .navRouter {
-<<<<<<< HEAD
-    text-decoration: none;
-    
-}
-=======
   display: block;
-  position: fixed;
+  position: sticky;
     top: 0;
     left: 0;
   width: 100%;
@@ -91,4 +86,3 @@ $max-width: 1160px;
     }
   }
 }
->>>>>>> origin/aisbell

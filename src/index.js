@@ -12,10 +12,10 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
   <Router>
-    <NavBar />
-    <main>
-      <App />
-    </main>
+
+<App />
+
+
   </Router>
   </React.StrictMode>,
   document.getElementById('root')

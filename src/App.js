@@ -1,17 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import logo from './logo.svg';
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
-<<<<<<< HEAD
+
+import {Route, Switch } from 'react-router-dom'
 import Home from './comp/Home'
 import NavBar from './comp/Nav'
-import ItemPanel from './comp/ItemPanel'
-=======
-import Landing from './comp/Landing'
->>>>>>> origin/aisbell
+//import ItemPanel from './comp/ItemPanel'
 import ShopBasic from './comp/ShopBasic'
-import ShopItem from './comp/ShopBasicItem'
-import ShopCustom from './comp/ShopCustom'
+import ShopCustom from './comp/ComboShop'
 import About from './comp/About'
 import Contact from './comp/Contact'
 import './css/app.css';
@@ -24,38 +18,21 @@ Such as returning NavBar asynchronously to our Router {the Switch tag}.
 
 
 class App extends React.Component{
-<<<<<<< HEAD
- render(){
-   return(
-   <><NavBar />
-    <Switch>
-    <Route exact path="/">
-      <ItemPanel> 
-Hery
-      </ItemPanel>
-    </Route>
-    <Route path="/Shop">
-      <ShopBasic />
-    </Route>
-    <Route path="/ShopCustom">
-      <ShopCustom />
-    </Route>
-    </Switch></>
-=======
   render(){
     return(
-      <>
+      <><NavBar />
+      <main>
       <Switch>
         <Route exact path="/">
-          <Landing>
+          <Home>
             Hi! <br/>
             <b>NOTE FOR US:</b><br/>Let's create a nice opening message for people to choose if they want to shop the regular shop or go straight to the custom shop.
-          </Landing>
+          </Home>
         </Route>
         <Route path="/Shop">
           <ShopBasic />
         </Route>
-        <Route path="/Shop-Custom">
+        <Route path="/Combos">
           <ShopCustom />
         </Route>
         <Route path="/About">
@@ -65,8 +42,8 @@ Hery
           <Contact />
         </Route>
       </Switch>
+      </main>
       </>
->>>>>>> origin/aisbell
     );
   }
 }

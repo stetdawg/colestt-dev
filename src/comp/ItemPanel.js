@@ -17,14 +17,7 @@ class ItemPanel extends Component {
     
     render() {
         return(
-            <div  className="contentPanel">
-            <div id="PanelWindow" className="Blade">{props.children}</div>
-            <div id="PanelWindow" className="BlckRubber">{props.children}</div>
-            <div id="PanelWindow" className="RdRubber">{props.children}</div>
-            <div id="PanelWindow" className="Case">{props.children}</div>
-            <div id="PanelWindow" className="Handle">{props.children}</div>
-         
-        </div>
+    
         )
     }
 }

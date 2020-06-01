@@ -9,12 +9,12 @@
 */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
 
 /*
      _                   _
@@ -35,26 +35,24 @@ main {
   display: block;
   position: relative;
   width: 100%;
-  max-width: 1160px;
+  max-width: 75%;
   height: auto;
   padding: 1em;
   padding-top: calc(1em + 50px);
   margin: auto;
   z-index: 0; }
-main section .container {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin: auto; }
-main section .container .content {
-  display: block;
-  position: relative;
-  width: 100%;
-  max-width: 1160px;
-  padding: 1em;
-  margin: auto; }
-main section#hero {
-  display: none; }
-
-/*# sourceMappingURL=structure.css.map */
+  main section .container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto; }
+    main section .container .content {
+      display: block;
+      position: relative;
+      width: 100%;
+      max-width: 1160px;
+      padding: 1em;
+      margin: auto; }
+  main section#hero {
+    display: none; }

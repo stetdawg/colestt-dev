@@ -35,7 +35,7 @@ export default class Nav extends Component {
                   </li>
                   <li>
                   {/* This will be a child element of Shop */}
-                    <Link to="/Shop-Custom"> Customize</Link>
+                    <Link to="/Combos"> Combos</Link>
                   </li>
                   <li>
                     <Link to="/About">About Us</Link>

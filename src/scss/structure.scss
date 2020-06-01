@@ -37,8 +37,6 @@ code {
 */
 
 $color1: #3a424a; //#789
-
-
 html {
   padding: 0;
   margin: 0;
@@ -50,7 +48,7 @@ main{
   display: block;
   position: relative;
   width: 100%;
-  max-width: 1160px;
+  max-width: 75%;
   height: auto;
   padding: 1em;
   padding-top: calc(1em + 50px);
