@@ -11,6 +11,7 @@ const ComboItem = (props) =><>
 <p className="item-price">${props.price}</p>
 <p className="item-weight">{props.weight} kg</p>
 
+<button onClick={props.onPrev}>Prev</button>
 
 
   <div id="selection-panel">
@@ -30,37 +31,82 @@ const ComboItem = (props) =><>
       <option value="" className="value">Glove 889 w/ sponge</option>
     </select>
   </div>
+  <button onClick={props.onNext}>Next</button>
 
-  <button> </button>
 </>
 
 class DisplayComboItem extends Component {
   constructor(props) {
     super(props)
     this.state = {
+
+      //might implement scroll to next/prev time
       onScroll: false,
       scrollIndex: 0,
-      array: merchandise
+      stack: [] 
     }
-    this.stateArray = this.state.array
+
+    //binding this,  explicitly setting this to variables helps define their scope(?)
+    this.handleNext = this.handleNextClick.bind(this)
+    this.handlePrev = this.handlePrevClick.bind(this)
+
+    this.myArray = Object.values(merchandise).slice()
+    this.stack = this.state.stack
+    this.stack.push(this.myArray.pop())
+
   }
 
   componentDidMount() {
-
-  }
-
-  onScroll() {
-  }
   
-//holy fuck i got it to work
+  }
+
+  handleNextClick() {
+  /*A Stack is LiF0 (Last-In First-Out): This means the last element added to the stack will be the first one to be popped 
+  The next button will then:
+  1. Pop from the stack
+  2. Pop from the array
+  3. Push returned array item to stack
+  3. Push returned stack item to the array
+  */
+   const sPop = this.stack.pop()
+   this.myArray.unshift(sPop)
+   const aPop = this.myArray.pop()
+   this.setState({
+    stack: this.stack.push(aPop)
+
+   })
+   console.log(this.stack)
+  }
+
+
+
+  handlePrevClick() {
+    /*A Stack is LiF0 (Last-In First-Out): This means the last element added to the stack will be the first one to be popped 
+    The back button will then:
+    1. Shift from the array
+    2. Pop from the stack
+    3. Push returned array item to stack
+    3. Push returned stack item to the array
+    */
+    const aShift = this.myArray.shift()
+    const sPop = this.stack.pop()
+    this.setState({
+      stack: this.stack.push(aShift)
+     })
+    this.myArray.push(sPop) 
+  }
+
+
+
+  
+//The stack used to hold displayed components
   Display = (k, i) => {
-    const obj = Object.values(k)
     //copy array
-    const a = obj[i]
-    //pop last item
-    console.log(a)
+    const a = k[i]
     return <ComboItem 
              {...a}
+             onNext={this.handleNext}
+             onPrev={this.handlePrev}
              />
   }
 
@@ -70,7 +116,7 @@ class DisplayComboItem extends Component {
 
   render() {
 
-    return this.Display(this.stateArray, 1)
+    return this.Display(this.stack, 0)
 
   }
 }
