@@ -21,7 +21,6 @@ class ShopBasic extends React.Component{
     super(props);
     this.state = {
       dialog : null,
-      randomValue : "hello",
       shop : []
     }
   }

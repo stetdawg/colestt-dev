@@ -4,7 +4,7 @@
   Site:   Coles TT
   Auth:   Anthony Isbell
   Crtd:   5/23/2020
-  Mod:    5/23/2020
+  Mod:    6/5/2020
 
 */
 .dialog {
@@ -12,7 +12,7 @@
 
 .shop {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 2em; }
 
 /*# sourceMappingURL=shop-basic.css.map */
