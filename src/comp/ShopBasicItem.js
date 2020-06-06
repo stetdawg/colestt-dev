@@ -30,7 +30,7 @@ class ShopItem extends React.Component{
       // weight is greater than 1
       return(<span className="item-weight" style={{color: "#090909"}}>{this.props.weight} kg</span>);
     }
-  }
+  } // {this.checkWeight(this.props.weight)}
 
   render(){
     return(
@@ -40,7 +40,7 @@ class ShopItem extends React.Component{
         </div>
         <span className="item-name">{this.props.name}</span>
         <span className="item-price">${this.props.price}</span>
-        {this.checkWeight(this.props.weight)}
+
         <button className="item-btn">Add to Cart</button>
       </a>
     );
