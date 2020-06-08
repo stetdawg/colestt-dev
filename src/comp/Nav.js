@@ -20,6 +20,21 @@ When the URL is /react, this renders:
 */
 
 export default class Nav extends Component {
+constructor(props) {
+  super(props)
+
+  this.state = {
+     
+  }
+}
+
+
+componentDidMount() {
+  g
+}
+
+
+
     render() {
         return (
             <nav className="navRouter">

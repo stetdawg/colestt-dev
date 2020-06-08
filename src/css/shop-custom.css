@@ -2,19 +2,21 @@
 
   Name:   shop-custom.scss -> shop-custom.css
   Site:   Coles TT
-  Auth:   Anthony Isbell
+  Auth:   Anthony Isbell & Stetson Baber
   Crtd:   5/23/2020
-  Mod:    5/23/2020
+  Mod:    6/6/2020
 
 */
 .contentPanel {
-  border: 1px solid #000;
+  max-height: 100vh;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
-  grid-template-rows: .1fr 1fr .5fr;
-  grid-template-areas: ".    .     hd   .    ." "desc desc  thmb sel  sel" "desc desc  .    prc  prc ";
   border: 1px solid #000; }
+  @media (min-width: 1025px) {
+    .contentPanel {
+      grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+      grid-template-rows: .1fr 1fr .5fr;
+      grid-template-areas: ".    .     hd   .    ." "desc desc  thmb sel  sel" "desc desc  .    prc  prc "; } }
   .contentPanel #combo {
     grid-area: hd;
     position: relative; }

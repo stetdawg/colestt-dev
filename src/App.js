@@ -25,8 +25,8 @@ class App extends React.Component{
       <Switch>
         <Route exact path="/">
           <Home>
-            Hi! <br/>
-            <b>NOTE FOR US:</b><br/>Let's create a nice opening message for people to choose if they want to shop the regular shop or go straight to the custom shop.
+            Welcome to Cole's Table Tennis <br/>
+           Here you'll find a selection of products for sale at great prices, as well as reviews. There are also videos on gluing and cutting rubber, and applying topsheet onto sponge.<br/><b>Check out our current specials below:</b><br/>
           </Home>
         </Route>
         <Route path="/Shop">

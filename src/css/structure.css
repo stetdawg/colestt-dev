@@ -34,8 +34,7 @@ html {
 main {
   display: block;
   position: relative;
-  width: 100%;
-  max-width: 75%;
+  width: inherit;
   height: auto;
   padding: 1em;
   padding-top: calc(1em + 50px);
