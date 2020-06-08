@@ -56,11 +56,11 @@ class ShopItem extends React.Component{
   render(){
 
     return(
-      <a className="shop-item" onClick={() => {this.toggleDecCounter()} /*this.props.onClick*/}>
-        <span className="item-name">{this.props.name}</span>
-        <div className="item-media">
+      <a className="shop-item">
+        <div className="item-media" onClick={() => {this.toggleDecCounter()} /*this.props.onClick*/}>
           {this.toggleImgDesc()}
         </div>
+        <span className="item-name">{this.props.name}</span>
         <span className="item-price">${this.props.price}</span>
         <button className="item-btn">Add to Cart</button> {/*adds to the cart, without having to check big description */}
       </a>
