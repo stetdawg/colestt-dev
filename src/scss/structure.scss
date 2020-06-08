@@ -4,27 +4,11 @@
   Site:   Coles TT
   Auth:   Anthony Isbell
   Crtd:   5/23/2020
-  Mod:    5/23/2020
+  Mod:    6/8/2020
 
 */
 
-// manually imported from the standard index.css
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-// end import
+@import "config";
 
 /*
      _                   _
@@ -48,9 +32,9 @@ main{
   display: block;
   position: relative;
   width: 100%;
-  max-width: 75%;
+  max-width: $max-width;
   height: auto;
-  padding: 1em;
+  padding: $max-width-padding;
   // padding-top: calc(1em + 50px);
   margin: auto;
   z-index: 0;

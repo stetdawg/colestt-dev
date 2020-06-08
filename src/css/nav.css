@@ -4,7 +4,16 @@
   Site:   Coles TT
   Auth:   Stetson Baber
   Crtd:   5/24/2020
-  Mod:    5/27/2020 // aisbell
+  Mod:    6/8/2020
+
+*/
+/*
+
+  Name:   _config.scss
+  Site:   Coles TT
+  Auth:   Anthony Isbell
+  Crtd:   6/8/2020
+  Mod:
 
 */
 .navRouter {
@@ -20,49 +29,51 @@
   -webkit-box-shadow: 0px 2px 5px 0px rgba(10, 10, 10, 0.75);
   -moz-box-shadow: 0px 2px 5px 0px rgba(10, 10, 10, 0.75);
   box-shadow: 0px 2px 5px 0px rgba(10, 10, 10, 0.75); }
-  .navRouter .nav-container {
-    display: block;
-    position: relative;
-    width: 100%;
-    max-width: 1160px;
-    height: 100%;
-    padding: 0 0.5em;
-    margin: auto; }
-    .navRouter .nav-container .nav-logo {
-      box-sizing: border-box;
-      display: inline-block;
-      position: relative;
-      width: 50px;
-      height: 50px;
-      padding: 0;
-      margin: 0;
-      text-align: center;
-      line-height: 50px;
-      font-weight: 800; }
-    .navRouter .nav-container > ul {
-      box-sizing: border-box;
-      display: inline-flex;
-      flex-flow: row nowrap;
-      align-items: flex-end;
-      justify-content: flex-end;
-      position: relative;
-      width: calc(100% - 50px);
-      height: auto;
-      max-height: 50px;
-      padding: 0;
-      padding-left: 0.25em;
-      margin: auto;
-      list-style: none; }
-      .navRouter .nav-container > ul li {
-        box-sizing: border-box;
-        padding: 1em; }
-        .navRouter .nav-container > ul li a {
-          padding: 0.25em;
-          border-bottom: 2px solid rgba(0, 0, 0, 0);
-          color: inherit;
-          text-decoration: none;
-          transition: 200ms; }
-          .navRouter .nav-container > ul li a:hover {
-            border-bottom: 2px solid #3a424a;
-            color: #3a424a;
-            transition: 200ms; }
+.navRouter .nav-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 1160px;
+  height: 100%;
+  padding: 0 16px;
+  margin: auto; }
+.navRouter .nav-container .nav-logo {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 800; }
+.navRouter .nav-container > ul {
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  width: calc(100% - 50px);
+  height: auto;
+  max-height: 50px;
+  padding: 0;
+  padding-left: 0.25em;
+  margin: auto;
+  list-style: none; }
+.navRouter .nav-container > ul li {
+  box-sizing: border-box;
+  padding: 1em; }
+.navRouter .nav-container > ul li a {
+  padding: 0.25em;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  color: inherit;
+  text-decoration: none;
+  transition: 200ms; }
+.navRouter .nav-container > ul li a:hover {
+  border-bottom: 2px solid #3a424a;
+  color: #3a424a;
+  transition: 200ms; }
+
+/*# sourceMappingURL=nav.css.map */

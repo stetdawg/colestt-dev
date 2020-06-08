@@ -4,9 +4,11 @@
   Site:   Coles TT
   Auth:   Anthony Isbell
   Crtd:   5/23/2020
-  Mod:    5/23/2020
+  Mod:    6/8/2020
 
 */
+
+@import "config";
 
 .contentPanel{
 border: 1px solid #000;
@@ -15,24 +17,24 @@ height: auto;
 // min-width: 50%;
 display: grid;
 grid-template-columns: 1fr 1fr 3fr 1fr 1fr ;
-grid-template-rows: .1fr 1fr .5fr; 
-grid-template-areas: 
+grid-template-rows: .1fr 1fr .5fr;
+grid-template-areas:
   ".    .     hd   .    ."
   "desc desc  thmb sel  sel"
   "desc desc  .    prc  prc ";
 border: 1px solid #000;
 
-    
+
 #combo {
   grid-area: hd;
   position: relative;
 }
-.side-panel{    
+.side-panel{
   grid-area: desc;
   display: flex;
   position: relative;
-  
-  
+
+
   .item-name{
     position: absolute;
     font-size: 1.3em;
@@ -51,7 +53,7 @@ img {
 }
 p{
   grid-area: prc;
-}    
+}
 #selection-panel {
   position: relative;
   grid-area: sel;

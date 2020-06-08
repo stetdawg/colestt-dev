@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA;;;;;;;;EAQE",
-"sources": ["../scss/about.scss"],
+"mappings": "AAAA;;;;;;;;EAQE;ACPF;;;;;;;;EAQE",
+"sources": ["../scss/about.scss","../scss/_config.scss"],
 "names": [],
 "file": "about.css"
 }

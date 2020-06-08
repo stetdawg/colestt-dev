@@ -4,13 +4,11 @@
   Site:   Coles TT
   Auth:   Stetson Baber
   Crtd:   5/24/2020
-  Mod:    5/27/2020 // aisbell
+  Mod:    6/8/2020
 
 */
 
-$color1: #3a424a;
-$nav-height: 50px;
-$max-width: 1160px;
+@import "config";
 
 .navRouter {
   display: block;
@@ -34,7 +32,7 @@ $max-width: 1160px;
     width: 100%;
     max-width: $max-width;
     height: 100%;
-    padding:  0 0.5em;
+    padding:  0 $max-width-padding;
     margin: auto;
 
     .nav-logo{

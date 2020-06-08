@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA;;;;;;;;EAQE",
-"sources": ["../scss/shop-landing.scss"],
+"mappings": "AAAA;;;;;;;;EAQE;ACPF;;;;;;;;EAQE",
+"sources": ["../scss/shop-landing.scss","../scss/_config.scss"],
 "names": [],
 "file": "shop-landing.css"
 }
