@@ -40,20 +40,18 @@ main {
   padding: 16px;
   margin: auto;
   z-index: 0; }
-main section .container {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin: auto; }
-main section .container .content {
-  display: block;
-  position: relative;
-  width: 100%;
-  max-width: 1160px;
-  padding: 1em;
-  margin: auto; }
-main section#hero {
-  display: none; }
-
-/*# sourceMappingURL=structure.css.map */
+  main section .container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto; }
+    main section .container .content {
+      display: block;
+      position: relative;
+      width: 100%;
+      max-width: 1160px;
+      padding: 1em;
+      margin: auto; }
+  main section#hero {
+    display: none; }
