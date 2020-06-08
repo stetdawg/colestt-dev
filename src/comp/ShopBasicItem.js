@@ -9,13 +9,12 @@ import '../css/shop-basic-item.css';
 
 // components
 
-
 class ShopItem extends React.Component{
 
   constructor(props){
     super(props);
     this.state = {
-
+      displayImage : true
     }
   }
 
@@ -32,16 +31,38 @@ class ShopItem extends React.Component{
     }
   } // {this.checkWeight(this.props.weight)}
 
-  render(){
-    return(
-      <a className="shop-item" onClick={this.props.onClick}>
-        <div className="item-media">
+  toggleImgDesc(){
+    if (this.state.displayImage == true){
+      return(
           <img src={this.props.thumb} />
-        </div>
-        <span className="item-name">{this.props.name}</span>
-        <span className="item-price">${this.props.price}</span>
+      );
+      // this.setState({displayImage : false});
+    } else {
+      return(
+          <div className="item-desc"><p>{this.props.desc}</p></div>
+      );
+      // this.setState({displayImage : true});
+    }
+  }
 
-        <button className="item-btn">Add to Cart</button>
+  toggleDecCounter(){
+    if (this.state.displayImage == true){
+      this.setState({displayImage : false});
+    }else{
+      this.setState({displayImage : true});
+    }
+  }
+
+  render(){
+
+    return(
+      <a className="shop-item" onClick={() => {this.toggleDecCounter()} /*this.props.onClick*/}>
+        <span className="item-name">{this.props.name}</span>
+        <div className="item-media">
+          {this.toggleImgDesc()}
+        </div>
+        <span className="item-price">${this.props.price}</span>
+        <button className="item-btn">Add to Cart</button> {/*adds to the cart, without having to check big description */}
       </a>
     );
   }

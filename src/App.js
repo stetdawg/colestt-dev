@@ -22,6 +22,7 @@ class App extends React.Component{
     return(
       <><NavBar />
       <main>
+      <div className="lightbox"></div>
       <Switch>
         <Route exact path="/">
           <Home>
