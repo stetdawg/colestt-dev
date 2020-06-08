@@ -30,7 +30,7 @@ constructor(props) {
 
 
 componentDidMount() {
-  g
+  
 }
 
 
