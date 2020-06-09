@@ -16,6 +16,9 @@
   Mod:
 
 */
+* {
+  box-sizing: border-box; }
+
 /*
      _                   _
     | |                 | |
@@ -32,10 +35,11 @@ html {
   z-index: 0; }
 
 main {
+  box-sizing: border-box;
   display: block;
   position: relative;
   width: 100%;
-  max-width: 1160px;
+  max-width: 60px;
   height: auto;
   padding: 16px;
   margin: auto;

@@ -8,7 +8,7 @@
 
 */
 
-@import "config";
+@import "_config.scss";
 
 /*
      _                   _
@@ -20,7 +20,7 @@
 
 */
 
-$color1: #3a424a; //#789
+
 html {
   padding: 0;
   margin: 0;
@@ -30,6 +30,7 @@ html {
 }
 
 main{
+  box-sizing: border-box;
   display: block;
   position: relative;
   width: 100%;

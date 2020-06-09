@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA;;;;;;;;EAQE;ACPF;;;;;;;;EAQE",
+"mappings": "AAAA;;;;;;;;EAQE;ACPF;;;;;;;;EAQE;AAEF,CAAC;EAAC,UAAU,EAAE,UAAU",
 "sources": ["../scss/shop-landing.scss","../scss/_config.scss"],
 "names": [],
 "file": "shop-landing.css"

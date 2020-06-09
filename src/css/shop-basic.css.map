@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA;;;;;;;;EAQE;ACPF;;;;;;;;EAQE;ADGF,OAAO;EAAC,OAAO,EAAE,IAAI;;AACrB,KAAK;EACH,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,QAAQ,EAAE,GAAG",
+"mappings": "AAAA;;;;;;;;EAQE;ACPF;;;;;;;;EAQE;AAEF,CAAC;EAAC,UAAU,EAAE,UAAU;;ADCxB,OAAO;EAAC,OAAO,EAAE,IAAI;;AACrB,KAAK;EACH,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,QAAQ,EAAE,GAAG",
 "sources": ["../scss/shop-basic.scss","../scss/_config.scss"],
 "names": [],
 "file": "shop-basic.css"

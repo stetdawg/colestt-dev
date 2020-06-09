@@ -5,6 +5,18 @@
   Crtd:   5/23/2020
   Mod:    6/6/2020
 */
+/*
+
+  Name:   _config.scss
+  Site:   Coles TT
+  Auth:   Anthony Isbell
+  Crtd:   6/8/2020
+  Mod:
+
+*/
+* {
+  box-sizing: border-box; }
+
 .contentPanel {
   height: auto;
   max-width: 98%;
@@ -15,7 +27,7 @@
       grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
       grid-template-rows: .1fr 1fr .5fr;
       grid-template-areas: ".    .     hd   .    ." "desc desc  thmb sel  sel" "desc desc  .    prc  prc "; } }
-  @media (max-width: 667px) {
+  @media (min-width: 0px) {
     .contentPanel {
       grid-template-columns: minmax(100px, auto); } }
   .contentPanel .combo-item-container {

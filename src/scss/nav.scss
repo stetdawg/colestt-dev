@@ -1,6 +1,6 @@
 /*
 
-  Name:   landing.scss -> landing.css
+  Name:   nav.scss -> nav.css
   Site:   Coles TT
   Auth:   Stetson Baber
   Crtd:   5/24/2020
@@ -27,6 +27,7 @@
   box-shadow: 0px 2px 5px 0px rgba(10,10,10,0.75);
 
   .nav-container{
+    box-sizing: border-box;
     display: block;
     position: relative;
     width: 100%;

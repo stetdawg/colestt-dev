@@ -5,16 +5,9 @@
   Crtd:   5/23/2020
   Mod:    6/6/2020
 */
-$tablet_width: 1024px;
-$media_queries : (
-    'mobile': only screen and (max-width: 667px),
-    'tablet': only screen and (min-width: 668px) and (max-width: $tablet_width),
-    'desktop': only screen and (min-width: ($tablet_width + 1)),
-    'retina2': only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi),
-    'retina3': only screen and (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 288dpi),
-    'landscape': screen and (orientation:landscape),    
-    'portrait': screen and (orientation:portrait)
-);
+
+
+@import "config";
 
 @mixin for_breakpoint($breakpoints) {
   $conditions : ();
@@ -34,14 +27,14 @@ $media_queries : (
 .contentPanel{
   height: auto;
   max-width: 98%;
-  
+
   // min-height: 50%;
   // min-width: 50%;
   display: grid;
   @include for_breakpoint(desktop){
     grid-template-columns: 1fr 1fr 3fr 1fr 1fr ;
-    grid-template-rows: .1fr 1fr .5fr; 
-    grid-template-areas: 
+    grid-template-rows: .1fr 1fr .5fr;
+    grid-template-areas:
       ".    .     hd   .    ."
       "desc desc  thmb sel  sel"
       "desc desc  .    prc  prc ";
@@ -59,11 +52,11 @@ $media_queries : (
   .info-panel {
 
   }
-    
+
   .selection-panel{
- 
+
   }
   }
   border: 1px solid #000;
-    
+
 }

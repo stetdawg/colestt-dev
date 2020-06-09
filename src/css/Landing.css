@@ -16,6 +16,9 @@
   Mod:
 
 */
+* {
+  box-sizing: border-box; }
+
 .landingPage h1 {
   color: black; }
 
@@ -31,18 +34,16 @@ section#hero
 #hero .flex {
   display: flex;
   height: 30vh; }
-#hero .flex:hover .panel {
-  width: 15%; }
-#hero .flex .panel {
-  width: calc(100% / 3);
-  height: 100%;
-  background-color: #00dc00;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  transition: width 1s; }
-#hero .flex .panel:hover {
-  width: 70%;
-  background-color: rgba(0, 0, 0, 0.2); }
-
-/*# sourceMappingURL=landing.css.map */
+  #hero .flex:hover .panel {
+    width: 15%; }
+  #hero .flex .panel {
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: #00dc00;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: width 1s; }
+    #hero .flex .panel:hover {
+      width: 70%;
+      background-color: rgba(0, 0, 0, 0.2); }

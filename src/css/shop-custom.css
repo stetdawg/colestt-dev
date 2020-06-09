@@ -16,6 +16,9 @@
   Mod:
 
 */
+* {
+  box-sizing: border-box; }
+
 .contentPanel {
   max-height: 100vh;
   height: auto;
