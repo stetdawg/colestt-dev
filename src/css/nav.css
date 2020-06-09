@@ -33,6 +33,7 @@
   -moz-box-shadow: 0px 2px 5px 0px rgba(10, 10, 10, 0.75);
   box-shadow: 0px 2px 5px 0px rgba(10, 10, 10, 0.75); }
   .navRouter .nav-container {
+    box-sizing: border-box;
     display: block;
     position: relative;
     width: 100%;
