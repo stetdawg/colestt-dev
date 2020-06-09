@@ -16,6 +16,9 @@
   Mod:
 
 */
+* {
+  box-sizing: border-box; }
+
 .shop-item {
   display: block;
   position: relative;
@@ -25,103 +28,103 @@
   background-color: rgba(10, 10, 10, 0.125);
   text-decoration: none;
   transition: 200ms; }
-.shop-item:hover {
-  background-color: rgba(10, 10, 10, 0.125); }
-.shop-item:hover .item-media img {
-  width: 110%;
-  height: 110%; }
-.shop-item .item-name {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 1.3em;
-  font-weight: 600;
-  color: #3a424a; }
-.shop-item .item-media {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding: 0;
-  padding-bottom: 100%;
-  margin-bottom: 0.25em;
-  overflow: hidden;
-  cursor: pointer; }
-.shop-item .item-media .item-desc {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  overflow-y: auto; }
-.shop-item .item-media .item-desc p {
-  margin: auto; }
-.shop-item .item-media img {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  transition: width 300ms, height 300ms ease;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-.shop-item .item-price {
-  display: inline-block;
-  position: absolute;
-  bottom: 8px;
-  right: 116px;
-  width: auto;
-  height: 36px;
-  padding: 0;
-  border: 0;
-  margin: 0;
-  color: #3a424a;
-  font-size: 24px;
-  line-height: 36px;
-  text-align: center;
-  /*
-    top: 0;
-    right: 0;
-  width: auto;
-  padding: 0.5em;
-  margin: 0;
-  background-color: $color1;
-  color: white;
-  font-size: 0.9em;
-  */ }
-.shop-item .item-weight {
-  display: block;
-  font-size: 1.0em;
-  font-weight: 400;
-  color: black; }
-.shop-item .item-btn {
-  display: inline-block;
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  width: 100px;
-  height: 36px;
-  padding: 4px;
-  border: 2px solid #3a424a;
-  margin: 0;
-  background-color: #3a424a;
-  color: white;
-  font-size: 12px;
-  cursor: pointer;
-  transition: 200ms; }
-.shop-item .item-btn:hover {
-  background-color: transparent;
-  color: #3a424a; }
-.shop-item .item-btn:active {
-  background-color: white;
-  color: #3a424a; }
+  .shop-item:hover {
+    background-color: rgba(10, 10, 10, 0.125); }
+    .shop-item:hover .item-media img {
+      width: 110%;
+      height: 110%; }
+  .shop-item .item-name {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #3a424a; }
+  .shop-item .item-media {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding: 0;
+    padding-bottom: 100%;
+    margin-bottom: 0.25em;
+    overflow: hidden;
+    cursor: pointer; }
+    .shop-item .item-media .item-desc {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      overflow-y: auto; }
+      .shop-item .item-media .item-desc p {
+        margin: auto; }
+    .shop-item .item-media img {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      transition: width 300ms, height 300ms ease;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .shop-item .item-price {
+    display: inline-block;
+    position: absolute;
+    bottom: 8px;
+    right: 116px;
+    width: auto;
+    height: 36px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    color: #3a424a;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    /*
+      top: 0;
+      right: 0;
+    width: auto;
+    padding: 0.5em;
+    margin: 0;
+    background-color: $color1;
+    color: white;
+    font-size: 0.9em;
+    */ }
+  .shop-item .item-weight {
+    display: block;
+    font-size: 1.0em;
+    font-weight: 400;
+    color: black; }
+  .shop-item .item-btn {
+    display: inline-block;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 100px;
+    height: 36px;
+    padding: 4px;
+    border: 2px solid #3a424a;
+    margin: 0;
+    background-color: #3a424a;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 200ms; }
+    .shop-item .item-btn:hover {
+      background-color: transparent;
+      color: #3a424a; }
+    .shop-item .item-btn:active {
+      background-color: white;
+      color: #3a424a; }
 
 /*
 .shop-item:nth-child(1) {
@@ -130,5 +133,3 @@
 }
 
 */
-
-/*# sourceMappingURL=shop-basic-item.css.map */

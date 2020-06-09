@@ -2,7 +2,7 @@
 
   Name:   shop-custom.scss -> shop-custom.css
   Site:   Coles TT
-  Auth:   Anthony Isbell
+  Auth:   Anthony Isbell & Stetson Baber
   Crtd:   5/23/2020
   Mod:    6/8/2020
 
@@ -16,43 +16,46 @@
   Mod:
 
 */
+* {
+  box-sizing: border-box; }
+
 .contentPanel {
-  border: 1px solid #000;
+  max-height: 100vh;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
-  grid-template-rows: .1fr 1fr .5fr;
-  grid-template-areas: ".    .     hd   .    ." "desc desc  thmb sel  sel" "desc desc  .    prc  prc ";
   border: 1px solid #000; }
-.contentPanel #combo {
-  grid-area: hd;
-  position: relative; }
-.contentPanel .side-panel {
-  grid-area: desc;
-  display: flex;
-  position: relative; }
-.contentPanel .side-panel .item-name {
-  position: absolute;
-  font-size: 1.3em; }
-.contentPanel .side-panel .item-desc {
-  top: 10%;
-  position: absolute; }
-.contentPanel img {
-  width: 10%;
-  border: 1px solid #000;
-  grid-area: thmb;
-  width: 70%; }
-.contentPanel p {
-  grid-area: prc; }
-.contentPanel #selection-panel {
-  position: relative;
-  grid-area: sel;
-  grid-auto-flow: row;
-  top: 30%; }
-.contentPanel #selection-panel .item-blade {
-  position: absolute; }
-.contentPanel #selection-panel .item-rb {
-  position: absolute;
-  top: 10%; }
-
-/*# sourceMappingURL=shop-custom.css.map */
+  @media (min-width: 1025px) {
+    .contentPanel {
+      grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+      grid-template-rows: .1fr 1fr .5fr;
+      grid-template-areas: ".    .     hd   .    ." "desc desc  thmb sel  sel" "desc desc  .    prc  prc "; } }
+  .contentPanel #combo {
+    grid-area: hd;
+    position: relative; }
+  .contentPanel .side-panel {
+    grid-area: desc;
+    display: flex;
+    position: relative; }
+    .contentPanel .side-panel .item-name {
+      position: absolute;
+      font-size: 1.3em; }
+    .contentPanel .side-panel .item-desc {
+      top: 10%;
+      position: absolute; }
+  .contentPanel img {
+    width: 10%;
+    border: 1px solid #000;
+    grid-area: thmb;
+    width: 70%; }
+  .contentPanel p {
+    grid-area: prc; }
+  .contentPanel #selection-panel {
+    position: relative;
+    grid-area: sel;
+    grid-auto-flow: row;
+    top: 30%; }
+    .contentPanel #selection-panel .item-blade {
+      position: absolute; }
+    .contentPanel #selection-panel .item-rb {
+      position: absolute;
+      top: 10%; }

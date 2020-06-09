@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import DisplayComboItem from './ComboItem';
-import '../css/shop-custom.css'
+import '../css/special.css'
 
 
 
@@ -53,8 +53,7 @@ class ShopCustom extends Component{
   render() {
     return(
       <div  className="contentPanel">
-      <h1 id="combo">Combos</h1>
-      <DisplayComboItem />
+      {/* <DisplayComboItem /> */}
         </div>
     )
   }
