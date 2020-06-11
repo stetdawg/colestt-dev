@@ -18,8 +18,9 @@
   box-sizing: border-box; }
 
 .contentPanel {
+  box-sizing: border-box;
+  width: 100%;
   height: auto;
-  max-width: 98%;
   display: grid;
   border: 1px solid #000; }
   @media (min-width: 1025px) {

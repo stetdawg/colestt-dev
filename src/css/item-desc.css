@@ -1,0 +1,100 @@
+/*
+
+  Name:   item-desc.scss -> item-desc.css
+  Site:   Coles TT
+  Auth:   Anthony Isbell
+  Crtd:   6/11/2020
+  Mod:
+
+*/
+/*
+
+  Name:   _config.scss
+  Site:   Coles TT
+  Auth:   Anthony Isbell
+  Crtd:   6/8/2020
+  Mod:
+
+*/
+* {
+  box-sizing: border-box; }
+
+article {
+  display: grid;
+  grid-template-columns: 400px 1fr 150px;
+  grid-template-rows: 36px 1em 1fr;
+  grid-template-areas: "media name price" "media var var" "media desc desc";
+  justify-content: center;
+  /*
+  grid-template-areas:
+    "thumb thumb name name name name"
+    "thumb thumb var var price btn;"
+    "desc desc desc desc desc desc";
+  */
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: auto; }
+
+.item-media {
+  grid-area: media;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; }
+  .item-media img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-transform: translate(-50%, -50%); }
+
+.item-name {
+  grid-area: name;
+  font-size: 2em;
+  color: #3a424a;
+  vertical-align: middle; }
+
+.item-price {
+  grid-area: price;
+  align-items: center;
+  text-align: right; }
+  .item-price > span {
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle; }
+  .item-price .item-btn {
+    position: relative;
+    width: 100px;
+    height: 36px;
+    padding: 4px;
+    border: 2px solid #3a424a;
+    margin: 0;
+    background-color: #3a424a;
+    color: white;
+    font-size: 12px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: 200ms; }
+    .item-price .item-btn:hover {
+      background-color: transparent;
+      color: #3a424a; }
+    .item-price .item-btn:active {
+      background-color: white;
+      color: #3a424a; }
+
+.item-var {
+  grid-area: var;
+  background-color: red; }
+
+.item-description {
+  grid-area: desc;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 1em; }

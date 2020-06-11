@@ -11,4 +11,94 @@
 @import "config";
 
 
-main{}
+article{
+  display: grid;
+  grid-template-columns: 400px 1fr 150px;
+  grid-template-rows: 36px 1em 1fr;
+  grid-template-areas: "media name price"
+                       "media var var"
+                       "media desc desc";
+  justify-content: center;
+  /*
+  grid-template-areas:
+    "thumb thumb name name name name"
+    "thumb thumb var var price btn;"
+    "desc desc desc desc desc desc";
+  */
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: auto;
+
+}
+.item-media{
+  grid-area: media;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  img{
+    display: block;
+    position: absolute;
+      top: 50%;
+      left: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    -webkit-transform: translate(-50%, -50%);
+  }
+}
+.item-name{
+  grid-area: name;
+  font-size: 2em;
+  color: $color1;
+  vertical-align: middle;
+}
+.item-price{
+  grid-area: price;
+  align-items: center;
+  text-align: right;
+
+  & > span{
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+  .item-btn{
+    position: relative;
+    width: 100px;
+    height: 36px;
+    padding: 4px;
+    border: 2px solid $color1;
+    margin: 0;
+    background-color: $color1;
+    color: white;
+    font-size: 12px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: 200ms;
+
+    &:hover{
+      background-color: transparent;
+      color: $color1;
+    }
+    &:active{
+      background-color: white;
+      color: $color1;
+    }
+  }
+}
+.item-var{
+  grid-area: var;
+  background-color: red;
+}
+.item-description{
+  grid-area: desc;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 1em;
+}

@@ -11,8 +11,11 @@ import Contact from './comp/Contact'
 
 import ItemDesc from './comp/ItemDesc'
 
-import './css/app.css';
-import './css/structure.css';
+import './css/app.css'
+import './css/structure.css'
+
+
+import merch from './json/merchandise.json'
 
 /* surrounding empty tags </> are called Fragments.
 They are needed to return two sibling components.
@@ -47,6 +50,9 @@ class App extends React.Component{
         </Route>
         <Route path="/ItemDesc">
           <ItemDesc />
+        </Route>
+        <Route path="/Item/Tiger1">
+          <ItemDesc {...merch[5]} />
         </Route>
       </Switch>
       </main>
