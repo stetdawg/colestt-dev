@@ -6,7 +6,7 @@ import '../scss/special.scss'
 
 
 
-class ShopCustom extends Component{
+class ItemDesc extends Component{
   constructor(props){
     super(props);
     this.state = {
@@ -60,4 +60,4 @@ class ShopCustom extends Component{
 }
 
 
-export default ShopCustom;
+export default ItemDesc;

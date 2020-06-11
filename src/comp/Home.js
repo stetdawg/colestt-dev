@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../css/landing.css'
+import '../scss/landing.scss'
 import Specials from './Specials';
 
 

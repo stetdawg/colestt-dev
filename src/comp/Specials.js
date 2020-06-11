@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import merchandise from '../json/customitem.json';
-import '../css/special.css'
- 
-const ComboItem = (props) =><>   
+import '../scss/special.scss'
+
+const ComboItem = (props) =><>
 <div className="combo-item-container">
 <img src={props.thumb} alt="." />
   <div className="info-panel">
@@ -44,25 +44,25 @@ class DisplaySpecials extends Component {
       //might implement scroll to next/prev time
       onScroll: false,
       scrollIndex: 0,
-      stack: [] 
+      stack: []
     }
     //binding this,  explicitly setting this to variables helps define their scope(?)
     this.myArray = merchandise.slice()
   }
 
   componentDidMount() {
-  
+
   }
 
 //The stack used to hold displayed components
 
 
 
-  
+
 
   render() {
 
-    return ( this.myArray.map(item => 
+    return ( this.myArray.map(item =>
       <div>
         <ComboItem {...item}/>
       </div>
@@ -74,11 +74,9 @@ class DisplaySpecials extends Component {
 
 
 
-/*          Array of Object 
+/*          Array of Object
 step through array with .map    */
 
 
 
 export default DisplaySpecials
-
-

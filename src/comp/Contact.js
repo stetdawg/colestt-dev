@@ -10,7 +10,7 @@ Mod:
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../css/contact.css';
+import '../scss/contact.scss';
 
 class Contact extends React.Component{
   constructor(props){

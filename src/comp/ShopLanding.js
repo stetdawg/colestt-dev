@@ -4,8 +4,8 @@ import ReactDOM from 'react-dom';
 //import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 // css
-import '../css/structure.css';
-import '../css/shop-landing.css';
+import '../scss/structure.scss';
+import '../scss/shop-landing.scss';
 
 // assets
 

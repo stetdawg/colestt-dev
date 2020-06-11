@@ -40,7 +40,10 @@
     max-width: 1160px;
     height: 100%;
     padding: 0 16px;
+    padding-right: 50px;
     margin: auto; }
+    .navRouter .nav-container > * {
+      vertical-align: top; }
     .navRouter .nav-container .nav-logo {
       box-sizing: border-box;
       display: inline-block;
@@ -79,3 +82,14 @@
             border-bottom: 2px solid #3a424a;
             color: #3a424a;
             transition: 200ms; }
+    .navRouter .nav-container .nav-btn {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      padding: 1em;
+      margin: 0;
+      background-color: red; }

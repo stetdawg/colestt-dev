@@ -1,9 +1,11 @@
 // react
 import React from 'react';
 import ReactDOM from 'react-dom';
+import DisplayComboItem from './ComboItem';
+import ItemDesc from './ItemDesc';
 
 // css
-import '../css/shop-basic-item.css';
+import '../scss/shop-basic-item.scss';
 
 // assets
 
@@ -46,11 +48,15 @@ class ShopItem extends React.Component{
   }
 
   toggleDecCounter(){
+
     if (this.state.displayImage == true){
       this.setState({displayImage : false});
     }else{
       this.setState({displayImage : true});
     }
+
+
+    // link to colestt.com/shop/AirTiger <ItemDesc />
   }
 
   render(){
