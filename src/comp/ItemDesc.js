@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 import DisplayComboItem from './ComboItem';
-import '../scss/special.scss'
-
+import '../scss/item-desc.scss'
 
 
 
@@ -53,7 +52,8 @@ class ItemDesc extends Component{
   render() {
     return(
       <div  className="contentPanel">
-      {/* <DisplayComboItem /> */}
+        <h1>Hello</h1>
+
         </div>
     )
   }

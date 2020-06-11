@@ -8,6 +8,9 @@ import ShopBasic from './comp/ShopBasic'
 import ShopCustom from './comp/ComboShop'
 import About from './comp/About'
 import Contact from './comp/Contact'
+
+import ItemDesc from './comp/ItemDesc'
+
 import './css/app.css';
 import './css/structure.css';
 
@@ -41,6 +44,9 @@ class App extends React.Component{
         </Route>
         <Route path="/Contact">
           <Contact />
+        </Route>
+        <Route path="/ItemDesc">
+          <ItemDesc />
         </Route>
       </Switch>
       </main>

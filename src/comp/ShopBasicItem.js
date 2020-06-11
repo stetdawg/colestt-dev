@@ -20,18 +20,18 @@ class ShopItem extends React.Component{
     }
   }
 
-  checkWeight = (weight) => {
-    if (weight < 1){
-      // weight is greater than 0
-      return(<span className="item-weight" style={{color: "#ABABAB"}}>{this.props.weight} kg</span>);
-    } else if (weight >= 1 && weight < 2) {
-      // weight is greater than 1
-      return(<span className="item-weight" style={{color: "#777"}}>{this.props.weight} kg</span>);
-    } else if (weight >= 2) {
-      // weight is greater than 1
-      return(<span className="item-weight" style={{color: "#090909"}}>{this.props.weight} kg</span>);
-    }
-  } // {this.checkWeight(this.props.weight)}
+  // checkWeight = (weight) => {
+  //   if (weight < 1){
+  //     // weight is greater than 0
+  //     return(<span className="item-weight" style={{color: "#ABABAB"}}>{this.props.weight} kg</span>);
+  //   } else if (weight >= 1 && weight < 2) {
+  //     // weight is greater than 1
+  //     return(<span className="item-weight" style={{color: "#777"}}>{this.props.weight} kg</span>);
+  //   } else if (weight >= 2) {
+  //     // weight is greater than 1
+  //     return(<span className="item-weight" style={{color: "#090909"}}>{this.props.weight} kg</span>);
+  //   }
+  // } // {this.checkWeight(this.props.weight)}
 
   toggleImgDesc(){
     if (this.state.displayImage == true){
