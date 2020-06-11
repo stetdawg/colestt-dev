@@ -38,7 +38,7 @@
     max-width: $max-width;
     height: 100%;
     padding:  0 $max-width-padding;
-    padding-right: $nav-height;
+    // padding-right: $nav-height; // only when nav-btn is up
     margin: auto;
 
     .nav-logo{
@@ -90,7 +90,7 @@
     }
     .nav-btn{
       box-sizing: border-box;
-      display: block;
+      display: none; //block;
       position: absolute;
         top: 0;
         right: 0;
@@ -101,5 +101,12 @@
 
       background-color: red;
     }
+  }
+
+}
+
+.mobile{ // for mobile
+  .nav-container{
+    padding-right: $nav-height; // only when nav-btn is up
   }
 }

@@ -49,10 +49,13 @@ class App extends React.Component{
           <Contact />
         </Route>
         <Route path="/ItemDesc">
-          <ItemDesc />
+          <ItemDesc version={"v1"} {...merch[5]} />
         </Route>
-        <Route path="/Item/Tiger1">
-          <ItemDesc {...merch[5]} />
+        <Route path="/ItemDesc2">
+          <ItemDesc version={"v2"} {...merch[5]} />
+        </Route>
+        <Route path="/Item/Illumina">
+          <ItemDesc {...merch[1]} />
         </Route>
       </Switch>
       </main>

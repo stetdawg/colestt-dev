@@ -40,7 +40,6 @@
     max-width: 1160px;
     height: 100%;
     padding: 0 16px;
-    padding-right: 50px;
     margin: auto; }
     .navRouter .nav-container > * {
       vertical-align: top; }
@@ -84,7 +83,7 @@
             transition: 200ms; }
     .navRouter .nav-container .nav-btn {
       box-sizing: border-box;
-      display: block;
+      display: none;
       position: absolute;
       top: 0;
       right: 0;
@@ -93,3 +92,6 @@
       padding: 1em;
       margin: 0;
       background-color: red; }
+
+.mobile .nav-container {
+  padding-right: 50px; }

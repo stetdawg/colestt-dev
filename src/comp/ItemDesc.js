@@ -65,22 +65,24 @@ class ItemDesc extends Component{
     */
   render() {
     return(
-      <article  className="">
+      <article  className={this.props.version}>
         <div className="item-media">
           <img src={this.props.thumb} />
         </div>
-        <span className="item-name">{this.props.name}</span>
-        <div className="item-var">
+        <span className="item-name"><b>Testing:</b> {this.props.name}</span>
+        <div className="item-rubber item-var">
+          <span>Colors </span>
           <select value={this.state.value} onChange={this.handleChange}>
             <option value="red">Red</option>
             <option value="black">Black</option>
             <option value="both">Both</option>
           </select>
+          {/* you can add more <span> and <select tags as needed */}
         </div>
-        <span className="item-description">{this.props.desc}</span>
+        <span className="item-description">{this.props.desc}<br/><br/><h1>The rest is just the description printed enough more times so that you can see the screen scroll.</h1><br/><br/>{this.props.desc}<br/><br/>{this.props.desc}<br/><br/>{this.props.desc}<br/><br/>{this.props.desc}<br/><br/>{this.props.desc}<br/><br/>{this.props.desc}</span>
         <span className="item-price">
           <span>${this.outputPrice()}</span>
-          <button className="item-btn">Add to Cart</button></span>
+          <button className="item-btn"><span>${this.outputPrice()} | </span>Add to Cart</button></span>
       </article>
     )
   }

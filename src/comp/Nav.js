@@ -59,10 +59,13 @@ export default class Nav extends Component {
               <Link to="/Contact">Contact Us</Link>
             </li>
             <li>
-              <Link to="/ItemDesc">Item Desc (old)</Link>
+              <Link to="/ItemDesc">Item Desc (v1)</Link>
             </li>
             <li>
-              <Link to="/Item/Tiger1">Item Desc</Link>
+              <Link to="/ItemDesc2">Item Desc (v2)</Link>
+            </li>
+            <li>
+              <Link to="/Item/Illumina">Item: Illumina (needs work)</Link>
             </li>
           </ul>
           <a className="nav-btn"></a>
