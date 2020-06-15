@@ -9,20 +9,7 @@
 
 @import "config";
 
-@mixin for_breakpoint($breakpoints) {
-  $conditions : ();
-  @each $breakpoint in $breakpoints {
-      // If the key exists in the map
-      $conditions: append(
-          $conditions,
-          #{inspect(map-get($media_queries, $breakpoint))},
-          comma
-      );
-  }
-  @media #{$conditions} {
-      @content;
-  }
-}
+
 
 .contentPanel{
   box-sizing: border-box;
@@ -34,30 +21,27 @@
   // min-width: 50%;
   display: grid;
   @include for_breakpoint(desktop){
-    grid-template-columns: 1fr 1fr 3fr 1fr 1fr ;
-    grid-template-rows: .1fr 1fr .5fr;
-    grid-template-areas:
-      ".    .     hd   .    ."
-      "desc desc  thmb sel  sel"
-      "desc desc  .    prc  prc ";
   }
-  @include for_breakpoint(mobile){
-    grid-template-columns: minmax(100px, auto) ;
-  }
+ 
   .combo-item-container{
-    display: grid;
-    grid-template-columns:minmax(100px, auto);
-    grid-template-rows: 1fr;
+    @include for_breakpoint(desktop){
+      display: flex;
+    }
+
     img {
       width: 100%;
+      height: 100%;
     }
-  .info-panel {
+    .info-panel {
+      h1{
+        font-size: 1.3em
+      }
+      text-align: center;
+    }
 
-  }
+    .selection-panel{
 
-  .selection-panel{
-
-  }
+    }
   }
   border: 1px solid #000;
 

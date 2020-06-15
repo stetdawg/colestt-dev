@@ -18,9 +18,7 @@ const ComboItem = (props) =><>
       <option value="" className="value">Galaxy LQ-1</option>
       <option value="" className="value">Galaxy LQ-2</option>
     </select>
-  </div>
 
-  <div id="selection-panel">
     <label for="rubbers">Rubber:</label>
     <select className="item-rb" name="Rubber" id="rubbers">
       <option value="" className="value">Air TigerS</option>
@@ -28,8 +26,11 @@ const ComboItem = (props) =><>
       <option value="" className="value">Glove 889 w/ sponge</option>
     </select>
   </div>
-<p className="item-price">${props.price}</p>
-<p className="item-weight">{props.weight} kg</p>
+  <span>
+  <p className="item-price">${props.price}</p>
+  <p className="item-weight">{props.weight} kg</p>
+  </span>
+
 
 
 </div>
