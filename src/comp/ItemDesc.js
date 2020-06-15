@@ -71,7 +71,7 @@ class ItemDesc extends Component{
         </div>
         <span className="item-name"><b>Testing:</b> {this.props.name}</span>
         <div className="item-rubber item-var">
-          <span>Colors </span>
+          <span>Colors: </span>
           <select value={this.state.value} onChange={this.handleChange}>
             <option value="red">Red</option>
             <option value="black">Black</option>
