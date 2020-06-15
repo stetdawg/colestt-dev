@@ -11,6 +11,22 @@
 
 *{box-sizing: border-box;}
 
+@mixin for_breakpoint($breakpoints) {
+  $conditions : ();
+  @each $breakpoint in $breakpoints {
+      // If the key exists in the map
+      $conditions: append(
+          $conditions,
+          #{inspect(map-get($media_queries, $breakpoint))},
+          comma
+      );
+  }
+  @media #{$conditions} {
+      @content;
+  }
+}
+
+
 // Colors
 $color1: #3a424a;
 
