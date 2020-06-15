@@ -4,7 +4,7 @@
   Site:   Coles TT
   Auth:   Anthony Isbell
   Crtd:   6/11/2020
-  Mod:
+  Mod:    6/11/2020
 
 */
 /*
@@ -19,7 +19,7 @@
 * {
   box-sizing: border-box; }
 
-@media (min-width: 0) {
+@media (min-width: 0px) {
   article {
     display: grid;
     grid-template-columns: 1fr minmax(143px, auto);
@@ -32,6 +32,27 @@
     height: auto;
     padding: 0;
     margin: auto; }
+    article.v1 .item-btn span {
+      display: none; }
+    article.v2 .item-price span {
+      display: none; }
+    article.v2 .item-btn {
+      position: relative;
+      width: auto !important;
+      height: 36px;
+      max-height: 100%;
+      padding: 0.5em;
+      border: 2px solid #3a424a;
+      margin: 0;
+      background-color: #3a424a;
+      color: white;
+      font-size: 0.9em;
+      vertical-align: middle;
+      cursor: pointer;
+      transition: 200ms;
+      display: inline-block; }
+      article.v2 .item-btn span {
+        display: inline; }
   .item-media {
     grid-area: media;
     position: relative;
