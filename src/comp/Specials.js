@@ -4,8 +4,9 @@ import '../scss/special.scss'
 
 const ComboItem = (props) =><>
 <div className="combo-item-container">
-
+<div className="thumbnail-container">
 <img src={props.thumb} alt="." />
+</div>
   
   <div className="info-panel">
     <h1 className="item-name">{props._name}</h1>
