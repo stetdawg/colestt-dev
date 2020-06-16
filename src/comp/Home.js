@@ -5,9 +5,11 @@ import Specials from './Specials';
 
 function Home(props) {
  return (
-        <div>
+        <div id="home">
          <div className="landingPage">
-                {props.children}
+         <div id="landing-container" >
+              {props.children}
+         </div>
          </div>
          <div  className="contentPanel">
                 <Specials />
