@@ -20,6 +20,7 @@
   box-sizing: border-box; }
 
 .navRouter {
+  font-size: .9em;
   display: block;
   position: sticky;
   top: 0;
