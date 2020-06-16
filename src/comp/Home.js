@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import '../scss/landing.scss'
 import Specials from './Specials';
-
 
 function Home(props) {
  return (
@@ -14,7 +12,6 @@ function Home(props) {
          <div  className="contentPanel">
                 <Specials />
          </div>
-
         </div>
         )
 

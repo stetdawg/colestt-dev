@@ -17,18 +17,36 @@
 * {
   box-sizing: border-box; }
 
-#home {
-  text-align: left; }
-  #home .landingPage {
-    display: flex; }
-    #home .landingPage #landing-container {
-      margin: 0;
-      padding: 0; }
-      @media (min-width: 1025px) {
-        #home .landingPage #landing-container {
-          padding: 0 10em;
-          display: grid;
-          gap: 2em 0; } }
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#home .landingPage {
+  text-align: center;
+  display: flex;
+  border: 1px solid #a3bdbf;
+  background-color: rgba(228, 228, 228, 0.679);
+  border-radius: 5px;
+  padding: 1em 1.4em;
+  max-width: 600px;
+  margin: 1em auto 3.2em auto; }
+  #home .landingPage #landing-container {
+    margin: 0;
+    padding: 0; }
+    @media (min-width: 1025px) {
+      #home .landingPage #landing-container {
+        -webkit-animation: fade-in 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation: fade-in 2s cubic-bezier(0.115, 0.81, 0.255, 1);
+        display: grid;
+        gap: 2em 0; } }
 
 .contentPanel {
   box-sizing: border-box;
