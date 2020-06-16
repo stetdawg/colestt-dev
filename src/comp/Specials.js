@@ -68,7 +68,7 @@ class DisplaySpecials extends Component {
   render() {
 
     return ( this.myArray.map(item =>
-      <div>
+      <div className="panelChildren">
         <ComboItem {...item}/>
       </div>
     ))
