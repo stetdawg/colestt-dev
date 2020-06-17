@@ -1,10 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom'
-import './css/structure.css';
-import './css/index.css';
+import './scss/structure.scss';
+import './scss/index.scss';
+import './scss/app.scss'
+
+import './scss/shop.scss'
+import './scss/nav.scss'
+import './scss/special.scss'
+import './scss/item-desc.scss'
+import './scss/contact.scss';
+import './scss/about.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
 
 //Wrap the root of the application in a Router
 //Continue to Nav.js

@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 
 // css
 import '../scss/structure.scss';
-import '../scss/shop-landing.scss';
+import '../scss/header.scss';
 
 // assets
 

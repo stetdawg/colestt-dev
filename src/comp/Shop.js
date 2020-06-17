@@ -4,13 +4,12 @@ import ReactDOM from 'react-dom';
 import Router from 'react-router';
 
 // css
-import '../scss/shop.scss'
 
 // assets
 import merchandise from '../json/merchandise.json';
 
 // components
-import ShopBasicItem from './ShopItem';
+import ShopBasicItem from './Items/ShopItem';
 
 
 

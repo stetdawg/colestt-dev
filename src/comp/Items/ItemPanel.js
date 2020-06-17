@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import '../scss/itempanel.scss'
+import '../../scss/itempanel.scss'
 
 
 

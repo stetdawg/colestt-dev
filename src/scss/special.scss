@@ -8,41 +8,25 @@
 
 
 @import "config";
-
- @-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-
+@import "keyframes";
 
 //HOME PAGE CSS
 #home{
 
-  .landingPage{
+  .header{
     text-align: center;
 
-    display: flex;    
-    border: 1px solid rgb(163, 189, 191);
+    display: flex;   
+    border: 1px groove rgba(163, 189, 191, 0.3);
     background-color: rgba(228, 228, 228, 0.679);
     border-radius: 5px;
     padding: 1em 1.4em;
     max-width: 600px;
     margin: 1em auto 3.2em auto;
-    #landing-container{
+    box-shadow: 8px 6px 10px #c0babc6e;
 
+   
+    #header-container{
 
       @include for_breakpoint(desktop){
 
@@ -77,13 +61,13 @@
     
         .thumbnail-container {
           display: grid;
-          height: -moz-fit-content;
-          height: fit-content;
-          width: 100%;
-          img {          
+          width: 300px;
+
+          img {      
+            border-radius: 3px;    
             justify-self: center;
             max-width: 100%;
-            height: auto;
+            max-height: 100%;
             border: 1px solid rgba(24, 15, 15, 0.472);
           }
         }
@@ -91,7 +75,10 @@
     .info-panel {
       font-size: .9em;
       text-align: left;
-     
+      flex-shrink: 2;
+      .item-name1{
+        color: #2d3033;
+      }
       @include for_breakpoint(desktop ){
         margin:0 4em;  
       }
@@ -108,5 +95,10 @@
       select{
         margin-left: 1em;}
   }}
+  hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0));
+  }
  }
 }
