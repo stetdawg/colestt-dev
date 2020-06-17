@@ -47,7 +47,7 @@ class ShopItem extends React.Component{
     }
   }
 
-  handleChange (event) {
+  handleSelectBoxChange (event) {
     if (event.target.value == "both"){
       console.log("it's both");
       this.setState({bothSelected : true});
@@ -90,7 +90,7 @@ class ShopItem extends React.Component{
         <span className="item-name">{this.props.name}</span>
         <div className="item-var">
           <span>Colors: </span>
-          <select value={this.state.value} onChange={(e) => this.handleChange(e)}>
+          <select value={this.state.value} onChange={(e) => this.handleSelectBoxChange(e)}>
             <option value="red">Red</option>
             <option value="black">Black</option>
             <option value="both">Both</option>
