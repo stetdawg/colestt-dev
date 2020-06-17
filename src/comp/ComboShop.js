@@ -51,8 +51,8 @@ class ShopCustom extends Component{
   render() {
     return(
       <div  className="contentPanel">
-      {/* <DisplayComboItem /> */}
-        </div>
+        <h1>Combo Shop (old)</h1>
+      </div>
     )
   }
 }

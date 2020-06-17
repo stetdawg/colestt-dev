@@ -10,13 +10,56 @@
 
 @import "config";
 
-.dialog{display: none;} // was only for testing the click function
-.shop{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2em;
+$shop-width: 80%;
 
+.dialog{display: none;} // was only for testing the click function
+
+
+.shop-wrapper{
+  display: grid;
+  grid-template-columns: minmax(175px, auto) minmax(auto, $shop-width);
+  //grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:  "header header"
+                        "sidebar shop";
+  grid-gap: 1em;
+
+  h1{
+    grid-area: header;
+  }
+}
+.shop{
+  grid-area: shop;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2em;
+  vertical-align: top;
   a{
     //background-color: red;
   }
+}
+
+.shop-sidebar{
+  grid-area: sidebar;
+  position: sticky;
+    top: 66px;
+  height: 100%;
+  //display: inline-block;
+  //width: calc(100% - $shop-width);
+  //vertical-align: top;
+
+  background-color: yellow;
+
+  h1{
+    font-size: 12pt;
+    padding: 1em;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 570px){
+  .shop{grid-template-columns: repeat(2, 1fr);}
+}
+@media (min-width: 750px){
+  .shop{grid-template-columns: repeat(3, 1fr);}
 }

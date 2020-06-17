@@ -16,29 +16,35 @@
   Mod:
 
 */
+@import url("http://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css");
 * {
   box-sizing: border-box; }
+
+:root {
+  --color1: $color1;
+  --max-width: $max-width;
+  --max-width-padding: $max-width-padding;
+  --nav-height: $nav-height; }
 
 .shop-item {
   display: block;
   position: relative;
-  padding: 1em;
-  padding-bottom: 52px;
+  padding: 5px;
+  padding-bottom: 90px;
   border-radius: 5px;
-  background-color: rgba(10, 10, 10, 0.125);
+  background-color: rgba(10, 10, 10, 0.225);
   text-decoration: none;
   transition: 200ms; }
-  .shop-item:hover {
-    background-color: rgba(10, 10, 10, 0.125); }
-    .shop-item:hover .item-media img {
-      width: 110%;
-      height: 110%; }
+  .shop-item:hover .item-media img {
+    width: 110%;
+    height: 110%; }
   .shop-item .item-name {
     display: block;
+    padding: 5px;
     margin-bottom: 8px;
     font-size: 1.3em;
     font-weight: 600;
-    color: #3a424a; }
+    color: black; }
   .shop-item .item-media {
     display: block;
     position: relative;
@@ -56,7 +62,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      padding: 0;
+      padding: s;
       margin: 0;
       overflow-y: auto; }
       .shop-item .item-media .item-desc p {
@@ -75,48 +81,54 @@
       -moz-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
-  .shop-item .item-price {
-    display: inline-block;
-    position: absolute;
-    bottom: 8px;
-    right: 116px;
-    width: auto;
-    height: 36px;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    color: #3a424a;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    /*
-      top: 0;
-      right: 0;
-    width: auto;
-    padding: 0.5em;
-    margin: 0;
-    background-color: $color1;
-    color: white;
-    font-size: 0.9em;
-    */ }
   .shop-item .item-weight {
     display: block;
     font-size: 1.0em;
     font-weight: 400;
     color: black; }
-  .shop-item .item-btn {
-    display: inline-block;
+  .shop-item .item-var {
+    display: grid;
+    grid-template-columns: auto 1fr;
     position: absolute;
-    bottom: 8px;
-    right: 8px;
-    width: 100px;
-    height: 36px;
-    padding: 4px;
+    bottom: 50px;
+    left: 5px;
+    width: calc(100% - 10px);
+    text-align: left; }
+    .shop-item .item-var span {
+      padding-right: 4px;
+      line-height: 36px;
+      font-size: 0.9em; }
+    .shop-item .item-var > select {
+      position: relative;
+      width: 100%;
+      height: 40px;
+      max-height: 100%;
+      padding: 4px;
+      border: 2px solid #ABABAB;
+      margin: 0;
+      background-color: white;
+      color: black;
+      font-size: 12px;
+      vertical-align: middle;
+      cursor: pointer;
+      transition: 200ms; }
+      .shop-item .item-var > select option {
+        border: 0;
+        cursor: pointer; }
+  .shop-item .item-btn {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: calc(100% - 10px);
+    height: auto;
+    padding: 0.75em;
     border: 2px solid #3a424a;
+    border-radius: 3px;
     margin: 0;
     background-color: #3a424a;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     cursor: pointer;
     transition: 200ms; }
     .shop-item .item-btn:hover {
@@ -125,6 +137,24 @@
     .shop-item .item-btn:active {
       background-color: white;
       color: #3a424a; }
+    .shop-item .item-btn .item-price {
+      /* // before making the price inside the button
+      display: inline-block;
+      position: absolute;
+        bottom: 8px;
+        right: 116px;
+      width: auto;
+      height: 36px;
+      padding: 0;
+      border: 0;
+      margin: 0;
+      //background-color: white;
+      color: $color1;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      */
+      display: inline; }
 
 /*
 .shop-item:nth-child(1) {

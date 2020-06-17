@@ -16,5 +16,12 @@
   Mod:
 
 */
+@import url("http://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css");
 * {
   box-sizing: border-box; }
+
+:root {
+  --color1: $color1;
+  --max-width: $max-width;
+  --max-width-padding: $max-width-padding;
+  --nav-height: $nav-height; }
