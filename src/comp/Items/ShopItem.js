@@ -68,7 +68,7 @@ class ShopItem extends React.Component{
     }
   }
 
-  toggleDecCounter(){
+  toggleDescCounter(){
 
     if (this.state.displayImage == true){
       this.setState({displayImage : false});
@@ -81,10 +81,9 @@ class ShopItem extends React.Component{
   }
 
   render(){
-
     return(
       <a className="shop-item">
-        <div className="item-media" onClick={() => {this.toggleDecCounter()} /*this.props.onClick*/}>
+        <div className="item-media" onClick={() => {this.toggleDescCounter()} /*this.props.onClick*/}>
           {this.toggleImgDesc()}
         </div>
         <span className="item-name">{this.props.name}</span>
