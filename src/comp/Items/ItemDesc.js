@@ -79,7 +79,6 @@ class ItemDesc extends Component{
         </div>
         <span className="item-description">{this.props.desc}<br/><br/><h1>The rest is just the description printed enough more times so that you can see the screen scroll.</h1><br/><br/>{this.props.desc}<br/><br/>{this.props.desc}<br/><br/>{this.props.desc}<br/><br/>{this.props.desc}<br/><br/>{this.props.desc}<br/><br/>{this.props.desc}</span>
         <span className="item-price">
-          <span>${this.outputPrice()}</span>
           <button className="item-btn"><span>${this.outputPrice()} | </span>Add to Cart</button></span>
       </article>
     )

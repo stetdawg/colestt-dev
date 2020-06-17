@@ -4,7 +4,7 @@
   Site:   Coles TT
   Auth:   Anthony Isbell
   Crtd:   6/11/2020
-  Mod:    6/11/2020
+  Mod:    6/17/2020
 
 */
 /*
@@ -16,8 +16,15 @@
   Mod:
 
 */
+@import url("http://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css");
 * {
   box-sizing: border-box; }
+
+:root {
+  --color1: $color1;
+  --max-width: $max-width;
+  --max-width-padding: $max-width-padding;
+  --nav-height: $nav-height; }
 
 @media (min-width: 0px) {
   article {
@@ -32,27 +39,6 @@
     height: auto;
     padding: 0;
     margin: auto; }
-    article.v1 .item-btn span {
-      display: none; }
-    article.v2 .item-price span {
-      display: none; }
-    article.v2 .item-btn {
-      position: relative;
-      width: auto !important;
-      height: 36px;
-      max-height: 100%;
-      padding: 0.5em;
-      border: 2px solid #3a424a;
-      margin: 0;
-      background-color: #3a424a;
-      color: white;
-      font-size: 0.9em;
-      vertical-align: middle;
-      cursor: pointer;
-      transition: 200ms;
-      display: inline-block; }
-      article.v2 .item-btn span {
-        display: inline; }
   .item-media {
     grid-area: media;
     position: relative;
@@ -62,7 +48,7 @@
       display: block;
       position: relative;
       width: 100%;
-      max-width: 400px;
+      max-width: 300px;
       height: 100%;
       margin: 0 auto; }
   .item-name {
@@ -72,37 +58,6 @@
     font-weight: bold;
     color: #3a424a;
     vertical-align: top; }
-  .item-price {
-    grid-area: price;
-    align-items: center;
-    justify-content: center;
-    text-align: right; }
-    .item-price > span {
-      display: inline-block;
-      margin-right: 4px;
-      font-size: 1.5em;
-      line-height: calc(4/3);
-      vertical-align: middle; }
-    .item-price .item-btn {
-      position: relative;
-      width: 100px;
-      height: 36px;
-      max-height: 100%;
-      padding: 4px;
-      border: 2px solid #3a424a;
-      margin: 0;
-      background-color: #3a424a;
-      color: white;
-      font-size: 12px;
-      vertical-align: middle;
-      cursor: pointer;
-      transition: 200ms; }
-      .item-price .item-btn:hover {
-        background-color: transparent;
-        color: #3a424a; }
-      .item-price .item-btn:active {
-        background-color: white;
-        color: #3a424a; }
   .item-var {
     grid-area: var;
     text-align: left; }
@@ -125,189 +80,54 @@
         cursor: pointer; }
   .item-description {
     grid-area: desc;
-    box-sizing: border-box;
     width: 100%;
-    height: auto; } }
-
-@media (min-width: 670px) {
-  article.v1 {
-    display: grid;
-    grid-template-columns: minmax(auto, 400px) 1fr auto;
-    grid-template-rows: minmax(36px, auto) 30px 1fr;
-    grid-template-areas: "media name price" "media var var" "media desc desc";
-    justify-content: center;
-    grid-gap: 1em;
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: auto; }
-  .v1 .item-media {
-    grid-area: media;
-    position: sticky;
-    top: 66px;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%; }
-    .v1 .item-media img {
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 100%;
-      height: 100%;
-      padding: 0;
-      margin: 0;
-      -webkit-transform: translate(-50%, -50%); }
-  .v1 .item-name {
-    font-size: 2em;
-    line-height: 1em;
-    color: #3a424a;
-    vertical-align: top; }
-  .v1 .item-price {
+    height: auto; }
+  .item-price {
     grid-area: price;
     align-items: center;
     justify-content: center;
     text-align: right; }
-    .v1 .item-price > span {
+    .item-price .item-btn {
       display: inline-block;
-      margin-right: 4px;
-      font-size: 1.5em;
-      line-height: calc(4/3);
-      vertical-align: middle; }
-    .v1 .item-price .item-btn {
       position: relative;
-      width: 100px;
+      width: auto;
       height: 36px;
-      max-height: 100%;
-      padding: 4px;
+      padding: 0.5em;
       border: 2px solid #3a424a;
       margin: 0;
       background-color: #3a424a;
       color: white;
-      font-size: 12px;
+      font-size: 0.9em;
       vertical-align: middle;
       cursor: pointer;
       transition: 200ms; }
-      .v1 .item-price .item-btn span {
-        display: none; }
-      .v1 .item-price .item-btn:hover {
+      .item-price .item-btn:hover {
         background-color: transparent;
         color: #3a424a; }
-      .v1 .item-price .item-btn:active {
+      .item-price .item-btn:active {
         background-color: white;
         color: #3a424a; }
-  .v1 .item-var {
-    grid-area: var;
-    text-align: left; }
-    .v1 .item-var > select {
-      position: relative;
-      width: 100px;
-      height: 36px;
-      max-height: 100%;
-      padding: 4px;
-      border: 2px solid #ABABAB;
-      margin: 0;
-      background-color: white;
-      color: black;
-      font-size: 12px;
-      vertical-align: middle;
-      cursor: pointer;
-      transition: 200ms; }
-      .v1 .item-var > select option {
-        border: 0;
-        cursor: pointer; }
-  .v1 .item-description {
-    grid-area: desc;
-    box-sizing: border-box;
-    width: 100%;
-    height: auto; }
-  article.v2 {
-    display: grid;
-    grid-template-columns: minmax(auto, 400px) 1fr;
-    grid-template-rows: minmax(36px, auto) minmax(auto, 350px) minmax(36px, auto) auto;
-    grid-template-areas: "media name" "media desc" "var desc" "price desc";
-    justify-content: center;
-    grid-gap: 1em;
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: auto; }
-  .v2 .item-media {
-    grid-area: media;
-    position: relative;
-    width: 100%;
+      .item-price .item-btn span {
+        display: inline; } }
+
+@media (min-width: 670px) {
+  article {
+    grid-template-columns: minmax(auto, 300px) 1fr;
+    grid-template-rows: minmax(36px, auto) minmax(auto, 250px) minmax(36px, auto) auto;
+    grid-template-areas: "media name" "media desc" "var desc" "price desc"; }
+  .item-media {
     height: 0;
     padding-bottom: 100%; }
-    .v2 .item-media img {
-      display: block;
+    .item-media img {
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 100%;
-      height: 100%;
-      padding: 0;
-      margin: 0;
-      -webkit-transform: translate(-50%, -50%); }
-  .v2 .item-name {
-    font-size: 2em;
-    line-height: 1em;
-    color: #3a424a;
-    vertical-align: top; }
-  .v2 .item-price {
-    grid-area: price;
-    align-items: center;
-    justify-content: center;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .item-price {
     text-align: left; }
-    .v2 .item-price > span {
-      display: none; }
-    .v2 .item-price .item-btn {
-      display: inline-block;
-      position: relative;
+    .item-price .item-btn {
       width: 100%;
-      min-width: 169px;
       height: auto;
-      max-height: 100%;
       padding: 0.75em;
-      border: 2px solid #3a424a;
-      margin: 0;
-      background-color: #3a424a;
-      color: white;
-      font-size: 1em;
-      vertical-align: middle;
-      cursor: pointer;
-      transition: 200ms; }
-      .v2 .item-price .item-btn span {
-        display: inline; }
-      .v2 .item-price .item-btn:hover {
-        background-color: transparent;
-        color: #3a424a; }
-      .v2 .item-price .item-btn:active {
-        background-color: white;
-        color: #3a424a; }
-  .v2 .item-var {
-    grid-area: var;
-    text-align: left; }
-    .v2 .item-var > select {
-      position: relative;
-      width: 100px;
-      height: 36px;
-      max-height: 100%;
-      padding: 4px;
-      border: 2px solid #ABABAB;
-      margin: 0;
-      background-color: white;
-      color: black;
-      font-size: 12px;
-      vertical-align: middle;
-      cursor: pointer;
-      transition: 200ms; }
-      .v2 .item-var > select option {
-        border: 0;
-        cursor: pointer; }
-  .v2 .item-description {
-    grid-area: desc;
-    box-sizing: border-box;
-    width: 100%;
-    height: auto; } }
+      font-size: 1em; } }

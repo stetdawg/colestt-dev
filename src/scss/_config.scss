@@ -11,6 +11,8 @@
 
 *{box-sizing: border-box;}
 
+@import url('http://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css'); // imports icons
+
 @mixin for_breakpoint($breakpoints) {
   $conditions : ();
   @each $breakpoint in $breakpoints {
@@ -26,7 +28,6 @@
   }
 }
 
-
 // Colors
 $color1: #3a424a;
 
@@ -34,12 +35,16 @@ $color1: #3a424a;
 $max-width: 1160px;
 $max-width-padding: 16px;
 
-
-
-
 // Component-specific Structuring
 $nav-height: 50px;
 
+
+:root{
+  --color1 : $color1;
+  --max-width: $max-width;
+  --max-width-padding: $max-width-padding;
+  --nav-height: $nav-height;
+}
 
 
 $tablet_width: 1024px;

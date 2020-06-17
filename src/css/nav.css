@@ -16,8 +16,15 @@
   Mod:
 
 */
+@import url("http://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css");
 * {
   box-sizing: border-box; }
+
+:root {
+  --color1: $color1;
+  --max-width: $max-width;
+  --max-width-padding: $max-width-padding;
+  --nav-height: $nav-height; }
 
 .navRouter {
   font-size: .9em;
@@ -27,25 +34,22 @@
   left: 0;
   width: 100%;
   min-height: 50px;
-  background-color: white;
+  background: white;
   text-decoration: none;
   z-index: 999;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(10, 10, 10, 0.75);
   -moz-box-shadow: 0px 2px 5px 0px rgba(10, 10, 10, 0.75);
   box-shadow: 0px 2px 5px 0px rgba(10, 10, 10, 0.75); }
   .navRouter .nav-container {
-    box-sizing: border-box;
     display: block;
-    position: relative;
     width: 100%;
     max-width: 1160px;
     height: 100%;
     padding: 0 16px;
     margin: auto; }
     .navRouter .nav-container > * {
-      vertical-align: top; }
+      vertical-align: middle; }
     .navRouter .nav-container .nav-logo {
-      box-sizing: border-box;
       display: inline-block;
       position: relative;
       width: 50px;
@@ -56,7 +60,6 @@
       line-height: 50px;
       font-weight: 800; }
     .navRouter .nav-container > ul {
-      box-sizing: border-box;
       display: inline-flex;
       flex-flow: row nowrap;
       align-items: flex-end;
@@ -68,6 +71,7 @@
       padding: 0;
       padding-left: 0.25em;
       margin: auto;
+      background-color: white;
       list-style: none; }
       .navRouter .nav-container > ul li {
         box-sizing: border-box;
@@ -80,8 +84,9 @@
           transition: 200ms; }
           .navRouter .nav-container > ul li a:hover {
             border-bottom: 2px solid #3a424a;
-            color: #3a424a;
-            transition: 200ms; }
+            color: #3a424a; }
+          .navRouter .nav-container > ul li a i {
+            display: none; }
     .navRouter .nav-container .nav-btn {
       box-sizing: border-box;
       display: none;
@@ -90,9 +95,117 @@
       right: 0;
       width: 50px;
       height: 50px;
-      padding: 1em;
+      padding: 24px 16px;
       margin: 0;
-      background-color: red; }
+      background-color: white;
+      color: white;
+      cursor: pointer;
+      transition: 200ms ease; }
+      .navRouter .nav-container .nav-btn:hover {
+        background-color: #3a424a;
+        color: white; }
+        .navRouter .nav-container .nav-btn:hover .nav-icon {
+          background-color: white; }
+          .navRouter .nav-container .nav-btn:hover .nav-icon:before {
+            background-color: white; }
+          .navRouter .nav-container .nav-btn:hover .nav-icon:after {
+            background-color: white; }
+      .navRouter .nav-container .nav-btn:active {
+        background-color: black;
+        color: #3a424a; }
+        .navRouter .nav-container .nav-btn:active .nav-icon {
+          background-color: white; }
+          .navRouter .nav-container .nav-btn:active .nav-icon:before {
+            background-color: white; }
+          .navRouter .nav-container .nav-btn:active .nav-icon:after {
+            background-color: white; }
+      .navRouter .nav-container .nav-btn .nav-icon {
+        display: block;
+        position: relative;
+        width: 18px;
+        height: 2px;
+        background: black;
+        transition: all 0.2s ease-out, background 0.2s; }
+        .navRouter .nav-container .nav-btn .nav-icon:before {
+          display: block;
+          position: absolute;
+          top: 5px;
+          width: 100%;
+          height: 100%;
+          background: black;
+          transition: all 0.2s ease-out, background 0.2s;
+          content: ""; }
+        .navRouter .nav-container .nav-btn .nav-icon:after {
+          display: block;
+          position: absolute;
+          top: -5px;
+          width: 100%;
+          height: 100%;
+          background: black;
+          transition: all 0.2s ease-out, background 0.2s;
+          content: ""; }
 
 .mobile .nav-container {
   padding-right: 50px; }
+
+@media screen and (max-width: 713px) {
+  .navRouter .nav-container {
+    padding: 0 calc(16px + 50px) 0 16px; }
+    .navRouter .nav-container .nav-btn {
+      display: block; }
+      .navRouter .nav-container .nav-btn.active {
+        background-color: #3a424a;
+        color: white; }
+        .navRouter .nav-container .nav-btn.active .nav-icon {
+          display: block;
+          position: relative;
+          width: 18px;
+          height: 2px;
+          background: transparent;
+          transition: all 0.2s ease-out, background 0.2s; }
+          .navRouter .nav-container .nav-btn.active .nav-icon:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            transform: rotate(-45deg);
+            transition: all 0.2s ease-out, background 0.2s;
+            content: ""; }
+          .navRouter .nav-container .nav-btn.active .nav-icon:after {
+            display: block;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background: white;
+            transform: rotate(45deg);
+            transition: all 0.2s ease-out, background 0.2s;
+            content: ""; }
+    .navRouter .nav-container ul {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 50px;
+      right: -100%;
+      width: 100%;
+      height: calc(100% - 50px);
+      max-height: none;
+      background-color: #3a424a;
+      color: white;
+      transition: right 300ms ease;
+      overflow-y: auto; }
+      .navRouter .nav-container ul.active {
+        right: 0; }
+      .navRouter .nav-container ul li {
+        width: 100%;
+        text-align: right; }
+        .navRouter .nav-container ul li a {
+          display: inline-block;
+          width: auto;
+          max-width: 100%; }
+          .navRouter .nav-container ul li a:hover {
+            color: white;
+            border-color: white; } }

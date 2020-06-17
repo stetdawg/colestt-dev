@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter as Router, Route, NavLink as Link } from 'react-router-dom'
 
 /*
@@ -18,58 +18,36 @@ When the URL is /react, this renders:
 
 */
 
-export default class Nav extends Component {
-  constructor(props) {
-    super(props)
+function NavBar({ navLinks, background, hoverBackground, linkColor, logo}){
+  const [ hoverIndex, setHoverIndex ] = useState(-1)
+  const [ navOpen, setNavOpen ] = useState(false)
 
-    this.state = {
-
-    }
-  }
-
-
-  componentDidMount() {
-
-  }
-
-
-
-  render() {
-    return (
-      <nav className="navRouter">
-        <div className="nav-container">
-          <div className="nav-logo">
-            Cole's
-          </div><ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/Shop">Shop</Link>
-            </li>
-            <li>
-            {/* This will be a child element of Shop */}
-              <Link to="/Combos"> Combos</Link>
-            </li>
-            <li>
-              <Link to="/About">About Us</Link>
-            </li>
-            <li>
-              <Link to="/Contact">Contact Us</Link>
-            </li>
-            <li>
-              <Link to="/ItemDesc">Item Desc (v1)</Link>
-            </li>
-            <li>
-              <Link to="/ItemDesc2">Item Desc (v2)</Link>
-            </li>
-            <li>
-              <Link to="/Item/Illumina">Item: Illumina (needs work)</Link>
-            </li>
-          </ul>
-          <a className="nav-btn"></a>
-        </div>
-      </nav>
-    )
-  }
+  return(
+    <nav className="navRouter">
+      <div className="nav-container">
+        <div className="nav-logo">
+          Cole's
+        </div><ul className={ navOpen ? 'active' : '' }>
+          {
+            navLinks.map(link => (
+              <li>
+                <Link to={link.path} onClick={() => setNavOpen(false)}>
+                  {link.text}
+                  <i className={link.icon}></i>
+                </Link>
+              </li>
+            ))
+          }
+        </ul>
+        <figure
+          onClick={ () => setNavOpen(!navOpen) }
+          className={ navOpen ? 'nav-btn active' : 'nav-btn' }
+        >
+          <span className="nav-icon"></span>
+        </figure>
+      </div>
+    </nav>
+  )
 }
+
+export default NavBar;
