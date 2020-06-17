@@ -1,0 +1,47 @@
+/*
+
+  Name:   shop.scss -> shop.css
+  Site:   Coles TT
+  Auth:   Anthony Isbell
+  Crtd:   5/23/2020
+  Mod:    6/8/2020
+
+*/
+/*
+
+  Name:   _config.scss
+  Site:   Coles TT
+  Auth:   Anthony Isbell
+  Crtd:   6/8/2020
+  Mod:
+
+*/
+* {
+  box-sizing: border-box; }
+
+.dialog {
+  display: none; }
+
+.shop-wrapper {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 80%);
+  grid-template-areas: "header header" "sidebar shop";
+  grid-gap: 1em; }
+  .shop-wrapper h1 {
+    grid-area: header; }
+
+.shop {
+  grid-area: shop;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+  vertical-align: top; }
+
+.shop-sidebar {
+  grid-area: sidebar;
+  background-color: yellow; }
+  .shop-sidebar h1 {
+    font-size: 12pt;
+    padding: 1em;
+    margin: 0 auto; }

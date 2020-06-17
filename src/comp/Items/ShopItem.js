@@ -1,11 +1,10 @@
 // react
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DisplayComboItem from './ComboItem';
 import ItemDesc from './ItemDesc';
 
 // css
-import '../scss/shop-basic-item.scss';
+import '../../scss/shop-item.scss';
 
 // assets
 

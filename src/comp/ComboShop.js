@@ -1,6 +1,4 @@
 import React,{Component} from 'react';
-import DisplayComboItem from './ComboItem';
-import '../scss/special.scss'
 
 
 

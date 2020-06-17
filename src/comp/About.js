@@ -10,7 +10,6 @@ Mod:
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../scss/about.scss';
 
 class About extends React.Component{
   constructor(props){

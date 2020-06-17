@@ -4,13 +4,12 @@ import ReactDOM from 'react-dom';
 import Router from 'react-router';
 
 // css
-import '../scss/shop-basic.scss'
 
 // assets
 import merchandise from '../json/merchandise.json';
 
 // components
-import ShopBasicItem from './ShopBasicItem';
+import ShopBasicItem from './Items/ShopItem';
 
 
 
@@ -45,9 +44,12 @@ class ShopBasic extends React.Component{
 
   render() {
     return(
-      <div>
+      <div className="shop-wrapper">
         <h1>Cole's Table Tennis</h1>
         {this.dialogBox()}
+        <div className="shop-sidebar">
+          <h1>Shop-sidebar</h1>
+        </div>
         <div className="shop">
           {
             merchandise.map(item => (
