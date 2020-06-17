@@ -57,7 +57,7 @@ class ShopItem extends React.Component{
     }
   }
 
-  outputPrice = () => {
+  outputPrice () {
     //this.state.bothSelected == false ? console.log("BS is false") : console.log("BS is true");
     //return(this.state.itemPrice || this.props.price);
 
