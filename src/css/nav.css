@@ -29,11 +29,9 @@
   min-height: 50px;
   background-color: white;
   text-decoration: none;
-  z-index: 999;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(10, 10, 10, 0.75);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(10, 10, 10, 0.75);
-  box-shadow: 0px 2px 5px 0px rgba(10, 10, 10, 0.75); }
+  z-index: 999; }
   .navRouter .nav-container {
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.548);
     box-sizing: border-box;
     display: block;
     position: relative;
@@ -67,7 +65,6 @@
       max-height: 50px;
       padding: 0;
       padding-left: 0.25em;
-      margin: auto;
       list-style: none; }
       .navRouter .nav-container > ul li {
         box-sizing: border-box;

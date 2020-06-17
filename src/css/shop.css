@@ -1,0 +1,28 @@
+/*
+
+  Name:   shop.scss -> shop.css
+  Site:   Coles TT
+  Auth:   Anthony Isbell
+  Crtd:   5/23/2020
+  Mod:    6/8/2020
+
+*/
+/*
+
+  Name:   _config.scss
+  Site:   Coles TT
+  Auth:   Anthony Isbell
+  Crtd:   6/8/2020
+  Mod:
+
+*/
+* {
+  box-sizing: border-box; }
+
+.dialog {
+  display: none; }
+
+.shop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em; }

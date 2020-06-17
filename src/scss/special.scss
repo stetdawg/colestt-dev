@@ -12,26 +12,48 @@
 
 //HOME PAGE CSS
 #home{
+  margin-top: -10em;
+.contentPanel{
 
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  //max-width: 98%;
+  // min-height: 50%;
+  // min-width: 50%;
+  -webkit-box-shadow: 0px -9px 5px 0px rgba(10,10,10,0.225),
+  0px -9px 30px 4px rgba(168, 168, 168, 0.75);  
+  -moz-box-shadow: 0px -9px 5px 0px rgba(10,10,10,0.225),
+  0px -9px 30px 4px rgba(168, 168, 168, 0.75);
+  box-shadow: 0px -9px 5px 0px rgba(10,10,10,0.225),
+  0px -9px 10px -4px rgba(105, 104, 104, 0.75);
+
+  padding-top: 12em;
   .header{
-    text-align: center;
 
+    text-align: center;
+    background:
+      linear-gradient(170deg,
+         rgba(255, 255, 255, 0.424),
+         rgba(189, 182, 182, 0) 70.71%),
+      linear-gradient(296deg,
+         rgba(216, 216, 216, 0.603), 
+         rgba(255, 255, 255, 0) 70.71%);
     display: flex;   
-    border: 1px groove rgba(163, 189, 191, 0.3);
-    background-color: rgba(228, 228, 228, 0.679);
+    border: 1px groove rgba(177, 218, 221, 0.3);
     border-radius: 5px;
     padding: 1em 1.4em;
-    max-width: 600px;
+    max-width: 750px;
     margin: 1em auto 3.2em auto;
-    box-shadow: 8px 6px 10px #c0babc6e;
+    box-shadow: .3em .3em 10px #b7b7b7, 1em -.1em 3em 1px #d9d2d2;
 
    
     #header-container{
-
+      -webkit-animation: fade-in 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) ;
+      animation: fade-in 1s cubic-bezier(0.315, 0.610, 0.555, 1.000) ;
       @include for_breakpoint(desktop){
 
-          -webkit-animation: fade-in 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) ;
-          animation: fade-in 2s cubic-bezier(0.115, 0.810, 0.255, 1.000) ;
+
         display: grid;
         gap: 2em 0;
         // text-align: center;
@@ -40,18 +62,14 @@
       padding: 0;
     }
   }
-}
 
 
-.contentPanel{
-  box-sizing: border-box;
-  width: 100%;
-  height: auto;
-  //max-width: 98%;
-  // min-height: 50%;
-  // min-width: 50%;
+
+
+
   .panelChildren{
-  margin-bottom: 5em;
+  margin-bottom: 4em;
+
 
   .combo-item-container{
 
@@ -61,26 +79,31 @@
     
         .thumbnail-container {
           display: grid;
-          width: 300px;
+          align-items: center;          
+          @include for_breakpoint(desktop){
+            width: 500px;
+            }  
 
           img {      
+
+
             border-radius: 3px;    
             justify-self: center;
-            max-width: 100%;
+            max-width: 60%;
             max-height: 100%;
-            border: 1px solid rgba(24, 15, 15, 0.472);
+            border: 1px ridge rgba(182, 182, 182, 0.781);
           }
         }
 
     .info-panel {
       font-size: .9em;
       text-align: left;
-      flex-shrink: 2;
+      flex-shrink: 3;
       .item-name1{
         color: #2d3033;
       }
       @include for_breakpoint(desktop ){
-        margin:0 4em;  
+        margin:0 -2em;  
       }
     h1{
       font-size: 1.2rem;
@@ -101,4 +124,5 @@
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0));
   }
  }
+}
 }
