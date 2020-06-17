@@ -17,7 +17,7 @@ $shop-width: 80%;
 
 .shop-wrapper{
   display: grid;
-  grid-template-columns: 1fr minmax(auto, $shop-width);
+  grid-template-columns: minmax(175px, auto) minmax(auto, $shop-width);
   //grid-auto-rows: minmax(100px, auto);
   grid-template-areas:  "header header"
                         "sidebar shop";
@@ -31,7 +31,7 @@ $shop-width: 80%;
   grid-area: shop;
   width: 100%;
   display: inline-grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 2em;
   vertical-align: top;
   a{
@@ -41,6 +41,9 @@ $shop-width: 80%;
 
 .shop-sidebar{
   grid-area: sidebar;
+  position: sticky;
+    top: 66px;
+  height: 100%;
   //display: inline-block;
   //width: calc(100% - $shop-width);
   //vertical-align: top;
@@ -52,4 +55,11 @@ $shop-width: 80%;
     padding: 1em;
     margin: 0 auto;
   }
+}
+
+@media (min-width: 570px){
+  .shop{grid-template-columns: repeat(2, 1fr);}
+}
+@media (min-width: 750px){
+  .shop{grid-template-columns: repeat(3, 1fr);}
 }

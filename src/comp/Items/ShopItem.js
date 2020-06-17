@@ -1,5 +1,5 @@
 // react
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import ItemDesc from './ItemDesc';
 
@@ -15,7 +15,8 @@ class ShopItem extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      displayImage : true
+      displayImage : true,
+      bothSelected : false
     }
   }
 
@@ -46,6 +47,27 @@ class ShopItem extends React.Component{
     }
   }
 
+  handleChange (event) {
+    if (event.target.value == "both"){
+      console.log("it's both");
+      this.setState({bothSelected : true});
+    } else {
+      console.log("it's red or black");
+      this.setState({bothSelected : false});
+    }
+  }
+
+  outputPrice = () => {
+    //this.state.bothSelected == false ? console.log("BS is false") : console.log("BS is true");
+    //return(this.state.itemPrice || this.props.price);
+
+    if (this.state.bothSelected == false){
+      return (this.props.price);
+    } else {
+      return (this.props.price * 2);
+    }
+  }
+
   toggleDecCounter(){
 
     if (this.state.displayImage == true){
@@ -66,8 +88,16 @@ class ShopItem extends React.Component{
           {this.toggleImgDesc()}
         </div>
         <span className="item-name">{this.props.name}</span>
-        <span className="item-price">${this.props.price}</span>
-        <button className="item-btn">Add to Cart</button> {/*adds to the cart, without having to check big description */}
+        <div className="item-var">
+          <span>Colors: </span>
+          <select value={this.state.value} onChange={(e) => this.handleChange(e)}>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="both">Both</option>
+          </select>
+          {/* you can add more <span> and <select tags as needed */}
+        </div>
+        <button className="item-btn"><span className="item-price">${this.outputPrice()}</span> | Add to Cart</button> {/*adds to the cart, without having to check big description */}
       </a>
     );
   }

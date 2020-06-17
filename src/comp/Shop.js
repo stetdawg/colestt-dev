@@ -9,7 +9,7 @@ import Router from 'react-router';
 import merchandise from '../json/merchandise.json';
 
 // components
-import ShopBasicItem from './Items/ShopItem';
+import ShopItem from './Items/ShopItem';
 
 
 
@@ -34,26 +34,17 @@ class ShopBasic extends React.Component{
     // })
   }
 
-  dialogBox = (props) => {
-    if (this.state.dialog == null){
-      return(<p className="dialog">This is the Dialog Box</p>)
-    } else {
-      return(<p className="dialog">{this.state.dialog} was clicked</p>)
-    }
-  }
-
   render() {
     return(
       <div className="shop-wrapper">
         <h1>Cole's Table Tennis</h1>
-        {this.dialogBox()}
         <div className="shop-sidebar">
           <h1>Shop-sidebar</h1>
         </div>
         <div className="shop">
           {
             merchandise.map(item => (
-              <ShopBasicItem
+              <ShopItem
                 //onClick={() => {this.btnClick(item.name)}}
                 name={item.name}
                 price={item.price}

@@ -62,6 +62,7 @@ class ItemDesc extends Component{
             ))}
     */
   render() {
+
     return(
       <article  className={this.props.version}>
         <div className="item-media">
