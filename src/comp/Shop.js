@@ -44,9 +44,12 @@ class ShopBasic extends React.Component{
 
   render() {
     return(
-      <div>
+      <div className="shop-wrapper">
         <h1>Cole's Table Tennis</h1>
         {this.dialogBox()}
+        <div className="shop-sidebar">
+          <h1>Shop-sidebar</h1>
+        </div>
         <div className="shop">
           {
             merchandise.map(item => (

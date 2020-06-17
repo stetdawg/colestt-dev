@@ -10,13 +10,46 @@
 
 @import "config";
 
+$shop-width: 80%;
+
 .dialog{display: none;} // was only for testing the click function
-.shop{
+
+
+.shop-wrapper{
   display: grid;
+  grid-template-columns: 1fr minmax(auto, $shop-width);
+  //grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:  "header header"
+                        "sidebar shop";
+  grid-gap: 1em;
+
+  h1{
+    grid-area: header;
+  }
+}
+.shop{
+  grid-area: shop;
+  width: 100%;
+  display: inline-grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2em;
-
+  vertical-align: top;
   a{
     //background-color: red;
+  }
+}
+
+.shop-sidebar{
+  grid-area: sidebar;
+  //display: inline-block;
+  //width: calc(100% - $shop-width);
+  //vertical-align: top;
+
+  background-color: yellow;
+
+  h1{
+    font-size: 12pt;
+    padding: 1em;
+    margin: 0 auto;
   }
 }
