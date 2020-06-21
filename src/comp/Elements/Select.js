@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom'
 
 import "../../scss/Elements/select.scss"
 
-const Select = (props) => <select name={props.itemType}>
+const Select = (props) => <select className={"select " + props.classN} name={props.itemType} onChange={props.onChange}>
   {props.children}
 </select>
 

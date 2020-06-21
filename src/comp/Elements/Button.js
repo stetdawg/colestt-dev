@@ -7,8 +7,8 @@ import ReactDOM from 'react-dom'
 
 import "../../scss/Elements/button.scss"
 
-const Button = (props) =><div className="btn">
+const Button = (props) =><button className={"btn " + props.classN}>
   {props.children}
-</div>
+</button>
 
 export default Button

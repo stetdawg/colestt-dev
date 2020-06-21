@@ -156,6 +156,10 @@
   .item-price{
     text-align: left;
 
+    &  > * {
+      width: 100% !important;
+    }
+
     .item-btn{
       width: 100%;
       height: auto;

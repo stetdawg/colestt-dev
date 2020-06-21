@@ -7,6 +7,8 @@ import ItemDesc from './ItemDesc';
 import '../../scss/shop-item.scss';
 
 // assets
+import Button from '../Elements/Button'
+import Select from '../Elements/Select'
 
 // components
 
@@ -89,14 +91,14 @@ class ShopItem extends React.Component{
         <span className="item-name">{this.props.name}</span>
         <div className="item-var">
           <span>Colors: </span>
-          <select onChange={(e) => this.handleSelectBoxChange(e)}>
+          <Select itemType="Color" onChange={(e) => this.handleSelectBoxChange(e)}>
             <option value="red" selected>Red</option>
             <option value="black">Black</option>
             <option value="both">Both</option>
-          </select>
+          </Select>
           {/* you can add more <span> and <select tags as needed */}
         </div>
-        <button className="item-btn"><span className="item-price">${this.outputPrice()}</span> | Add to Cart</button> {/*adds to the cart, without having to check big description */}
+        <Button classN="item-btn"><span className="item-price">${this.outputPrice()}</span> | Add to Cart</Button> {/*adds to the cart, without having to check big description */}
       </a>
     );
   }
