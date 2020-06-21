@@ -1,8 +1,15 @@
 import React,{Component} from 'react';
 
 
+import Button from './Elements/Button'
+import Select from './Elements/Select'
+import Text from './Elements/Text'
 
-
+// jsons
+import Blades from '../json/blades.json'
+import Rubbers from '../json/rubbers.json'
+import Handles from '../json/handles.json'
+import Cases from '../json/cases.json'
 
 class ShopCustom extends Component{
   constructor(props){
@@ -48,10 +55,85 @@ class ShopCustom extends Component{
             </>
             ))}
     */
+
+
+  handleChange = (event) => {
+
+    for (let i = 0; i < event.target.children("option").length; i++){
+      //if option[i]
+      console.log(event.target.children("option").value);
+      //json[i].price
+    }
+
+  }
+
+
   render() {
     return(
-      <div  className="contentPanel">
-        <h1>Combo Shop (old)</h1>
+      <div>
+        <h1>Combos</h1>
+        <p>Here's where you can customize your paddle to your liking. It comes sealed and assembled with edge tape and case of choice — ready to play.</p>
+        <div className="combo-shop">
+          <div className="combo-item-container">
+            <label for="Blade">Blade: </label>
+            <Select itemType="Blade" classN="blades" onChange={(e) => handleChange(e)}>
+              {
+                Blades.map(item => <option>
+                  {item.name + " ($" + item.price + ")"}
+                </option>)
+              }
+            </Select>
+          </div>
+          <div className="combo-item-container">
+            <label for="Red Rubber">Red Rubbber: </label>
+            <Select itemType="Red Rubber" classN="red-rubbers">
+              {
+                Rubbers.map(item => <option>
+                  {item.name}
+                </option>)
+              }
+            </Select>
+          </div>
+          <div className="combo-item-container">
+            <label for="Red Rubber Thickness">Red Rubber Thickness: </label>
+            <Text itemType="Red Rubber Thickness" />
+          </div>
+          <div className="combo-item-container">
+            <label for="Black Rubber">Black Rubbber: </label>
+            <Select itemType="Black Rubber" classN="black-rubbers">
+              {
+                Rubbers.map(item => <option>
+                  {item.name}
+                </option>)
+              }
+            </Select>
+          </div>
+          <div className="combo-item-container">
+            <label for="Black Rubber Thickness">Black Rubber Thickness: </label>
+            <Text itemType="Black Rubber Thickness" />
+          </div>
+          <div className="combo-item-container">
+            <label for="Handles">Handles: </label>
+            <Select itemType="Handles" classN="handles">
+              {
+                Handles.map(item => <option>
+                  {item.name}
+                </option>)
+              }
+            </Select>
+          </div>
+          <div className="combo-item-container">
+            <label for="Case">Case: </label>
+            <Select itemType="Case" classN="case">
+              {
+                Cases.map(item => <option>
+                  {item.name}
+                </option>)
+              }
+            </Select>
+          </div>
+          <Button classN="">Buy Now</Button>
+        </div>
       </div>
     )
   }
