@@ -1,5 +1,5 @@
 // react
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import ItemDesc from './ItemDesc';
 
@@ -47,7 +47,7 @@ class ShopItem extends React.Component{
     }
   }
 
-  handleChange (event) {
+  handleSelectBoxChange (event) {
     if (event.target.value == "both"){
       console.log("it's both");
       this.setState({bothSelected : true});
@@ -68,7 +68,7 @@ class ShopItem extends React.Component{
     }
   }
 
-  toggleDecCounter(){
+  toggleDescCounter(){
 
     if (this.state.displayImage == true){
       this.setState({displayImage : false});
@@ -81,16 +81,15 @@ class ShopItem extends React.Component{
   }
 
   render(){
-
     return(
       <a className="shop-item">
-        <div className="item-media" onClick={() => {this.toggleDecCounter()} /*this.props.onClick*/}>
+        <div className="item-media" onClick={() => {this.toggleDescCounter()} /*this.props.onClick*/}>
           {this.toggleImgDesc()}
         </div>
         <span className="item-name">{this.props.name}</span>
         <div className="item-var">
           <span>Colors: </span>
-          <select value={this.state.value} onChange={(e) => this.handleChange(e)}>
+          <select value={this.state.value} onChange={(e) => this.handleSelectBoxChange(e)}>
             <option value="red">Red</option>
             <option value="black">Black</option>
             <option value="both">Both</option>
