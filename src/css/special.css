@@ -52,7 +52,10 @@
       padding: 1em 1.4em;
       max-width: 750px;
       margin: 1em auto 3.2em auto;
-      box-shadow: .3em .3em 10px #b7b7b7, 1em -.1em 3em 1px #d9d2d2; }
+      box-shadow: .3em .3em 10px #b7b7b7, 1em -.1em 3em 1px #d9d2d2;
+      display: flex;
+      border: 1px groove rgba(163, 189, 191, 0.3);
+      background-color: rgba(228, 228, 228, 0.679); }
       #home .contentPanel .header #header-container {
         -webkit-animation: fade-in 1s cubic-bezier(0.215, 0.61, 0.355, 1);
         animation: fade-in 1s cubic-bezier(0.315, 0.61, 0.555, 1);
@@ -72,11 +75,11 @@
         align-items: center; }
         @media (min-width: 1025px) {
           #home .contentPanel .panelChildren .combo-item-container .thumbnail-container {
-            width: 500px; } }
+            width: 450px; } }
         #home .contentPanel .panelChildren .combo-item-container .thumbnail-container img {
           border-radius: 3px;
           justify-self: center;
-          max-width: 60%;
+          max-width: 85%;
           max-height: 100%;
           border: 1px ridge rgba(182, 182, 182, 0.781); }
       #home .contentPanel .panelChildren .combo-item-container .info-panel {
@@ -87,17 +90,30 @@
           color: #2d3033; }
         @media (min-width: 1025px) {
           #home .contentPanel .panelChildren .combo-item-container .info-panel {
-            margin: 0 -2em; } }
+            margin: 0 1.5em; } }
         #home .contentPanel .panelChildren .combo-item-container .info-panel h1 {
           font-size: 1.2rem; }
       #home .contentPanel .panelChildren .combo-item-container .selection-panel {
         display: flex;
+        justify-content: center;
         flex-direction: column; }
+        #home .contentPanel .panelChildren .combo-item-container .selection-panel .select-container {
+          display: grid;
+          grid-template-columns: 55px 1fr;
+          grid-gap: 1em;
+          margin: 0.5em 0; }
         #home .contentPanel .panelChildren .combo-item-container .selection-panel label {
+          display: block;
           text-align: left;
           margin-left: 1em; }
+          @media (min-width: 1025px) {
+            #home .contentPanel .panelChildren .combo-item-container .selection-panel label {
+              margin-left: 0; } }
         #home .contentPanel .panelChildren .combo-item-container .selection-panel select {
           margin-left: 1em; }
+          @media (min-width: 1025px) {
+            #home .contentPanel .panelChildren .combo-item-container .selection-panel select {
+              margin-left: 0; } }
       #home .contentPanel .panelChildren hr {
         border: 0;
         height: 1px;

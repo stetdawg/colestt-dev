@@ -32,9 +32,9 @@
          rgba(255, 255, 255, 0.424),
          rgba(189, 182, 182, 0) 70.71%),
       linear-gradient(296deg,
-         rgba(216, 216, 216, 0.603), 
+         rgba(216, 216, 216, 0.603),
          rgba(255, 255, 255, 0) 70.71%);
-    display: flex;   
+    display: flex;
     border: 1px groove rgba(177, 218, 221, 0.3);
     border-radius: 5px;
     padding: 1em 1.4em;
@@ -42,7 +42,11 @@
     margin: 1em auto 3.2em auto;
     box-shadow: .3em .3em 10px #b7b7b7, 1em -.1em 3em 1px #d9d2d2;
 
-   
+    display: flex;
+    border: 1px groove rgba(163, 189, 191, 0.3);
+    background-color: rgba(228, 228, 228, 0.679);
+
+
     #header-container{
       -webkit-animation: fade-in 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) ;
       animation: fade-in 1s cubic-bezier(0.315, 0.610, 0.555, 1.000) ;
@@ -70,21 +74,19 @@
 
       @include for_breakpoint(desktop){
       display: flex;
-      }  
-    
+      }
+
         .thumbnail-container {
           display: grid;
-          align-items: center;          
+          align-items: center;
           @include for_breakpoint(desktop){
-            width: 500px;
-            }  
+            width: 450px;
+            }
 
-          img {      
-
-
-            border-radius: 3px;    
+          img {
+            border-radius: 3px;
             justify-self: center;
-            max-width: 60%;
+            max-width: 85%;
             max-height: 100%;
             border: 1px ridge rgba(182, 182, 182, 0.781);
           }
@@ -97,8 +99,8 @@
       .item-name1{
         color: #2d3033;
       }
-      @include for_breakpoint(desktop ){
-        margin:0 -2em;  
+      @include for_breakpoint(desktop){
+        margin:0 1.5em;
       }
     h1{
       font-size: 1.2rem;
@@ -106,12 +108,32 @@
 }
     .selection-panel{
       display: flex;
+      justify-content: center;
       flex-direction: column;
+
+      .select-container{
+        //@include for_breakpoint(desktop){
+          display: grid;
+          grid-template-columns: 55px 1fr;
+          grid-gap: 1em;
+          margin: 0.5em 0;
+        //}
+      }
+
       label{
+        display: block;
         text-align: left;
-        margin-left: 1em;}
+        margin-left: 1em;
+        @include for_breakpoint(desktop){
+          margin-left: 0;
+        }
+      }
       select{
-        margin-left: 1em;}
+        margin-left: 1em;
+        @include for_breakpoint(desktop){
+          margin-left: 0;
+        }
+      }
   }}
   hr{
     border: 0;

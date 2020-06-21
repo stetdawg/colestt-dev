@@ -5,10 +5,10 @@ Along with displaying the property in the button. listen for clicks and pass dat
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import "../../scss/Elements/button.scss"
+import "../../scss/Elements/select.scss"
 
-const Button = (props) =><div className="btn">
+const Select = (props) => <select name={props.itemType}>
   {props.children}
-</div>
+</select>
 
-export default Button
+export default Select
