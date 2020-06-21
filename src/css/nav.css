@@ -190,6 +190,7 @@
       width: 100%;
       height: calc(100% - 50px);
       max-height: none;
+      margin: 0;
       background-color: #3a424a;
       color: white;
       transition: right 300ms ease;
