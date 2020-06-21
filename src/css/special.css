@@ -75,11 +75,11 @@
         align-items: center; }
         @media (min-width: 1025px) {
           #home .contentPanel .panelChildren .combo-item-container .thumbnail-container {
-            width: 450px; } }
+            width: 400px; } }
         #home .contentPanel .panelChildren .combo-item-container .thumbnail-container img {
           border-radius: 3px;
           justify-self: center;
-          max-width: 85%;
+          max-width: 100%;
           max-height: 100%;
           border: 1px ridge rgba(182, 182, 182, 0.781); }
       #home .contentPanel .panelChildren .combo-item-container .info-panel {
