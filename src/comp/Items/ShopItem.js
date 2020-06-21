@@ -89,8 +89,8 @@ class ShopItem extends React.Component{
         <span className="item-name">{this.props.name}</span>
         <div className="item-var">
           <span>Colors: </span>
-          <select value={this.state.value} onChange={(e) => this.handleSelectBoxChange(e)}>
-            <option value="red">Red</option>
+          <select onChange={(e) => this.handleSelectBoxChange(e)}>
+            <option value="red" selected>Red</option>
             <option value="black">Black</option>
             <option value="both">Both</option>
           </select>
