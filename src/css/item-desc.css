@@ -126,6 +126,8 @@
       transform: translate(-50%, -50%); }
   .item-price {
     text-align: left; }
+    .item-price > * {
+      width: 100% !important; }
     .item-price .item-btn {
       width: 100%;
       height: auto;
