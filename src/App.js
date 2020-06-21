@@ -60,8 +60,9 @@ class App extends React.Component{
       }
     ];
 
-    return(
-      <><NavBar
+    return( <>
+      <div className="background"></div>
+     <NavBar
         navLinks={ navLinks }
       />
       <main>
