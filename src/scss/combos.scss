@@ -35,6 +35,35 @@
       width: 100%;
     }
   }
+  .paddle-info{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 1em;
+    margin: auto;
+
+    .info-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
+      margin-bottom: 1em;
+      @include for_breakpoint(desktop){
+        grid-gap: 5em;
+      }
+      & > * {
+        text-align: left;
+      }
+      label{
+        text-align: right;
+      }
+      select{
+
+      }
+      input{
+
+      }
+    }
+  }
 
   .btn{
     display: block;
