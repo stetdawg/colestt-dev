@@ -23,7 +23,6 @@ class ShopCustom extends Component{
       casePrice: null,
       comboPrice: null
     }
-
   }
 
   checkWeight = (weight) => {
