@@ -9,7 +9,7 @@ Mod:
 */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 
 class About extends React.Component{
   constructor(props){

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BrowserRouter as Router, Route, NavLink as Link } from 'react-router-dom'
+import { NavLink as Link } from 'react-router-dom'
 
 /*
 <Link to="/">
@@ -19,7 +19,6 @@ When the URL is /react, this renders:
 */
 
 function NavBar({ navLinks, background, hoverBackground, linkColor, logo}){
-  const [ hoverIndex, setHoverIndex ] = useState(-1)
   const [ navOpen, setNavOpen ] = useState(false)
 
   return(

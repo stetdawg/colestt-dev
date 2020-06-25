@@ -1,7 +1,7 @@
 // react
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ItemDesc from './ItemDesc';
+//import ReactDOM from 'react-dom';
+//import ItemDesc from './ItemDesc'; // Keep this to link to the ItemDesc
 
 // css
 import '../../scss/shop-item.scss';
@@ -36,9 +36,9 @@ class ShopItem extends React.Component{
   // } // {this.checkWeight(this.props.weight)}
 
   toggleImgDesc(){
-    if (this.state.displayImage == true){
+    if (this.state.displayImage === true){
       return(
-          <img src={this.props.thumb} />
+          <img src={this.props.thumb} alt={this.props.name}/>
       );
       // this.setState({displayImage : false});
     } else {
@@ -50,7 +50,7 @@ class ShopItem extends React.Component{
   }
 
   handleSelectBoxChange (event) {
-    if (event.target.value == "both"){
+    if (event.target.value === "both"){
       console.log("it's both");
       this.setState({bothSelected : true});
     } else {
@@ -60,10 +60,10 @@ class ShopItem extends React.Component{
   }
 
   outputPrice () {
-    //this.state.bothSelected == false ? console.log("BS is false") : console.log("BS is true");
+    //this.state.bothSelected === false ? console.log("BS is false") : console.log("BS is true");
     //return(this.state.itemPrice || this.props.price);
 
-    if (this.state.bothSelected == false){
+    if (this.state.bothSelected === false){
       return (this.props.price);
     } else {
       return (this.props.price * 2);
@@ -72,7 +72,7 @@ class ShopItem extends React.Component{
 
   toggleDescCounter(){
 
-    if (this.state.displayImage == true){
+    if (this.state.displayImage === true){
       this.setState({displayImage : false});
     }else{
       this.setState({displayImage : true});
@@ -84,7 +84,7 @@ class ShopItem extends React.Component{
 
   render(){
     return(
-      <a className="shop-item">
+      <div className="shop-item"> {/* used to be <a> tag, but got an error */}
         <div className="item-media" onClick={() => {this.toggleDescCounter()} /*this.props.onClick*/}>
           {this.toggleImgDesc()}
         </div>
@@ -99,7 +99,7 @@ class ShopItem extends React.Component{
           {/* you can add more <span> and <select tags as needed */}
         </div>
         <Button classN="item-btn"><span className="item-price">${this.outputPrice()}</span> | Add to Cart</Button> {/*adds to the cart, without having to check big description */}
-      </a>
+      </div>
     );
   }
 }

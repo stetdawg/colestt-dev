@@ -19,7 +19,7 @@ class ItemDesc extends Component{
   handleChange(event) {
 
     // doubles the price if both colors are selected
-    if(event.target.value == "both"){
+    if(event.target.value === "both"){
       this.setState({value: event.target.value, itemPrice: this.props.price * 2});
     } else {
       this.setState({value: event.target.value, itemPrice: this.props.price});
@@ -69,7 +69,7 @@ class ItemDesc extends Component{
     return(
       <article  className={this.props.version}>
         <div className="item-media">
-          <img src={this.props.thumb} />
+          <img src={this.props.thumb} alt={this.props.name}/>
         </div>
         <span className="item-name"><b>Testing:</b> {this.props.name}</span>
         <div className="item-rubber item-var">

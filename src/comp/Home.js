@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Specials from './Specials';
 import Header from './Header'
 
 function Home(props) {
  return (
-        <div id="home">       
+        <div id="home">
          <div  className="contentPanel">
          <Header>
        Welcome to Cole's Table Tennis!<br />

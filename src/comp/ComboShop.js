@@ -66,7 +66,7 @@ class ShopCustom extends Component{
     // console.log("The selected child is: " + event.target.selectedIndex);         // find the index of the selected child
 
     // console.log("The price is: $" + Blades[event.target.selectedIndex].price);   // finds the price of the selected child
-    if (event.target.selectedIndex != 0){
+    if (event.target.selectedIndex !== 0){
       this.setState({bladePrice : Blades[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({bladePrice : null});
@@ -76,7 +76,7 @@ class ShopCustom extends Component{
 
 
   handleRedRubberChange(event){
-    if (event.target.selectedIndex != 0){
+    if (event.target.selectedIndex !== 0){
       this.setState({redRubberPrice : Rubbers[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({redRubberPrice : null});
@@ -86,7 +86,7 @@ class ShopCustom extends Component{
 
 
   handleBlackRubberChange(event){
-    if (event.target.selectedIndex != 0){
+    if (event.target.selectedIndex !== 0){
       this.setState({blackRubberPrice : Rubbers[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({blackRubberPrice : null});
@@ -96,7 +96,7 @@ class ShopCustom extends Component{
 
 
   handleHandleChange(event){
-    if (event.target.selectedIndex != 0){
+    if (event.target.selectedIndex !== 0){
       this.setState({handlesPrice : Handles[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({handlesPrice : null});
@@ -106,7 +106,7 @@ class ShopCustom extends Component{
 
 
   handleCaseChange(event){
-    if (event.target.selectedIndex != 0){
+    if (event.target.selectedIndex !== 0){
       this.setState({casePrice : Cases[event.target.selectedIndex].price}); // updates the state with that new value
     } else {
       this.setState({casePrice : null});
@@ -128,11 +128,11 @@ class ShopCustom extends Component{
   }
 
   componentDidUpdate(){
-    if (this.state.bladePrice != null &&
-        this.state.redRubberPrice != null &&
-        this.state.blackRubberPrice != null &&
-        this.state.handlesPrice != null &&
-        this.state.casePrice != null)
+    if (this.state.bladePrice !== null &&
+        this.state.redRubberPrice !== null &&
+        this.state.blackRubberPrice !== null &&
+        this.state.handlesPrice !== null &&
+        this.state.casePrice !== null)
     {
       console.log("The state is full");
       this.getTotal();
