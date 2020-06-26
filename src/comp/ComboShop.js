@@ -45,27 +45,9 @@ class ShopCustom extends Component{
   componentWillUnmount() {
     //destroy scroll
   }
-  /* TODO
-    For the time being i removed the wrappers such as 'shop-custom',
-    and 'form'. I need the contents to be direct children of the grid (contentPanel).
-    This is necessary to position the selections in the grid directly.
-
-    If you can map each item to have a form around it i can work with that
-
-
-
-       {merchandise.map(item => (<>
-                {this.displayCustomItem(item.name, item.desc, item.price, item.weight, item.thumb, item.blade, item.Rubber.Black)}
-            </>
-            ))}
-    */
 
 
   handleBladeChange(event){
-
-    // console.log("The selected child is: " + event.target.selectedIndex);         // find the index of the selected child
-
-    // console.log("The price is: $" + Blades[event.target.selectedIndex].price);   // finds the price of the selected child
     if (event.target.selectedIndex !== 0){
       this.setState({bladePrice : Blades[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
