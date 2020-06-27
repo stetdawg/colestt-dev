@@ -6,10 +6,18 @@ import Select from './Elements/Select'
 import Text from './Elements/Text'
 
 // jsons
-import Blades from '../json/blades.json'
-import Rubbers from '../json/rubbers.json'
-import Handles from '../json/handles.json'
-import Cases from '../json/cases.json'
+import RubbersInverted from '../json/merchandise/rubbers-inverted.json';
+import RubbersPipsOut from '../json/merchandise/rubbers-pipsOut.json';
+import RubbersTopsheets from '../json/merchandise/rubbers-topsheets.json';
+import RubbersSponges from '../json/merchandise/rubbers-sponges.json';
+
+import BladesWood from '../json/merchandise/blades-wood.json';
+import BladesComposite from '../json/merchandise/blades-composite.json';
+
+import Handles from '../json/merchandise/handles.json';
+import Cases from '../json/merchandise/cases.json';
+import Balls from '../json/merchandise/balls.json';
+import Accessories from '../json/merchandise/accessories.json';
 
 class ShopCustom extends Component{
   constructor(props){
@@ -47,9 +55,17 @@ class ShopCustom extends Component{
   }
 
 
+  // Handling the event changes, based on the options taken
+
   handleBladeChange(event){
-    if (event.target.selectedIndex !== 0){
-      this.setState({bladePrice : Blades[event.target.selectedIndex - 1].price}); // updates the state with that new value
+
+    // console.log("The selected child is: " + event.target.selectedIndex);         // find the index of the selected child
+    // console.log("The price is: $" + Blades[event.target.selectedIndex].price);   // finds the price of the selected child
+
+
+
+    if (event.target.selectedIndex != 0){
+      this.setState({bladePrice : BladesWood[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({bladePrice : null});
     }
@@ -58,8 +74,8 @@ class ShopCustom extends Component{
 
 
   handleRedRubberChange(event){
-    if (event.target.selectedIndex !== 0){
-      this.setState({redRubberPrice : Rubbers[event.target.selectedIndex - 1].price}); // updates the state with that new value
+    if (event.target.selectedIndex != 0){
+      this.setState({redRubberPrice : RubbersInverted[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({redRubberPrice : null});
     }
@@ -68,8 +84,8 @@ class ShopCustom extends Component{
 
 
   handleBlackRubberChange(event){
-    if (event.target.selectedIndex !== 0){
-      this.setState({blackRubberPrice : Rubbers[event.target.selectedIndex - 1].price}); // updates the state with that new value
+    if (event.target.selectedIndex != 0){
+      this.setState({blackRubberPrice : RubbersInverted[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({blackRubberPrice : null});
     }
@@ -88,8 +104,8 @@ class ShopCustom extends Component{
 
 
   handleCaseChange(event){
-    if (event.target.selectedIndex !== 0){
-      this.setState({casePrice : Cases[event.target.selectedIndex].price}); // updates the state with that new value
+    if (event.target.selectedIndex != 0){
+      this.setState({casePrice : Cases[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({casePrice : null});
     }
@@ -135,8 +151,13 @@ class ShopCustom extends Component{
             <Select itemType="Blade" classN="blades" onChange={(e) => this.handleBladeChange(e)}>
               <option selected></option>
               {
-                Blades.map(item => <option>
-                  {item.name + " ($" + item.price + ")"}
+                BladesWood.map(item => <option>
+                  {item.name + "   --   $" + item.price /* ($" + item.price + ")" */}
+                </option>)
+              }
+              {
+                BladesComposite.map(item => <option>
+                  {item.name + "   --   $" + item.price}
                 </option>)
               }
             </Select>
@@ -146,8 +167,8 @@ class ShopCustom extends Component{
             <Select itemType="Red Rubber" classN="red-rubbers" onChange={(e) => this.handleRedRubberChange(e)}>
               <option selected></option>
               {
-                Rubbers.map(item => <option>
-                  {item.name + " ($" + item.price + ")"}
+                RubbersInverted.map(item => <option>
+                  {item.name + "   --   $" + item.price}
                 </option>)
               }
             </Select>
@@ -161,8 +182,8 @@ class ShopCustom extends Component{
             <Select itemType="Black Rubber" classN="black-rubbers" onChange={(e) => this.handleBlackRubberChange(e)}>
               <option selected></option>
               {
-                Rubbers.map(item => <option>
-                  {item.name + " ($" + item.price + ")"}
+                RubbersInverted.map(item => <option>
+                  {item.name + "   --   $" + item.price}
                 </option>)
               }
             </Select>
@@ -177,7 +198,7 @@ class ShopCustom extends Component{
               <option selected></option>
               {
                 Handles.map(item => <option>
-                  {item.name + " ($" + item.price + ")"}
+                  {item.name /*  + "   --   $" + item.price */}
                 </option>)
               }
             </Select>
@@ -188,7 +209,7 @@ class ShopCustom extends Component{
               <option selected></option>
               {
                 Cases.map(item => <option>
-                  {item.name + " ($" + item.price + ")"}
+                  {item.name + "   --   $" + item.price}
                 </option>)
               }
             </Select>

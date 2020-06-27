@@ -1,0 +1,3 @@
+Air DefenderS, 8
+Globe 999, 8
+Globe 999t, 8
