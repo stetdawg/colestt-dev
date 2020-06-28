@@ -6,6 +6,8 @@ import Select from './Elements/Select'
 import Text from './Elements/Text'
 
 // jsons
+import Merch from '../json/merchandise.json';
+/*
 import RubbersInverted from '../json/merchandise/rubbers-inverted.json';
 import RubbersPipsOut from '../json/merchandise/rubbers-pipsOut.json';
 import RubbersTopsheets from '../json/merchandise/rubbers-topsheets.json';
@@ -18,6 +20,8 @@ import Handles from '../json/merchandise/handles.json';
 import Cases from '../json/merchandise/cases.json';
 import Balls from '../json/merchandise/balls.json';
 import Accessories from '../json/merchandise/accessories.json';
+*/
+
 
 class ShopCustom extends Component{
   constructor(props){
@@ -62,20 +66,21 @@ class ShopCustom extends Component{
     // console.log("The selected child is: " + event.target.selectedIndex);         // find the index of the selected child
     // console.log("The price is: $" + Blades[event.target.selectedIndex].price);   // finds the price of the selected child
 
-
+    console.log(event.target.selectedIndex)
 
     if (event.target.selectedIndex != 0){
-      this.setState({bladePrice : BladesWood[event.target.selectedIndex - 1].price}); // updates the state with that new value
+      //this.setState({bladePrice : BladesWood[event.target.selectedIndex - 1].price}); // updates the state with that new value
+      this.setState({bladePrice : Merch.blades[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({bladePrice : null});
     }
-    // this.getTotal();
+
   }
 
 
   handleRedRubberChange(event){
     if (event.target.selectedIndex != 0){
-      this.setState({redRubberPrice : RubbersInverted[event.target.selectedIndex - 1].price}); // updates the state with that new value
+      this.setState({redRubberPrice : Merch.rubbers[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({redRubberPrice : null});
     }
@@ -85,7 +90,7 @@ class ShopCustom extends Component{
 
   handleBlackRubberChange(event){
     if (event.target.selectedIndex != 0){
-      this.setState({blackRubberPrice : RubbersInverted[event.target.selectedIndex - 1].price}); // updates the state with that new value
+      this.setState({blackRubberPrice : Merch.rubbers[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({blackRubberPrice : null});
     }
@@ -95,7 +100,7 @@ class ShopCustom extends Component{
 
   handleHandleChange(event){
     if (event.target.selectedIndex !== 0){
-      this.setState({handlesPrice : Handles[event.target.selectedIndex - 1].price}); // updates the state with that new value
+      this.setState({handlesPrice : Merch.handles[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({handlesPrice : null});
     }
@@ -105,7 +110,7 @@ class ShopCustom extends Component{
 
   handleCaseChange(event){
     if (event.target.selectedIndex != 0){
-      this.setState({casePrice : Cases[event.target.selectedIndex - 1].price}); // updates the state with that new value
+      this.setState({casePrice : Merch.cases[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({casePrice : null});
     }
@@ -151,14 +156,14 @@ class ShopCustom extends Component{
             <Select itemType="Blade" classN="blades" onChange={(e) => this.handleBladeChange(e)}>
               <option selected></option>
               {
-                BladesWood.map(item => <option>
-                  {item.name + "   --   $" + item.price /* ($" + item.price + ")" */}
+                Merch.blades.map(item => <option>
+                  {item._name + "   --   $" + item.price /* ($" + item.price + ")" */}
                 </option>)
               }
               {
-                BladesComposite.map(item => <option>
-                  {item.name + "   --   $" + item.price}
-                </option>)
+                // Merch.bladesComposite.map(item => <option>
+                //   {item._name + "   --   $" + item.price}
+                // </option>)
               }
             </Select>
           </div>
@@ -167,8 +172,8 @@ class ShopCustom extends Component{
             <Select itemType="Red Rubber" classN="red-rubbers" onChange={(e) => this.handleRedRubberChange(e)}>
               <option selected></option>
               {
-                RubbersInverted.map(item => <option>
-                  {item.name + "   --   $" + item.price}
+                Merch.rubbers.map(item => <option>
+                  {item._name + "   --   $" + item.price}
                 </option>)
               }
             </Select>
@@ -182,8 +187,8 @@ class ShopCustom extends Component{
             <Select itemType="Black Rubber" classN="black-rubbers" onChange={(e) => this.handleBlackRubberChange(e)}>
               <option selected></option>
               {
-                RubbersInverted.map(item => <option>
-                  {item.name + "   --   $" + item.price}
+                Merch.rubbers.map(item => <option>
+                  {item._name + "   --   $" + item.price}
                 </option>)
               }
             </Select>
@@ -197,8 +202,8 @@ class ShopCustom extends Component{
             <Select itemType="Handles" classN="handles" onChange={(e) => this.handleHandleChange(e)}>
               <option selected></option>
               {
-                Handles.map(item => <option>
-                  {item.name /*  + "   --   $" + item.price */}
+                Merch.handles.map(item => <option>
+                  {item._name /*  + "   --   $" + item.price */}
                 </option>)
               }
             </Select>
@@ -208,8 +213,8 @@ class ShopCustom extends Component{
             <Select itemType="Case" classN="case" onChange={(e) => this.handleCaseChange(e)}>
               <option selected></option>
               {
-                Cases.map(item => <option>
-                  {item.name + "   --   $" + item.price}
+                Merch.cases.map(item => <option>
+                  {item._name + "   --   $" + item.price}
                 </option>)
               }
             </Select>
