@@ -11,7 +11,7 @@ import Contact from './comp/Contact'
 
 import ItemDesc from './comp/Items/ItemDesc'
 
-import merch from './json/merchandise.json'
+import Merch from './json/merchandise.json'
 
 /* surrounding empty tags </> are called Fragments.
 They are needed to return two sibling components.
@@ -84,13 +84,10 @@ class App extends React.Component{
           <Contact />
         </Route>
         <Route path="/ItemDesc">
-          <ItemDesc version={"v1"} {...merch[2]} />
-        </Route>
-        <Route path="/ItemDesc2">
-          <ItemDesc version={"v2"} {...merch[2]} />
+          <ItemDesc {...Merch.rubbers[36]} />
         </Route>
         <Route path="/Item/Illumina">
-          <ItemDesc version={"v2"} {...merch[1]} />
+          <ItemDesc {...Merch.rubbers[2]} />
         </Route>
       </Switch>
       </main>

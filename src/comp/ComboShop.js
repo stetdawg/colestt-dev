@@ -7,20 +7,6 @@ import Text from './Elements/Text'
 
 // jsons
 import Merch from '../json/merchandise.json';
-/*
-import RubbersInverted from '../json/merchandise/rubbers-inverted.json';
-import RubbersPipsOut from '../json/merchandise/rubbers-pipsOut.json';
-import RubbersTopsheets from '../json/merchandise/rubbers-topsheets.json';
-import RubbersSponges from '../json/merchandise/rubbers-sponges.json';
-
-import BladesWood from '../json/merchandise/blades-wood.json';
-import BladesComposite from '../json/merchandise/blades-composite.json';
-
-import Handles from '../json/merchandise/handles.json';
-import Cases from '../json/merchandise/cases.json';
-import Balls from '../json/merchandise/balls.json';
-import Accessories from '../json/merchandise/accessories.json';
-*/
 
 
 class ShopCustom extends Component{
@@ -33,7 +19,8 @@ class ShopCustom extends Component{
       blackRubberPrice : null,
       handlesPrice: null,
       casePrice: null,
-      comboPrice: null
+      comboPrice: null,
+      shippingCost: 7.00
     }
   }
 
@@ -50,19 +37,11 @@ class ShopCustom extends Component{
     }
   } // add this to the render when you wanna call upon the weight -> {this.checkWeight(this.props.weight)}
 
-  //virtualization, render only what the user can see.
-  componentDidMount() {
-    //scroll listener?
-    }
-  componentWillUnmount() {
-    //destroy scroll
-  }
-
 
   // Handling the event changes, based on the options taken
 
   handleBladeChange(event){
-    if (event.target.selectedIndex != 0){
+    if (event.target.selectedIndex !== 0){
       this.setState({bladePrice : Merch.blades[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({bladePrice : null});
@@ -71,7 +50,7 @@ class ShopCustom extends Component{
 
 
   handleRedRubberChange(event){
-    if (event.target.selectedIndex != 0){
+    if (event.target.selectedIndex !== 0){
       this.setState({redRubberPrice : Merch.rubbers[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({redRubberPrice : null});
@@ -80,7 +59,7 @@ class ShopCustom extends Component{
 
 
   handleBlackRubberChange(event){
-    if (event.target.selectedIndex != 0){
+    if (event.target.selectedIndex !== 0){
       this.setState({blackRubberPrice : Merch.rubbers[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({blackRubberPrice : null});
@@ -98,47 +77,28 @@ class ShopCustom extends Component{
 
 
   handleCaseChange(event){
-    if (event.target.selectedIndex != 0){
+    if (event.target.selectedIndex !== 0){
       this.setState({casePrice : Merch.cases[event.target.selectedIndex - 1].price}); // updates the state with that new value
     } else {
       this.setState({casePrice : null});
     }
   }
 
-  printTotal(){
+  getTotal(){
     if (this.state.bladePrice !== null &&
         this.state.redRubberPrice !== null &&
         this.state.blackRubberPrice !== null &&
         this.state.handlesPrice !== null &&
         this.state.casePrice !== null)
       {
-        const shipping = 2.99;
-        const total = this.state.bladePrice + this.state.redRubberPrice + this.state.blackRubberPrice + this.state.handlesPrice + this.state.casePrice + parseFloat(shipping);
+        const total = this.state.bladePrice + this.state.redRubberPrice + this.state.blackRubberPrice + this.state.handlesPrice + this.state.casePrice + parseFloat(this.state.shippingCost);
         return "$" + total + " | Add to Cart";
       } else {
         return "Finish the Combo";
       }
   }
 
-  getTotal(){
-    const shipping = 2.99;
-    const total = this.state.bladePrice + this.state.redRubberPrice + this.state.blackRubberPrice + this.state.handlesPrice + this.state.casePrice;
-
-    console.log("getTotal was called");
-  }
-
   componentDidUpdate(){
-    if (this.state.bladePrice !== null &&
-        this.state.redRubberPrice !== null &&
-        this.state.blackRubberPrice !== null &&
-        this.state.handlesPrice !== null &&
-        this.state.casePrice !== null)
-    {
-      console.log("The state is full. FINALLY CALLING getTotal()");
-      // this.getTotal();
-    } else {
-      console.log("The state IS NOT full");
-    }
 
   }
 
@@ -156,11 +116,6 @@ class ShopCustom extends Component{
                 Merch.blades.map(item => <option>
                   {item._name + "   --   $" + item.price /* ($" + item.price + ")" */}
                 </option>)
-              }
-              {
-                // Merch.bladesComposite.map(item => <option>
-                //   {item._name + "   --   $" + item.price}
-                // </option>)
               }
             </Select>
           </div>
@@ -227,14 +182,13 @@ class ShopCustom extends Component{
             </div>
             <div className="info-container">
               <label for="shipping">Shipping:</label>
-              <span name="shipping">$2.99</span>
-              <input id="shipping" name="shipping" value={2.99} type="hidden" />
+              <span name="shipping">${this.state.shippingCost}</span>
+              <input id="shipping" name="shipping" value={7.00} type="hidden" />
             </div>
           </div>
           <Button classN="">
-            {/*  this.getTotal() == null ? "Finish selecting your combo to generate your price" : "$" + this.getTotal() + " | Buy Now"  */}
             {
-              this.printTotal()
+              this.getTotal()
             }
           </Button>
         </div>

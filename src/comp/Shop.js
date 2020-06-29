@@ -6,18 +6,9 @@ import React from 'react';
 // css
 
 // assets
-import RubbersInverted from '../json/merchandise/rubbers-inverted.json';
-import RubbersPipsOut from '../json/merchandise/rubbers-pipsOut.json';
-import RubbersTopsheets from '../json/merchandise/rubbers-topsheets.json';
-import RubbersSponges from '../json/merchandise/rubbers-sponges.json';
+// jsons
+import Merch from '../json/merchandise.json';
 
-import BladesWood from '../json/merchandise/blades-wood.json';
-import BladesComposite from '../json/merchandise/blades-composite.json';
-
-import Handles from '../json/merchandise/handles.json';
-import Cases from '../json/merchandise/cases.json';
-import Balls from '../json/merchandise/balls.json';
-import Accessories from '../json/merchandise/accessories.json';
 
 // components
 import ShopItem from './Items/ShopItem';
@@ -54,48 +45,8 @@ class ShopBasic extends React.Component{
         </div>
         <div className="shop">
           <h2>Rubbers</h2>
-          <h3>Inverted</h3>
           {
-            RubbersInverted.map(item => (
-              <ShopItem
-                //onClick={() => {this.btnClick(item.name)}}
-                name={item.name}
-                price={item.price}
-                weight={item.weight}
-                thumb={item.thumb}
-                {...item /* name, price, thumb, desc*/}
-              />
-            ))
-          }
-          <h3>Pips-Out</h3>
-          {
-            RubbersPipsOut.map(item => (
-              <ShopItem
-                //onClick={() => {this.btnClick(item.name)}}
-                name={item.name}
-                price={item.price}
-                weight={item.weight}
-                thumb={item.thumb}
-                {...item /* name, price, thumb, desc*/}
-              />
-            ))
-          }
-          <h3>Topsheets</h3>
-          {
-            RubbersTopsheets.map(item => (
-              <ShopItem
-                //onClick={() => {this.btnClick(item.name)}}
-                name={item.name}
-                price={item.price}
-                weight={item.weight}
-                thumb={item.thumb}
-                {...item /* name, price, thumb, desc*/}
-              />
-            ))
-          }
-          <h3>Sponges</h3>
-          {
-            RubbersSponges.map(item => (
+            Merch.rubbers.map(item => (
               <ShopItem
                 //onClick={() => {this.btnClick(item.name)}}
                 name={item.name}
@@ -107,22 +58,8 @@ class ShopBasic extends React.Component{
             ))
           }
           <h2>Blades</h2>
-          <h3>All-Wood</h3>
           {
-            BladesWood.map(item => (
-              <ShopItem
-                //onClick={() => {this.btnClick(item.name)}}
-                name={item.name}
-                price={item.price}
-                weight={item.weight}
-                thumb={item.thumb}
-                {...item /* name, price, thumb, desc*/}
-              />
-            ))
-          }
-          <h3>Composite</h3>
-          {
-            BladesComposite.map(item => (
+            Merch.blades.map(item => (
               <ShopItem
                 //onClick={() => {this.btnClick(item.name)}}
                 name={item.name}
@@ -135,7 +72,7 @@ class ShopBasic extends React.Component{
           }
           <h2>Handles</h2>
           {
-            Handles.map(item => (
+            Merch.handles.map(item => (
               <ShopItem
                 //onClick={() => {this.btnClick(item.name)}}
                 name={item.name}
@@ -148,7 +85,7 @@ class ShopBasic extends React.Component{
           }
           <h2>Cases</h2>
           {
-            Cases.map(item => (
+            Merch.cases.map(item => (
               <ShopItem
                 //onClick={() => {this.btnClick(item.name)}}
                 name={item.name}
@@ -161,7 +98,7 @@ class ShopBasic extends React.Component{
           }
           <h2>Balls</h2>
           {
-            Balls.map(item => (
+            Merch.balls.map(item => (
               <ShopItem
                 //onClick={() => {this.btnClick(item.name)}}
                 name={item.name}
@@ -174,7 +111,7 @@ class ShopBasic extends React.Component{
           }
           <h2>Accessories</h2>
           {
-            Accessories.map(item => (
+            Merch.accessories.map(item => (
               <ShopItem
                 //onClick={() => {this.btnClick(item.name)}}
                 name={item.name}
