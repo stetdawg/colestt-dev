@@ -104,7 +104,7 @@ class ShopItem extends React.Component{
           <Select itemType="Color" onChange={(e) => this.handleSelectBoxChange(e)}>
             <option value="red">Red</option>
             <option value="black">Black</option>
-            <option value="both">Both</option>
+            {/* <option value="both">Both</option> */}
           </Select>
           {/* you can add more <span> and <select tags as needed */}
         </div>
