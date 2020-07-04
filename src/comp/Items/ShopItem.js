@@ -18,7 +18,8 @@ class ShopItem extends React.Component{
     super(props);
     this.state = {
       displayImage : true,
-      bothSelected : false
+      bothSelected : false,
+      selectedColor: "red"
     }
   }
 
@@ -51,11 +52,15 @@ class ShopItem extends React.Component{
 
   handleSelectBoxChange (event) {
     if (event.target.value === "both"){
-      console.log("it's both");
-      this.setState({bothSelected : true});
+      this.setState({
+        bothSelected : true,
+        selectedColor: event.target.value
+      });
     } else {
-      console.log("it's red or black");
-      this.setState({bothSelected : false});
+      this.setState({
+        bothSelected : false,
+        selectedColor: event.target.value
+      });
     }
   }
 
@@ -82,6 +87,10 @@ class ShopItem extends React.Component{
     // link to colestt.com/shop/AirTiger <ItemDesc />
   }
 
+  sendData(childName, childCat) {
+    this.props.onClick(childName, childCat);
+  }
+
   render(){
     // console.log(this.props)
     return(
@@ -93,14 +102,14 @@ class ShopItem extends React.Component{
         <div className="item-var">
           <span>Colors: </span>
           <Select itemType="Color" onChange={(e) => this.handleSelectBoxChange(e)}>
-            <option value="red" selected>Red</option>
+            <option value="red">Red</option>
             <option value="black">Black</option>
             <option value="both">Both</option>
           </Select>
           {/* you can add more <span> and <select tags as needed */}
         </div>
         <Button
-          onClick={this.props.onClick}
+          onClick={() => this.sendData(this.props._name, this.state.selectedColor)}
           classN="item-btn"><span className="item-price"
           >
           ${this.outputPrice()}</span> | Add to Cart

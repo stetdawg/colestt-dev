@@ -4,9 +4,11 @@ export const addCart = (productName, productCat) => {
   return(dispatch) => {
     console.log("Adding to cart");
     console.log("Product: ", productName);
+    console.log("ProdCat: ", productCat);
     dispatch({
       type: ADD_PRODUCT_CART,
-      payload: productName
+      payloadName: productName,
+      payloadCat: productCat
     })
   }
 }
