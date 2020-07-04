@@ -50,6 +50,21 @@ class ShopItem extends React.Component{
     }
   }
 
+  selectVars(){
+    if (this.props.itemType === "rubbers"){
+      return(
+        <>
+        <span>Colors: </span>
+        <Select itemType="Color" onChange={(e) => this.handleSelectBoxChange(e)}>
+          <option value="red">Red</option>
+          <option value="black">Black</option>
+          {/* <option value="both">Both</option> */}
+        </Select>
+        </>
+      )
+    }
+  }
+
   handleSelectBoxChange (event) {
     if (event.target.value === "both"){
       this.setState({
@@ -100,12 +115,7 @@ class ShopItem extends React.Component{
         </div>
         <span className="item-name">{this.props._name}</span>
         <div className="item-var">
-          <span>Colors: </span>
-          <Select itemType="Color" onChange={(e) => this.handleSelectBoxChange(e)}>
-            <option value="red">Red</option>
-            <option value="black">Black</option>
-            {/* <option value="both">Both</option> */}
-          </Select>
+          {this.selectVars()}
           {/* you can add more <span> and <select tags as needed */}
         </div>
         <Button

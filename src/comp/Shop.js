@@ -37,6 +37,7 @@ class Shop extends React.Component {
           {
             Merch.rubbers.map(item => (
               <ShopItem
+                itemType="rubbers"
                 onClick={this.handleClick}
                 {...item /* name, price, thumb, desc*/}
               />
@@ -44,48 +45,48 @@ class Shop extends React.Component {
           }
           <h2>Blades</h2>
           {
-            // Merch.blades.map(item => (
-            //   <ShopItem
-            //     onClick={() => { props.addCart() }}
-            //     {...item}
-            //   />
-            // ))
+            Merch.blades.map(item => (
+              <ShopItem
+                onClick={this.handleClick}
+                {...item}
+              />
+            ))
           }
           <h2>Handles</h2>
           {
-            // Merch.handles.map(item => (
-            //   <ShopItem
-            //     onClick={() => { props.addCart() }}
-            //     {...item}
-            //   />
-            // ))
+            Merch.handles.map(item => (
+              <ShopItem
+                onClick={this.handleClick}
+                {...item}
+              />
+            ))
           }
           <h2>Cases</h2>
           {
-            // Merch.cases.map(item => (
-            //   <ShopItem
-            //     onClick={() => { props.addCart() }}
-            //     {...item}
-            //   />
-            // ))
+            Merch.cases.map(item => (
+              <ShopItem
+                onClick={this.handleClick}
+                {...item}
+              />
+            ))
           }
           <h2>Balls</h2>
           {
-            // Merch.balls.map(item => (
-            //   <ShopItem
-            //     onClick={() => { props.addCart() }}
-            //     {...item}
-            //   />
-            // ))
+            Merch.balls.map(item => (
+              <ShopItem
+                onClick={this.handleClick}
+                {...item}
+              />
+            ))
           }
           <h2>Accessories</h2>
           {
-            // Merch.accessories.map(item => (
-            //   <ShopItem
-            //     onClick={() => { props.addCart() }}
-            //     {...item}
-            //   />
-            // ))
+            Merch.accessories.map(item => (
+              <ShopItem
+                onClick={this.handleClick}
+                {...item}
+              />
+            ))
           }
         </div>
       </div>
