@@ -3,11 +3,23 @@ Along with displaying the property in the button. listen for clicks and pass dat
 
 
 import React from 'react'
-//import ReactDOM from 'react-dom'
 
 import "../../scss/Elements/button.scss"
 
-const Button = (props) =><button className={"btn " + props.classN}>
+/*
+Props
+
+onClick:
+
+  in order to use the onClick of the button, add the function to the onClick property
+
+classN:
+
+  assigns the className based on the classN property
+
+*/
+
+const Button = (props) => <button onClick={props.onClick} className={"btn " + props.classN}>
   {props.children}
 </button>
 

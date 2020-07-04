@@ -1,8 +1,12 @@
 import React from 'react';
 
 import {Route, Switch } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import store from './store'
+
 import Home from './comp/Home'
 import NavBar from './comp/Nav'
+
 //import ItemPanel from './comp/ItemPanel'
 import Shop from './comp/Shop'
 import ComboShop from './comp/ComboShop'
@@ -60,37 +64,41 @@ class App extends React.Component{
       }
     ];
 
-    return( <>
-      <div className="background"></div>
-     <NavBar
-        navLinks={ navLinks }
-      />
-      <main>
-      <div className="lightbox"></div>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/Shop">
-          <Shop />
-        </Route>
-        <Route path="/Combos">
-          <ComboShop />
-        </Route>
-        <Route path="/About">
-          <About />
-        </Route>
-        <Route path="/Contact">
-          <Contact />
-        </Route>
-        <Route path="/ItemDesc">
-          <ItemDesc {...Merch.rubbers[36]} />
-        </Route>
-        <Route path="/Item/Illumina">
-          <ItemDesc {...Merch.rubbers[2]} />
-        </Route>
-      </Switch>
-      </main>
+    return(
+      <>
+        <Provider store={store}>
+          <div className="background"></div>
+          <NavBar
+            navLinks={ navLinks }
+          />
+          <main>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/Shop">
+              <Shop />
+            </Route>
+            <Route path="/Combos">
+              <ComboShop />
+            </Route>
+            <Route path="/About">
+              <About />
+            </Route>
+            <Route path="/Contact">
+              <Contact />
+            </Route>
+            {/*
+              <Route path="/ItemDesc">
+                <ItemDesc {...Merch.rubbers[36]} />
+              </Route>
+              <Route path="/Item/Illumina">
+                <ItemDesc {...Merch.rubbers[2]} />
+              </Route>
+            */}
+          </Switch>
+          </main>
+        </Provider>
       </>
     );
   }

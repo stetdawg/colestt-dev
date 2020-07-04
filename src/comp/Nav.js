@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink as Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { getNumbers } from '../actions/getAction'
 
 /*
 <Link to="/">
@@ -18,9 +20,8 @@ When the URL is /react, this renders:
 
 */
 
-function NavBar({ navLinks, background, hoverBackground, linkColor, logo}){
+function NavBar(props){
   const [ navOpen, setNavOpen ] = useState(false)
-
   return(
     <nav className="navRouter">
       <div className="nav-container">
@@ -28,7 +29,7 @@ function NavBar({ navLinks, background, hoverBackground, linkColor, logo}){
           Cole's
         </div><ul className={ navOpen ? 'active' : '' }>
           {
-            navLinks.map(link => (
+            props.navLinks.map(link => (
               <li>
                 <Link to={link.path} onClick={() => setNavOpen(false)}>
                   {link.text}
@@ -37,6 +38,12 @@ function NavBar({ navLinks, background, hoverBackground, linkColor, logo}){
               </li>
             ))
           }
+          <li>
+            <Link to="/cart" onClick={() => setNavOpen(false)}>
+              Cart <span>{props.cartProps.cartNumbers}</span>
+              <i className=""></i>
+            </Link>
+          </li>
         </ul>
         <figure
           onClick={ () => setNavOpen(!navOpen) }
@@ -49,4 +56,8 @@ function NavBar({ navLinks, background, hoverBackground, linkColor, logo}){
   )
 }
 
-export default NavBar;
+const mapStateToProps = state => ({
+  cartProps: state.cartState
+})
+
+export default connect(mapStateToProps, { getNumbers })(NavBar);

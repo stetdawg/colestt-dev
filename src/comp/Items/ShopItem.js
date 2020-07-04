@@ -38,7 +38,7 @@ class ShopItem extends React.Component{
   toggleImgDesc(){
     if (this.state.displayImage === true){
       return(
-          <img src={this.props.thumb} alt={this.props.name}/>
+          <img src={this.props.thumb} alt={this.props._name}/>
       );
       // this.setState({displayImage : false});
     } else {
@@ -83,12 +83,13 @@ class ShopItem extends React.Component{
   }
 
   render(){
+    // console.log(this.props)
     return(
       <div className="shop-item"> {/* used to be <a> tag, but got an error */}
         <div className="item-media" onClick={() => {this.toggleDescCounter()} /*this.props.onClick*/}>
           {this.toggleImgDesc()}
         </div>
-        <span className="item-name">{this.props.name}</span>
+        <span className="item-name">{this.props._name}</span>
         <div className="item-var">
           <span>Colors: </span>
           <Select itemType="Color" onChange={(e) => this.handleSelectBoxChange(e)}>
@@ -98,7 +99,12 @@ class ShopItem extends React.Component{
           </Select>
           {/* you can add more <span> and <select tags as needed */}
         </div>
-        <Button classN="item-btn"><span className="item-price">${this.outputPrice()}</span> | Add to Cart</Button> {/*adds to the cart, without having to check big description */}
+        <Button
+          onClick={this.props.onClick}
+          classN="item-btn"><span className="item-price"
+          >
+          ${this.outputPrice()}</span> | Add to Cart
+        </Button>
       </div>
     );
   }
