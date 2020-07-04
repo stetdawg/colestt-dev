@@ -38,7 +38,7 @@ function NavBar(props){
               </li>
             ))
           }
-          <li>
+          <li className="cart-link">
             <Link to="/cart" onClick={() => setNavOpen(false)}>
               Cart <span>{props.cartProps.cartNumbers}</span>
               <i className=""></i>

@@ -27,7 +27,7 @@ const Shop = (props) => {
         {
           Merch.rubbers.map(item => (
             <ShopItem
-              onClick={() => props.addCart()}
+              onClick={() => props.addCart(item._name)}
               {...item /* name, price, thumb, desc*/}
             />
           ))

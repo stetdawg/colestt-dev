@@ -4,7 +4,7 @@
   Site:   Coles TT
   Auth:   Stetson Baber
   Crtd:   5/24/2020
-  Mod:    6/8/2020
+  Mod:    7/4/2020
 
 */
 /*
@@ -84,6 +84,11 @@
             color: #3a424a; }
           .navRouter .nav-container > ul li a i {
             display: none; }
+        .navRouter .nav-container > ul li.cart-link span {
+          background: #3a424a;
+          color: white;
+          padding: 2px 4px;
+          border-radius: 5px; }
     .navRouter .nav-container .nav-btn {
       box-sizing: border-box;
       display: none;
@@ -145,7 +150,7 @@
 .mobile .nav-container {
   padding-right: 50px; }
 
-@media screen and (max-width: 713px) {
+@media screen and (max-width: 800px) {
   .navRouter .nav-container {
     padding: 0 calc(16px + 50px) 0 16px; }
     .navRouter .nav-container .nav-btn {
@@ -206,4 +211,9 @@
           max-width: 100%; }
           .navRouter .nav-container ul li a:hover {
             color: white;
-            border-color: white; } }
+            border-color: white; }
+        .navRouter .nav-container ul li.cart-link span {
+          background: white;
+          color: #3a424a;
+          padding: 2px 4px;
+          border-radius: 5px; } }

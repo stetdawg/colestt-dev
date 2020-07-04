@@ -12,6 +12,7 @@ import Shop from './comp/Shop'
 import ComboShop from './comp/ComboShop'
 import About from './comp/About'
 import Contact from './comp/Contact'
+import Cart from './comp/Cart'
 
 import ItemDesc from './comp/Items/ItemDesc'
 
@@ -87,6 +88,9 @@ class App extends React.Component{
             </Route>
             <Route path="/Contact">
               <Contact />
+            </Route>
+            <Route path="/Cart">
+              <Cart />
             </Route>
             {/*
               <Route path="/ItemDesc">
