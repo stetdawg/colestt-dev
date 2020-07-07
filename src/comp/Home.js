@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import Specials from './Specials';
+import React from 'react'
+import Specials from './Specials'
 import Header from './Header'
 
 function Home(props) {

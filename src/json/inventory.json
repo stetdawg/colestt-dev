@@ -1,0 +1,57 @@
+{
+  "Rubbers": [
+      {  
+      "_name" : "Air TigerS",
+      "type" : "Rubbers",
+      "desc": " TigerS is the newest offering from AirOriginals. Euro finish 37deg. ",
+      "price" : 16,
+      "category": "Inverted",
+      "thumb" : "https://images-na.ssl-images-amazon.com/images/I/61jry8NvyzL._AC_SL1500_.jpg"
+    },
+
+    {
+      "_name" : "Add Sponge to Topsheet",
+      "type": "Rubbers",
+      "desc": "  Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done.  ",
+      "price" : 5,
+      "category":  "Pips-Out",
+      "thumb" : "https://www.colestt.com/img/rubbers/dawei-lightning.jpg"
+    },
+
+    { 
+      "_name" : "999 National Team TopSheet",
+      "type": "Rubbers",
+      "desc": " The topsheet used on national team versions. I put the regular picture up, but this topsheet doesn't come in cardboard...just a plastic.",
+      "price" : 9,
+      "category":  "Topsheets",
+      "thumb" : "https://www.colestt.com/img/rubbers/dawei-lightning.jpg"
+    },
+    
+    { 
+      "_name" : "Air Supersoft 35 and Air Lemon 37 Sponge",
+      "type": "Rubbers",
+      "desc": " Generally speaking the lemon sponges are the variety that have the most bubbles, and thus are the lightest. They are generally easier to sink the ball into. In thinner versions, the ball will go to the blade easily compared to other, denser makes.",
+      "price" : 7,
+      "category":  "Sponges",
+      "thumb" : "https://www.colestt.com/img/rubbers/dawei-lightning.jpg"
+    }
+  ],
+
+  "Blades": [
+    { 
+      "_name" : "Air Limba and Air Koto",
+      "type": "Blades",
+      "desc": " We're switching these up a little again. The new limba blades I got in are orange handle, kind of a knock off of DHS I think. They are nicely made, and are 5ply with limba outer and spruce secondary, making them basically a Matrix formula blade. The Koto blue blades are the 7ply formula like the old Quattro Limba, but with Koto outers. ",
+      "price" : 22,
+      "category":  "All-Wood",
+      "thumb" : "https://www.colestt.com/img/rubbers/dawei-lightning.jpg"
+    }
+  ],
+
+"Balls": [],
+
+"Accesories": []
+
+
+}
+

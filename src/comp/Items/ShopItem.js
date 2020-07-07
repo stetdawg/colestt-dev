@@ -1,10 +1,10 @@
 // react
-import React from 'react';
-import ReactDOM from 'react-dom';
-import ItemDesc from './ItemDesc';
+import React from 'react'
+//import ReactDOM from 'react-dom'
+//import ItemDesc from './ItemDesc'; // Keep this to link to the ItemDesc
 
 // css
-import '../../scss/shop-item.scss';
+import '../../scss/shop-item.scss'
 
 // assets
 import Button from '../Elements/Button'

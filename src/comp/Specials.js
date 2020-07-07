@@ -1,5 +1,5 @@
-import React,{Component} from 'react';
-import merchandise from '../json/customitem.json';
+import React,{Component} from 'react'
+import merchandise from '../json/customitem.json'
 import HomeItems from './Items/HomeItems'
 
 class DisplayHomeItems extends Component {
