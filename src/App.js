@@ -1,17 +1,22 @@
 import React from 'react';
 
 import {Route, Switch } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import store from './store'
+
 import Home from './comp/Home'
 import NavBar from './comp/Nav'
+
 //import ItemPanel from './comp/ItemPanel'
 import Shop from './comp/Shop'
 import ComboShop from './comp/ComboShop'
 import About from './comp/About'
 import Contact from './comp/Contact'
+import Cart from './comp/Cart'
 
 import ItemDesc from './comp/Items/ItemDesc'
 
-import merch from './json/merchandise.json'
+import Merch from './json/merchandise.json'
 
 /* surrounding empty tags </> are called Fragments.
 They are needed to return two sibling components.
@@ -60,40 +65,44 @@ class App extends React.Component{
       }
     ];
 
-    return( <>
-      <div className="background"></div>
-     <NavBar
-        navLinks={ navLinks }
-      />
-      <main>
-      <div className="lightbox"></div>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/Shop">
-          <Shop />
-        </Route>
-        <Route path="/Combos">
-          <ComboShop />
-        </Route>
-        <Route path="/About">
-          <About />
-        </Route>
-        <Route path="/Contact">
-          <Contact />
-        </Route>
-        <Route path="/ItemDesc">
-          <ItemDesc version={"v1"} {...merch[2]} />
-        </Route>
-        <Route path="/ItemDesc2">
-          <ItemDesc version={"v2"} {...merch[2]} />
-        </Route>
-        <Route path="/Item/Illumina">
-          <ItemDesc version={"v2"} {...merch[1]} />
-        </Route>
-      </Switch>
-      </main>
+    return(
+      <>
+        <Provider store={store}>
+          <div className="background"></div>
+          <NavBar
+            navLinks={ navLinks }
+          />
+          <main>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/Shop">
+              <Shop />
+            </Route>
+            <Route path="/Combos">
+              <ComboShop />
+            </Route>
+            <Route path="/About">
+              <About />
+            </Route>
+            <Route path="/Contact">
+              <Contact />
+            </Route>
+            <Route path="/Cart">
+              <Cart />
+            </Route>
+            {/*
+              <Route path="/ItemDesc">
+                <ItemDesc {...Merch.rubbers[36]} />
+              </Route>
+              <Route path="/Item/Illumina">
+                <ItemDesc {...Merch.rubbers[2]} />
+              </Route>
+            */}
+          </Switch>
+          </main>
+        </Provider>
       </>
     );
   }

@@ -11,6 +11,7 @@ import './scss/special.scss'
 import './scss/item-desc.scss'
 import './scss/contact.scss';
 import './scss/about.scss';
+import './scss/combos.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

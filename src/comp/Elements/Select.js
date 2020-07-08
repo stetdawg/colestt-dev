@@ -3,11 +3,11 @@ Along with displaying the property in the button. listen for clicks and pass dat
 
 
 import React from 'react'
-import ReactDOM from 'react-dom'
+//import ReactDOM from 'react-dom'
 
 import "../../scss/Elements/select.scss"
 
-const Select = (props) => <select className={"select " + props.classN} name={props.itemType} onChange={props.onChange}>
+const Select = (props) => <select name={props.itemType} className={"select " + props.classN} onChange={props.onChange}>
   {props.children}
 </select>
 

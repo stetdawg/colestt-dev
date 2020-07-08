@@ -1,5 +1,5 @@
-import React,{Component} from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react'
+//import ReactDOM from 'react-dom'
 import Button from '../Elements/Button'
 import Select from '../Elements/Select'
 

@@ -1,0 +1,5 @@
+Racket Cover (Round), 3
+Racket Cover (Elliptical), 5
+Galaxy Rectangular, 7 
+Galaxy Rectangular 2zip, 14  
+No Racket Cover, 0

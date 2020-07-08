@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 [
   {
@@ -43,53 +44,95 @@
   }
 ]
 =======
+=======
+>>>>>>> aisbell
 {
   "accessories" : [
     {
       "_name" : "Dawei Net and Post Set",
+<<<<<<< HEAD
            "price" : 35,
+=======
+      "type" : "Accessories",
+      "price" : 35,
+>>>>>>> aisbell
       "thumb" : "https://www.colestt.com/img/accessories/dawei-post-set.jpg",
       "desc" : "It's a solid blade. 11111"
     },
     {
       "_name" : "Replacement Net",
+<<<<<<< HEAD
            "price" : 6,
+=======
+      "type" : "Accessories",
+      "price" : 6,
+>>>>>>> aisbell
       "thumb" : "https://www.colestt.com/img/accessories/dawei-post-set.jpg",
       "desc" : "It's a solid blade. 11111"
     },
     {
       "_name" : "Dawei Water-Based Glue (100ml)",
+<<<<<<< HEAD
            "price" : 12,
+=======
+      "type" : "Accessories",
+      "price" : 12,
+>>>>>>> aisbell
       "thumb" : "https://www.colestt.com/img/accessories/dawei-post-set.jpg",
       "desc" : "It's a solid blade. 11111"
     },
     {
       "_name" : "Racket Cover (Rectangular)",
+<<<<<<< HEAD
            "price" : 10,
+=======
+      "type" : "Accessories",
+      "price" : 10,
+>>>>>>> aisbell
       "thumb" : "https://www.colestt.com/img/accessories/dawei-post-set.jpg",
       "desc" : "It's a solid blade. 11111"
     },
     {
       "_name" : "Racket Cover (Elliptical)",
+<<<<<<< HEAD
            "price" : 6,
+=======
+      "type" : "Accessories",
+      "price" : 6,
+>>>>>>> aisbell
       "thumb" : "https://www.colestt.com/img/accessories/dawei-post-set.jpg",
       "desc" : "It's a solid blade. 11111"
     },
     {
       "_name" : "Racket Cover (Round)",
+<<<<<<< HEAD
            "price" : 3,
+=======
+      "type" : "Accessories",
+      "price" : 3,
+>>>>>>> aisbell
       "thumb" : "https://www.colestt.com/img/accessories/dawei-post-set.jpg",
       "desc" : "It's a solid blade. 11111"
     },
     {
       "_name" : "Air Glue Sheet",
+<<<<<<< HEAD
            "price" : 2,
+=======
+      "type" : "Accessories",
+      "price" : 2,
+>>>>>>> aisbell
       "thumb" : "https://www.colestt.com/img/accessories/dawei-post-set.jpg",
       "desc" : "It's a solid blade. 11111"
     },
     {
       "_name" : "Galaxy Edge Tape",
+<<<<<<< HEAD
            "price" : 0.4,
+=======
+      "type" : "Accessories",
+      "price" : 0.4,
+>>>>>>> aisbell
       "thumb" : "https://www.colestt.com/img/accessories/dawei-post-set.jpg",
       "desc" : "It's a solid blade. 11111"
     }
@@ -97,21 +140,33 @@
   "balls" : [
     {
       "_name" : "Double Fish 3* Balls (Pack of 3)",
+<<<<<<< HEAD
        
+=======
+      "type" : "Balls",
+>>>>>>> aisbell
       "price" : 3,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
       "desc" : "It's a solid blade. 11111"
     },
     {
       "_name" : "Gambler Platinum 3* Balls (Bag of 36)",
+<<<<<<< HEAD
        
+=======
+      "type" : "Balls",
+>>>>>>> aisbell
       "price" : 12,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
       "desc" : "It's a solid blade. 11111"
     },
     {
       "_name" : "Gambler Platinum 2* Balls (Bag of 72)",
+<<<<<<< HEAD
        
+=======
+      "type" : "Balls",
+>>>>>>> aisbell
       "price" : 15,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
       "desc" : "It's a solid ball. 11111"
@@ -121,12 +176,20 @@
     {
       "_name" : "Air MambaS",
       "category" : "Composite",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "price" : 32,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
       "desc" : "It's a solid blade. 11111"
     },
     {
       "_name" : "Wavestone Blue (flared)",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Composite",
       "price" : 34,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
@@ -134,6 +197,10 @@
     },
     {
       "_name" : "Air Wavestone Yellow Cross (flared)",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Composite",
       "price" : 34,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
@@ -141,6 +208,10 @@
     },
     {
       "_name" : "Galaxy T7s (fl pen)",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Composite",
       "price" : 34,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
@@ -148,6 +219,10 @@
     },
     {
       "_name" : "Galaxy T8s (fl st pen)",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Composite",
       "price" : 34,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
@@ -155,6 +230,10 @@
     },
     {
       "_name" : "Galaxy T10s (fl st)",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Composite",
       "price" : 42,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
@@ -162,6 +241,10 @@
     },
     {
       "_name" : "Galaxy T11s (fl st)",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Composite",
       "price" : 42,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
@@ -169,6 +252,10 @@
     },
     {
       "_name" : "Galaxy V14 (fl pen)",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Composite",
       "price" : 45,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
@@ -176,6 +263,10 @@
     },
     {
       "_name" : "Galaxy V14 pro",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Composite",
       "price" : 55,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
@@ -183,6 +274,10 @@
     },
     {
       "_name" : "Galaxy MC2 fl",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Composite",
       "price" : 25,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
@@ -190,6 +285,10 @@
     },
     {
       "_name" : "Galaxy MC2 fl",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Composite",
       "price" : 60,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
@@ -197,6 +296,10 @@
     },
     {
       "_name" : "Gambler Oversized Carbon fl, st",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Composite",
       "price" : 32,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
@@ -204,6 +307,10 @@
     },
     {
       "_name" : "Air Koto",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 22,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -211,6 +318,10 @@
     },
     {
       "_name" : "Air Matrix Orange (fl)",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 22,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -218,6 +329,10 @@
     },
     {
       "_name" : "Air Touch Koto (fl or st)",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 22,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -225,6 +340,10 @@
     },
     {
       "_name" : "Air Touch01",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 18,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -232,6 +351,10 @@
     },
     {
       "_name" : "Air Matrix Green (st)",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 22,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -239,6 +362,10 @@
     },
     {
       "_name" : "Galaxy LQ-1",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 51,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -246,6 +373,10 @@
     },
     {
       "_name" : "Galaxy LQ-2 (fl or st)",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 49,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -253,6 +384,10 @@
     },
     {
       "_name" : "Galaxy W6",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 34,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -260,6 +395,10 @@
     },
     {
       "_name" : "Galaxy Earth 4",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 55,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -267,6 +406,10 @@
     },
     {
       "_name" : "Galaxy 896",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 19,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -274,6 +417,10 @@
     },
     {
       "_name" : "Galaxy n11",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 18,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -281,6 +428,10 @@
     },
     {
       "_name" : "Galaxy 985 jpen",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 19,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -288,6 +439,10 @@
     },
     {
       "_name" : "Galaxy PD437 fl",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 45,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -295,6 +450,10 @@
     },
     {
       "_name" : "LKT Zebra Classic Oversized",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 27.50,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -302,6 +461,10 @@
     },
     {
       "_name" : "LKT Toxic 5",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 22,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -309,6 +472,10 @@
     },
     {
       "_name" : "LKT Ayous Hinoki Straight",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 22,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -316,6 +483,10 @@
     },
     {
       "_name" : "Globe JP-01 jpen",
+<<<<<<< HEAD
+=======
+      "type" : "Blades",
+>>>>>>> aisbell
       "category" : "Wood",
       "price" : 25,
       "thumb" : "https://www.colestt.com/img/blades/Air_Limba.jpg",
@@ -325,30 +496,50 @@
   "cases" : [
     {
       "_name" : "Racket Cover (Round)",
+<<<<<<< HEAD
+=======
+      "type" : "Cases",
+>>>>>>> aisbell
       "price" : 3,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
       "desc" : "It's a solid blade. 11111"
     },
     {
       "_name" : "Racket Cover (Elliptical)",
+<<<<<<< HEAD
+=======
+      "type" : "Cases",
+>>>>>>> aisbell
       "price" : 5,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
       "desc" : "It's a solid blade. 11111"
     },
     {
       "_name" : "Galaxy Rectangular",
+<<<<<<< HEAD
+=======
+      "type" : "Cases",
+>>>>>>> aisbell
       "price" : 7,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
       "desc" : "It's a solid blade. 11111"
     },
     {
       "_name" : "Galaxy Rectangular 2zip",
+<<<<<<< HEAD
+=======
+      "type" : "Cases",
+>>>>>>> aisbell
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
       "desc" : "It's a solid blade. 11111"
     },
     {
       "_name" : "No Racket Cover",
+<<<<<<< HEAD
+=======
+      "type" : "Cases",
+>>>>>>> aisbell
       "price" : 0,
       "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
       "desc" : "It's a solid blade. 11111"
@@ -357,6 +548,7 @@
   "handles" : [
     {
       "_name" : "Flared",
+<<<<<<< HEAD
            "price" : 0
     },
     {
@@ -366,11 +558,29 @@
     {
       "_name" : "Pen",
            "price" : 0
+=======
+      "type" : "Handles",
+      "price" : 0
+    },
+    {
+      "_name" : "Straight",
+      "type" : "Handles",
+      "price" : 0
+    },
+    {
+      "_name" : "Pen",
+      "type" : "Handles",
+      "price" : 0
+>>>>>>> aisbell
     }
   ],
   "rubbers" : [
     {
       "_name" : "Air TigerS",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -378,6 +588,10 @@
     },
     {
       "_name" : "Air Illumina Alpha Plus",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -385,6 +599,10 @@
     },
     {
       "_name" : "Air Illumina Delta Sound",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -392,6 +610,10 @@
     },
     {
       "_name" : "Air Scirocco SF",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 9,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -399,6 +621,10 @@
     },
     {
       "_name" : "Air DefenderS",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -406,6 +632,10 @@
     },
     {
       "_name" : "Air AssassinS",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -413,6 +643,10 @@
     },
     {
       "_name" : "Dawei 2008XP",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 9,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -420,6 +654,10 @@
     },
     {
       "_name" : "DHS H3 Neo",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 21,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -427,6 +665,10 @@
     },
     {
       "_name" : "DHS H2 Neo",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 21,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -434,6 +676,10 @@
     },
     {
       "_name" : "DHS TG3 Reg",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 16,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -441,6 +687,10 @@
     },
     {
       "_name" : "DHS PF4 Reg",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 12,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -448,6 +698,10 @@
     },
     {
       "_name" : "Galaxy Moon Pro",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 15,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -455,6 +709,10 @@
     },
     {
       "_name" : "Galaxy Moon Speed Soft",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 17,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -462,6 +720,10 @@
     },
     {
       "_name" : "Galaxy Mars2 Tuned",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 16,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -469,6 +731,10 @@
     },
     {
       "_name" : "Galaxy Venus3 Soft",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 12,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -476,6 +742,10 @@
     },
     {
       "_name" : "Galaxy Venus3 Hard",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 12,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -483,6 +753,10 @@
     },
     {
       "_name" : "Galaxy Earth2",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 12,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -490,6 +764,10 @@
     },
     {
       "_name" : "Galaxy Saturn Pro",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 22,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -497,6 +775,10 @@
     },
     {
       "_name" : "Galaxy Big Dipper",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 17,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -504,6 +786,10 @@
     },
     {
       "_name" : "Galaxy Apollo 5",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 20,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -511,6 +797,10 @@
     },
     {
       "_name" : "Galaxy Mercury 2",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 8,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -518,6 +808,10 @@
     },
     {
       "_name" : "Galaxy Bile Green",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -525,6 +819,10 @@
     },
     {
       "_name" : "Galaxy Fuschia",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -532,6 +830,10 @@
     },
     {
       "_name" : "Gambler Volt",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 16,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -539,6 +841,10 @@
     },
     {
       "_name" : "Gambler MechTek Oh Toro",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -546,6 +852,10 @@
     },
     {
       "_name" : "Gambler Burst",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 10,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -553,6 +863,10 @@
     },
     {
       "_name" : "Gambler Zero",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 10,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -560,6 +874,10 @@
     },
     {
       "_name" : "Gambler 9ut",
+<<<<<<< HEAD
+=======
+      "type" : "Rubbers",
+>>>>>>> aisbell
       "category" : "Inverted",
       "price" : 10,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
@@ -567,238 +885,408 @@
     },
     {
       "_name" : "Globe 999t China 2.2 (black only)",
+<<<<<<< HEAD
            "category" : "Inverted",
+=======
+      "type" : "Rubbers",
+      "category" : "Inverted",
+>>>>>>> aisbell
       "price" : 12,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
       "desc" : "TigerS is the newest offering from AirOriginals. Euro finish 37deg"
     },
     {
       "_name" : "Globe 999t Japan 1.5",
+<<<<<<< HEAD
            "category" : "Inverted",
+=======
+      "type" : "Rubbers",
+      "category" : "Inverted",
+>>>>>>> aisbell
       "price" : 16,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
       "desc" : "TigerS is the newest offering from AirOriginals. Euro finish 37deg"
     },
     {
       "_name" : "Prize Trophy 2.2 38deg",
+<<<<<<< HEAD
            "category" : "Inverted",
+=======
+      "type" : "Rubbers",
+      "category" : "Inverted",
+>>>>>>> aisbell
       "price" : 12,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
       "desc" : "TigerS is the newest offering from AirOriginals. Euro finish 37deg"
     },
     {
       "_name" : "Prize Liqin 2.2 38deg",
+<<<<<<< HEAD
            "category" : "Inverted",
+=======
+      "type" : "Rubbers",
+      "category" : "Inverted",
+>>>>>>> aisbell
       "price" : 12,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
       "desc" : "TigerS is the newest offering from AirOriginals. Euro finish 37deg"
     },
     {
       "_name" : "DHS PF4",
+<<<<<<< HEAD
            "category" : "Inverted",
+=======
+      "type" : "Rubbers",
+      "category" : "Inverted",
+>>>>>>> aisbell
       "price" : 12,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
       "desc" : "TigerS is the newest offering from AirOriginals. Euro finish 37deg"
     },
     {
       "_name" : "999 (write in sponge)",
+<<<<<<< HEAD
            "category" : "Inverted",
+=======
+      "type" : "Rubbers",
+      "category" : "Inverted",
+>>>>>>> aisbell
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
       "desc" : "TigerS is the newest offering from AirOriginals. Euro finish 37deg"
     },
     {
       "_name" : "999t (write in sponge)",
+<<<<<<< HEAD
            "category" : "Inverted",
+=======
+      "type" : "Rubbers",
+      "category" : "Inverted",
+>>>>>>> aisbell
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
       "desc" : "TigerS is the newest offering from AirOriginals. Euro finish 37deg"
     },
     {
       "_name" : "999 national topsheet (write in sponge)",
+<<<<<<< HEAD
            "category" : "Inverted",
+=======
+      "type" : "Rubbers",
+      "category" : "Inverted",
+>>>>>>> aisbell
       "price" : 16,
       "thumb" : "https://www.colestt.com/img/rubbers/air-tigerS.jpg",
       "desc" : "TigerS is the newest offering from AirOriginals. Euro finish 37deg"
     },
     {
       "_name" : "Air UPUPUPUP with sponge",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Dawei 388-D1 Quattro with sponge",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Dawei 388-D1 regular with sponge",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Globe 888 with sponge (black only)",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 13,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Globe 888-1 with sponge",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Globe 889 with sponge",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Globe 889-1 with sponge",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Globe 979 with sponge",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Globe Mo Wang with sponge",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 16,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Globe Mo Wang II with sponge",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 16,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "National Team Pogo with sponge",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 15,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Dawei 388-D1 Quattro with sponge",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 14,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "RITC 802-1 with sponge",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 11,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "RITC 563-1 with sponge",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 11,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Air Classique",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 10,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Air UPUPUPUP ox",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 10,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Dawei 388-D1 Quattro ox",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 10,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Dawei 388-D1 regular ox",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 10,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Globe 888 ox",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 9,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Globe 888-1 ox",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 9,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Globe 889 ox",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 9,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Globe 889-1 ox",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 9,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Globe 979 ox",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 9,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Globe Mo Wang I ox",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 12,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "Globe Mo Wang II ox",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 12,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
     {
       "_name" : "RITC 802-1 ox",
+<<<<<<< HEAD
            "category" : "Pips-Out",
+=======
+      "type" : "Rubbers",
+      "category" : "Pips-Out",
+>>>>>>> aisbell
       "price" : 6,
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
@@ -806,7 +1294,12 @@
     {
       "_name" : "RITC 563-1 ox",
       "category" : "Pips-Out",
+<<<<<<< HEAD
            "price" : 6,
+=======
+      "type" : "Rubbers",
+      "price" : 6,
+>>>>>>> aisbell
       "thumb" : "https://www.colestt.com/img/rubbers/globe_889-2.jpg",
       "desc" : "Probably this is going to be cannon (white air sponge around 38deg), but may be substituted with other sponges of similar cost, or I may match sponges with the selection. Whatever I use it will be at least the quality of the factory sponge that normally comes under the pips, and probably much better. Be aware that many of the long pips with thin base are difficult for me to glue perfectly, but I think on average I do as good of a job as can be done."
     },
@@ -819,53 +1312,91 @@
     },
     {
       "_name" : "Air Lemon 38",
+<<<<<<< HEAD
            "category" : "Sponges",
+=======
+      "type" : "Rubbers",
+      "category" : "Sponges",
+>>>>>>> aisbell
       "price" : 10,
       "thumb" : "https://www.colestt.com/img/rubbers/dawei-quattro.jpg",
       "desc" : "Generally speaking the lemon sponges are the variety that have the most bubbles, and thus are the lightest. They are generally easier to sink the ball into. In thinner versions, the ball will go to the blade easily compared to other, denser makes."
     },
     {
       "_name" : "Air Zero Sponge",
+<<<<<<< HEAD
            "category" : "Sponges",
+=======
+      "type" : "Rubbers",
+      "category" : "Sponges",
+>>>>>>> aisbell
       "price" : 10,
       "thumb" : "https://www.colestt.com/img/rubbers/dawei-quattro.jpg",
       "desc" : "Generally speaking the lemon sponges are the variety that have the most bubbles, and thus are the lightest. They are generally easier to sink the ball into. In thinner versions, the ball will go to the blade easily compared to other, denser makes."
     },
     {
       "_name" : "Dawei Quattro",
+<<<<<<< HEAD
            "category" : "Sponges",
+=======
+      "type" : "Rubbers",
+      "category" : "Sponges",
+>>>>>>> aisbell
       "price" : 9,
       "thumb" : "https://www.colestt.com/img/rubbers/dawei-quattro.jpg",
       "desc" : "Generally speaking the lemon sponges are the variety that have the most bubbles, and thus are the lightest. They are generally easier to sink the ball into. In thinner versions, the ball will go to the blade easily compared to other, denser makes."
     },
     {
       "_name" : "Dawei Lightning (Cannon)",
+<<<<<<< HEAD
            "category" : "Sponges",
+=======
+      "type" : "Rubbers",
+      "category" : "Sponges",
+>>>>>>> aisbell
       "price" : 5,
       "thumb" : "https://www.colestt.com/img/rubbers/dawei-quattro.jpg",
       "desc" : "Generally speaking the lemon sponges are the variety that have the most bubbles, and thus are the lightest. They are generally easier to sink the ball into. In thinner versions, the ball will go to the blade easily compared to other, denser makes."
     },
     {
       "_name" : "Air DefenderS",
+<<<<<<< HEAD
            "category" : "Topsheets",
+=======
+      "type" : "Rubbers",
+      "category" : "Topsheets",
+>>>>>>> aisbell
       "price" : 8,
       "thumb" : "https://www.colestt.com/img/rubbers/dawei-lightning.jpg",
       "desc" : "The topsheet used on national team versions. I put the regular picture up, but this topsheet doesn't come in cardboard...just a plastic."
     },
     {
       "_name" : "Globe 999",
+<<<<<<< HEAD
            "category" : "Topsheets",
+=======
+      "type" : "Rubbers",
+      "category" : "Topsheets",
+>>>>>>> aisbell
       "price" : 8,
       "thumb" : "https://www.colestt.com/img/rubbers/dawei-lightning.jpg",
       "desc" : "The topsheet used on national team versions. I put the regular picture up, but this topsheet doesn't come in cardboard...just a plastic."
     },
     {
       "_name" : "Globe 999t",
+<<<<<<< HEAD
            "category" : "Topsheets",
+=======
+      "type" : "Rubbers",
+      "category" : "Topsheets",
+>>>>>>> aisbell
       "price" : 8,
       "thumb" : "https://www.colestt.com/img/rubbers/dawei-lightning.jpg",
       "desc" : "The topsheet used on national team versions. I put the regular picture up, but this topsheet doesn't come in cardboard...just a plastic."
     }
   ]
 }
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> aisbell

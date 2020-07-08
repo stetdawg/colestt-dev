@@ -3,6 +3,8 @@ import React,{Component} from 'react';
 import Button from '../Elements/Button'
 import Select from '../Elements/Select'
 
+import Merch from '../../json/merchandise.json';
+
 
 
 
@@ -19,7 +21,7 @@ class ItemDesc extends Component{
   handleChange(event) {
 
     // doubles the price if both colors are selected
-    if(event.target.value == "both"){
+    if(event.target.value === "both"){
       this.setState({value: event.target.value, itemPrice: this.props.price * 2});
     } else {
       this.setState({value: event.target.value, itemPrice: this.props.price});
@@ -60,7 +62,7 @@ class ItemDesc extends Component{
 
 
        {merchandise.map(item => (<>
-                {this.displayCustomItem(item.name, item.desc, item.price, item.weight, item.thumb, item.blade, item.Rubber.Black)}
+                {this.displayCustomItem(item._name, item.desc, item.price, item.weight, item.thumb, item.blade, item.Rubber.Black)}
             </>
             ))}
     */
@@ -69,9 +71,9 @@ class ItemDesc extends Component{
     return(
       <article  className={this.props.version}>
         <div className="item-media">
-          <img src={this.props.thumb} />
+          <img src={this.props.thumb} alt={this.props._name}/>
         </div>
-        <span className="item-name"><b>Testing:</b> {this.props.name}</span>
+        <span className="item-name"><b>Testing:</b> {this.props._name}</span>
         <div className="item-rubber item-var">
           <span>Colors: </span>
           <Select value={this.state.value} itemType="Color" onChange={this.handleChange}>
@@ -81,7 +83,7 @@ class ItemDesc extends Component{
           </Select>
           {/* you can add more <span> and <select tags as needed */}
         </div>
-        <span className="item-description">{this.props.desc}<br/><br/><h1>The rest is just the description printed enough more times so that you can see the screen scroll.</h1><br/><br/>{this.props.desc}<br/><br/>{this.props.desc}<br/><br/>{this.props.desc}<br/><br/>{this.props.desc}<br/><br/>{this.props.desc}<br/><br/>{this.props.desc}</span>
+        <span className="item-description">{this.props.desc}</span>
         <span className="item-price">
           <Button classN="item-btn"><span>${this.outputPrice()} | </span>Add to Cart</Button>
         </span>

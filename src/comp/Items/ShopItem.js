@@ -18,7 +18,8 @@ class ShopItem extends React.Component{
     super(props);
     this.state = {
       displayImage : true,
-      bothSelected : false
+      bothSelected : false,
+      selectedColor: "red"
     }
   }
 
@@ -36,9 +37,9 @@ class ShopItem extends React.Component{
   // } // {this.checkWeight(this.props.weight)}
 
   toggleImgDesc(){
-    if (this.state.displayImage == true){
+    if (this.state.displayImage === true){
       return(
-          <img src={this.props.thumb} />
+          <img src={this.props.thumb} alt={this.props._name}/>
       );
       // this.setState({displayImage : false});
     } else {
@@ -49,21 +50,40 @@ class ShopItem extends React.Component{
     }
   }
 
+  selectVars(){
+    if (this.props.itemType === "rubbers"){
+      return(
+        <>
+        <span>Colors: </span>
+        <Select itemType="Color" onChange={(e) => this.handleSelectBoxChange(e)}>
+          <option value="red">Red</option>
+          <option value="black">Black</option>
+          {/* <option value="both">Both</option> */}
+        </Select>
+        </>
+      )
+    }
+  }
+
   handleSelectBoxChange (event) {
-    if (event.target.value == "both"){
-      console.log("it's both");
-      this.setState({bothSelected : true});
+    if (event.target.value === "both"){
+      this.setState({
+        bothSelected : true,
+        selectedColor: event.target.value
+      });
     } else {
-      console.log("it's red or black");
-      this.setState({bothSelected : false});
+      this.setState({
+        bothSelected : false,
+        selectedColor: event.target.value
+      });
     }
   }
 
   outputPrice () {
-    //this.state.bothSelected == false ? console.log("BS is false") : console.log("BS is true");
+    //this.state.bothSelected === false ? console.log("BS is false") : console.log("BS is true");
     //return(this.state.itemPrice || this.props.price);
 
-    if (this.state.bothSelected == false){
+    if (this.state.bothSelected === false){
       return (this.props.price);
     } else {
       return (this.props.price * 2);
@@ -72,7 +92,7 @@ class ShopItem extends React.Component{
 
   toggleDescCounter(){
 
-    if (this.state.displayImage == true){
+    if (this.state.displayImage === true){
       this.setState({displayImage : false});
     }else{
       this.setState({displayImage : true});
@@ -82,24 +102,29 @@ class ShopItem extends React.Component{
     // link to colestt.com/shop/AirTiger <ItemDesc />
   }
 
+  sendData(childName, childCat) {
+    this.props.onClick(childName, childCat);
+  }
+
   render(){
+    // console.log(this.props)
     return(
-      <a className="shop-item">
+      <div className="shop-item"> {/* used to be <a> tag, but got an error */}
         <div className="item-media" onClick={() => {this.toggleDescCounter()} /*this.props.onClick*/}>
           {this.toggleImgDesc()}
         </div>
-        <span className="item-name">{this.props.name}</span>
+        <span className="item-name">{this.props._name}</span>
         <div className="item-var">
-          <span>Colors: </span>
-          <Select itemType="Color" onChange={(e) => this.handleSelectBoxChange(e)}>
-            <option value="red" selected>Red</option>
-            <option value="black">Black</option>
-            <option value="both">Both</option>
-          </Select>
+          {this.selectVars()}
           {/* you can add more <span> and <select tags as needed */}
         </div>
-        <Button classN="item-btn"><span className="item-price">${this.outputPrice()}</span> | Add to Cart</Button> {/*adds to the cart, without having to check big description */}
-      </a>
+        <Button
+          onClick={() => this.sendData(this.props._name, this.state.selectedColor)}
+          classN="item-btn"><span className="item-price"
+          >
+          ${this.outputPrice()}</span> | Add to Cart
+        </Button>
+      </div>
     );
   }
 }

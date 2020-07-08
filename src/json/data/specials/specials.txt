@@ -1,0 +1,20 @@
+[
+{
+  "name" : "Dawei Premade Buster Combo",
+  "price" : 28,
+  "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
+  "desc" : "It's a solid blade. 11111"
+},
+{
+  "name" : "Dawei 2008XP (2.2)",
+  "price" : 6,
+  "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
+  "desc" : "It's a solid blade. 11111"
+},
+{
+  "name" : "Galaxy Venus 2 Tuned",
+  "price" : 10,
+  "thumb" : "https://www.colestt.com/img/blades/air_mambaS.jpg",
+  "desc" : "It's a solid blade. 11111"
+}
+]

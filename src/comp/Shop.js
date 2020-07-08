@@ -6,6 +6,12 @@ import React from 'react'
 import Filter from './Items/SearchFilter'
 import inventory from '../json/merchandise.json' 
 
+import { connect } from 'react-redux'
+import { addCart } from '../actions/addAction'
+
+// assets
+// jsons
+import Merch from '../json/merchandise.json';
 
 const Filter = (props) =>{
   const [radioType, onRadioSelect ] = useState("accessories")
@@ -102,6 +108,7 @@ class Shop extends React.Component{
 
   constructor(props){
     super(props);
+    this.handleClick = this.handleClick.bind(this);
     this.state = {
       dialog : null,
       shop : []
@@ -111,13 +118,11 @@ class Shop extends React.Component{
   componentDidMount(){
   }
 
-  btnClick = (props) => {
-    // this.setState({
-    //     dialog: props
-    // })
+  handleClick (itemName, itemCat){
+    this.props.addCart(itemName, itemCat); // sends the info to the cart
   }
 
-  render() {
+  render(){
     return(
       <div className="shop-wrapper">
         <h1>Cole's Table Tennis</h1>
@@ -137,4 +142,4 @@ class Shop extends React.Component{
 }
 
 
-export default Shop;
+export default connect(null, { addCart })(Shop);
