@@ -4,60 +4,35 @@ import React,{Fragment, useState, useEffect} from 'react'
 //import Router from 'react-router'
 import Filter from './Items/SearchFilter'
 import inventory from '../json/merchandise.json' 
-
 import { connect } from 'react-redux'
 import { addCart } from '../actions/addAction'
-
-// assets
-// jsons
-import Merch from '../json/merchandise.json';
 
 
 
 
 
 //component to render a single item
-const Item = (i, a, itemCategory) => <li>
-{a["accessories"]}
+const Items = ({item}) => <li>
+  {
+    <div>
+      <div className="thumb">
+        <img src={item.thumb} alt="thumbnail"/></div>
+      <p className="_name">{item._name}</p>
+      <p className="price">{item.price}</p>
+    </div>
+  }
 </li>
-//create a component to render item list
-console.log(inventory)
 
-const ItemList = ({ 
-  data, 
-  filter, 
-  favourites, 
-  addFavourite 
-}) => { 
-  const input = filter.toLowerCase()
-  
-  // Gather list of names
-  const names = data
-    // filtering out the names that...
-    .filter((person, i) => {
-      return (
-        // ...are not matching the current search value
-       !person.name.toLowerCase().indexOf(input)
-      )
-    })
-    // ...output a <Name /> component for each name
-    .map((person, i) => {
-    // only display names that match current input string
-      return (
-        <Item 
 
-        />
-      )
-    })
-  
-  /* ##### the component's output ##### */
-  return ( 
-    <ul> 
-      {names}
-    </ul>
-  )
+const ItemList = ({data}) => {
+const g = Object.keys(data)
+const h = g.map((x) =><>
+<p> {x} </p>
+{data[x].map(x => <Items item={x}/>)}
+</>)
+return h
 }
-
+//create a component to render item list
 
 class Shop extends React.Component{
 
@@ -87,8 +62,8 @@ class Shop extends React.Component{
           onFilterSelect={null} />
         </div>
         <div className="shop">
-        <Item 
-        a={inventory}
+        <ItemList
+        data={inventory}
         />
         </div>
       </div>
