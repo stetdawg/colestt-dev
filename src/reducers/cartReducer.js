@@ -14,7 +14,7 @@ export default (state = initialState, action) => {
       return{
         cartNumbers: state.cartNumbers + 1
       }
-    case GET_NUMBERS_CART:
+    case GET_NUMBERS_CART: // for the nav
       return {
         ...state
       }

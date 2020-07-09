@@ -74,24 +74,12 @@ class App extends React.Component{
           />
           <main>
           <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/Shop">
-              <Shop />
-            </Route>
-            <Route path="/Combos">
-              <ComboShop />
-            </Route>
-            <Route path="/About">
-              <About />
-            </Route>
-            <Route path="/Contact">
-              <Contact />
-            </Route>
-            <Route path="/Cart">
-              <Cart />
-            </Route>
+            <Route exact path="/" component={Home} />
+            <Route path="/Shop" component={Shop} />
+            <Route path="/Combos" component={ComboShop} />
+            <Route path="/About" component={About} />
+            <Route path="/Contact" component={Contact} />
+            <Route path="/Cart" component={Cart} />
             {/*
               <Route path="/ItemDesc">
                 <ItemDesc {...Merch.rubbers[36]} />

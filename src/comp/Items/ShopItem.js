@@ -19,6 +19,7 @@ class ShopItem extends React.Component{
     this.state = {
       displayImage : true,
       bothSelected : false,
+      itemPrice: this.props.price,
       itemCat: "red"
     }
   }
@@ -70,11 +71,13 @@ class ShopItem extends React.Component{
       if (event.target.value === "both"){
         this.setState({
           bothSelected : true,
+          itemPrice: this.props.price * 2,
           itemCat: event.target.value
         });
       } else {
         this.setState({
           bothSelected : false,
+          itemPrice: this.props.price,
           itemCat: event.target.value
         });
       }
@@ -104,10 +107,11 @@ class ShopItem extends React.Component{
     // link to colestt.com/shop/AirTiger <ItemDesc />
   }
 
-  sendData(childName, childCat) {
-    
-    this.props.onClick(childName, childCat);
-  }
+  // sendData(childName, childCat) {
+  //
+  //   this.props.onClick(childName, childCat);
+  //
+  // }
 
   render(){
     // console.log(this.props)
@@ -122,7 +126,7 @@ class ShopItem extends React.Component{
           {/* you can add more <span> and <select tags as needed */}
         </div>
         <Button
-          onClick={() => this.sendData(this.props._name, this.state.itemCat)}
+          onClick={() => this.props.onClick(this.props._name, this.state.itemPrice, this.state.itemCat)}
           classN="item-btn"><span className="item-price"
           >
           ${this.outputPrice()}</span> | Add to Cart

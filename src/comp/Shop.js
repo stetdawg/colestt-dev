@@ -15,17 +15,17 @@ class Shop extends React.Component {
 
   constructor(props){
     super(props);
-    this.handleClick = this.handleClick.bind(this);
+    // this.handleClick = this.handleClick.bind(this); // not needed unless troubleshooting
     this.state = {
 
     }
   }
 
-  handleClick (itemName, itemCat){
-    this.props.addCart(itemName, itemCat); // sends the info to the cart
-  }
+  // handleClick (itemName, itemPrice, itemCat){ // not needed unless troubleshooting
+  //   this.props.addCart(itemName, itemPrice, itemCat); // sends the info to the cart
+  // }
 
-  render(){
+  render(props){
     return(
       <div className="shop-wrapper">
         <h1>Cole's Table Tennis</h1>
@@ -38,8 +38,8 @@ class Shop extends React.Component {
             Merch.rubbers.map(item => (
               <ShopItem
                 itemType="rubbers"
-                onClick={this.handleClick}
-                {...item /* name, price, thumb, desc*/}
+                onClick={this.props.addCart}
+                {...item /* name, price, thumb, desc */}
               />
             ))
           }
