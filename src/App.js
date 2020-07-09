@@ -6,6 +6,7 @@ import store from './store'
 
 import Home from './comp/Home'
 import NavBar from './comp/Nav'
+import './scss/app.scss'
 
 //import ItemPanel from './comp/ItemPanel'
 import Shop from './comp/Shop'

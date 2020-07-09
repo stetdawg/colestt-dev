@@ -6,33 +6,46 @@ import Filter from './Items/SearchFilter'
 import inventory from '../json/merchandise.json' 
 import { connect } from 'react-redux'
 import { addCart } from '../actions/addAction'
-
+import Button from './Elements/Button'
+import Select from './Elements/Select'
+import '../scss/shop-item.scss'
+import '../scss/shop.scss'
 
 
 
 
 //component to render a single item
-const Items = ({item}) => <li>
-  {
-    <div>
-      <div className="thumb">
+const Items = ({item}) => <>
+  
+    <div className="shop-item">
+      <div className="item-media">
         <img src={item.thumb} alt="thumbnail"/></div>
-      <p className="_name">{item._name}</p>
-      <p className="price">{item.price}</p>
-    </div>
-  }
-</li>
+      <p className="item-name">{item._name}</p>
+      <div className="item-var">
 
+      <Select itemType="Color" onChange={null}>
+            <option value="red" selected>Red</option>
+            <option value="black">Black</option>
+            <option value="both">Both</option>
+          </Select>
+
+          </div>
+        <Button classN="item-btn"><span className="item-price">${item.price}</span> | Add to Cart</Button>
+    </div>
+</>
+
+//create a component to render item list
 
 const ItemList = ({data}) => {
 const g = Object.keys(data)
-const h = g.map((x) =><>
-<p> {x} </p>
-{data[x].map(x => <Items item={x}/>)}
-</>)
+const h = g.map((x) =>
+  <>
+    <h3> {x} </h3>
+      {data[x]
+        .map(x => <Items item={x}/>)}
+        </>)
 return h
 }
-//create a component to render item list
 
 class Shop extends React.Component{
 
