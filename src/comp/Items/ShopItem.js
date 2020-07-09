@@ -19,7 +19,7 @@ class ShopItem extends React.Component{
     this.state = {
       displayImage : true,
       bothSelected : false,
-      selectedColor: "red"
+      itemCat: "red"
     }
   }
 
@@ -66,16 +66,18 @@ class ShopItem extends React.Component{
   }
 
   handleSelectBoxChange (event) {
-    if (event.target.value === "both"){
-      this.setState({
-        bothSelected : true,
-        selectedColor: event.target.value
-      });
-    } else {
-      this.setState({
-        bothSelected : false,
-        selectedColor: event.target.value
-      });
+    if (this.props.itemType === "rubbers"){
+      if (event.target.value === "both"){
+        this.setState({
+          bothSelected : true,
+          itemCat: event.target.value
+        });
+      } else {
+        this.setState({
+          bothSelected : false,
+          itemCat: event.target.value
+        });
+      }
     }
   }
 
@@ -103,6 +105,7 @@ class ShopItem extends React.Component{
   }
 
   sendData(childName, childCat) {
+    
     this.props.onClick(childName, childCat);
   }
 
@@ -119,7 +122,7 @@ class ShopItem extends React.Component{
           {/* you can add more <span> and <select tags as needed */}
         </div>
         <Button
-          onClick={() => this.sendData(this.props._name, this.state.selectedColor)}
+          onClick={() => this.sendData(this.props._name, this.state.itemCat)}
           classN="item-btn"><span className="item-price"
           >
           ${this.outputPrice()}</span> | Add to Cart

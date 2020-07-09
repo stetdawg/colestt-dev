@@ -355,16 +355,19 @@
     {
       "_name" : "Flared",
       "type" : "Handles",
+      "category" : "Handles",
       "price" : 0
     },
     {
       "_name" : "Straight",
       "type" : "Handles",
+      "category" : "Handles",
       "price" : 0
     },
     {
       "_name" : "Pen",
       "type" : "Handles",
+      "category" : "Handles",
       "price" : 0
     }
   ],
