@@ -6,6 +6,7 @@ import store from './store'
 
 import Home from './comp/Home'
 import NavBar from './comp/Nav'
+import './scss/app.scss'
 
 //import ItemPanel from './comp/ItemPanel'
 import Shop from './comp/Shop'
@@ -16,7 +17,7 @@ import Cart from './comp/Cart'
 
 import ItemDesc from './comp/Items/ItemDesc'
 
-import Merch from './json/merchandise.json'
+// import Merch from './json/merchandise.json'
 
 /* surrounding empty tags </> are called Fragments.
 They are needed to return two sibling components.

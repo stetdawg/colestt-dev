@@ -3,9 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom'
 import './scss/structure.scss';
 import './scss/index.scss';
-import './scss/app.scss'
 
-import './scss/shop.scss'
 import './scss/nav.scss'
 import './scss/special.scss'
 import './scss/item-desc.scss'
