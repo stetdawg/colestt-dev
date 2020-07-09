@@ -32,8 +32,7 @@
 .shop-wrapper {
   display: grid;
   grid-template-columns: minmax(175px, auto) minmax(auto, 80%);
-  grid-template-areas: "header header"
- "sidebar shop";
+  grid-template-areas: "header header" "sidebar shop";
   grid-gap: 1em; }
   .shop-wrapper h1 {
     grid-area: header; }
