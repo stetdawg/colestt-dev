@@ -15,12 +15,12 @@ import '../scss/shop.scss'
 
 
 //component to render a single item
-const Items = ({item}) => {
+const Items = (props) => {
   return(
     <div className="shop-item">
       <div className="item-media">
-        <img src={item.thumb} alt="thumbnail"/></div>
-      <p className="item-name">{item._name}</p>
+        <img src={props.item.thumb} alt="thumbnail"/></div>
+      <p className="item-name">{props.item._name}</p>
       <div className="item-var">
 
       <Select itemType="Color" onChange={null}>
@@ -29,20 +29,20 @@ const Items = ({item}) => {
           </Select>
 
           </div>
-        <Button onClick={null} classN="item-btn"><span className="item-price">${item.price}</span> | Add to Cart</Button>
+        <Button onClick={() => props.onClick(props.item._name, props.item.price)} classN="item-btn"><span className="item-price">${props.item.price}</span> | Add to Cart</Button>
     </div>
   );
 }
 
 //create a component to render item list
 
-const ItemList = ({data}) => {
-const g = Object.keys(data)
+const ItemList = (props) => {
+const g = Object.keys(props.data)
 const h = g.map((x) =>
   <>
     <h3> {x} </h3>
-      {data[x]
-        .map(x => <Items item={x}/>)}
+      {props.data[x]
+        .map(x => <Items onClick={props.onClick} item={x}/>)}
         </>)
 return h
 }
@@ -72,10 +72,10 @@ class Shop extends React.Component{
           onFilterSelect={null} />
         </div>
         <div className="shop">
-
-        <ItemList
-        data={inventory}
-        />
+          <ItemList
+            onClick={this.props.addCart}
+            data={inventory}
+          />
         </div>
       </div>
     );
