@@ -9,6 +9,7 @@ export const addCart = (productName, productPrice = null, productCat = null) => 
     dispatch({
       type: ADD_PRODUCT_CART,
       payloadName: productName,
+      payloadPrice: productPrice,
       payloadCat: productCat,
     })
   }
