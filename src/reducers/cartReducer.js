@@ -11,15 +11,15 @@ export default (state = initialState, action) => {
   switch(action.type){
     case ADD_PRODUCT_CART:
       // let addQuantity = {...state.products[action.payloadName]};
-      let newItemName = action.payloadName;
       let newItem = {
         name: action.payloadName,
         price: action.payloadPrice,
-        category: action.payloadCat
+        category: action.payloadCat,
+        quantity: 1,
+        inCart: true
       };
 
-      let newProducts = state.products.concat(newItem);
-      console.log(state.products);
+      let newProducts = state.products.concat(newItem); // concat
       console.log("newProducts: ", newProducts);
       return{
         cartNumbers: state.cartNumbers + 1,
