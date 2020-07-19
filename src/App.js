@@ -26,6 +26,18 @@ Such as returning NavBar asynchronously to our Router {the Switch tag}.
 
 
 class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      products: [],
+      filteredProducts: [],
+      cartItems: []
+    }
+  }
+
+  componentWillMount(){
+    fetch()
+  }
   render(){
 
     const navLinks = [
@@ -80,7 +92,9 @@ class App extends React.Component{
             <Route path="/Combos" component={ComboShop} />
             <Route path="/About" component={About} />
             <Route path="/Contact" component={Contact} />
-            <Route path="/Cart" component={Cart} />
+            <Route path="/Cart">
+              <Cart cartItems={this.state.cartItems} handleRemoveFromCart={this.handleRemoveCart}
+            </Route>
             {/*
               <Route path="/ItemDesc">
                 <ItemDesc {...Merch.rubbers[36]} />
