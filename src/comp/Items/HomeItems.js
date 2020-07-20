@@ -40,7 +40,7 @@ import Select from '../Elements/Select'
     </div>
 
 
-  <Button onClick={(e) => props.handleAddToCart(e, props)}>${props.price} | Buy Now</Button>
+  <Button onClick={(e) => props.handleAddToCart(e, {...props ,id: props.name})}>${props.price} | Buy Now</Button>
   </div>
   </div><hr /></>
 

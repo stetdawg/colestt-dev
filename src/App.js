@@ -156,9 +156,14 @@ class App extends React.Component{
               <Home handleAddToCart={this.handleAddToCart} />
             </Route>
             <Route path="/Shop">
-              <Shop products={this.state.filteredProducts} handleAddToCart={this.handleAddToCart} />
+              <Shop
+                products={this.state.filteredProducts}
+                handleAddToCart={this.handleAddToCart}
+              />
             </Route>
-            <Route path="/Combos" component={ComboShop} />
+            <Route path="/Combos">
+              <ComboShop handleAddToCart={this.handleAddToCart}/>
+            </Route>
             <Route path="/About" component={About} />
             <Route path="/Contact" component={Contact} />
             <Route path="/Cart">

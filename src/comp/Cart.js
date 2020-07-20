@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Button from './Elements/Button'
 import '../scss/cart.scss'
 
 
@@ -23,13 +24,13 @@ export default class Cart extends Component{
               {
                 cartItems.map(item =>
                   <tr key={item.name}>
-                    <td><button onClick={(e) => this.props.handleRemoveFromCart(e, item)}>X</button></td>
+                    <td><Button onClick={(e) => this.props.handleRemoveFromCart(e, item)}>X</Button></td>
                     <td>{item.name}</td>
                     <td>${item.price}</td>
                     <td>
-                      <button onClick={(e) => this.props.handleChangeCount(e, "dec", item)}>-</button>
+                      <Button onClick={(e) => this.props.handleChangeCount(e, "dec", item)}>-</Button>
                       {item.count}
-                      <button onClick={(e) => this.props.handleChangeCount(e, "inc", item)}>+</button>
+                      <Button onClick={(e) => this.props.handleChangeCount(e, "inc", item)}>+</Button>
                     </td>
                     <td>${item.price * item.count}</td>
                   </tr>
