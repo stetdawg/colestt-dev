@@ -22,7 +22,7 @@ When the URL is /react, this renders:
 
 function NavBar(props){
   const [ navOpen, setNavOpen ] = useState(false);
-  console.log("NavBar props", props);
+  // console.log("NavBar props", props);
   return(
     <nav className="navRouter">
       <div className="nav-container">

@@ -36,15 +36,17 @@ class App extends React.Component{
       cartItems: []
     }
     this.handleAddToCart = this.handleAddToCart.bind(this);
-    this.handleRemoveCart = this.handleRemoveCart.bind(this);
+    this.handleRemoveFromCart = this.handleRemoveFromCart.bind(this);
   }
 
-  // componentWillMount(){
-  //   fetch()
-  // }
+  componentWillMount(){
+    if (localStorage.getItem("cartItems")){
+      this.setState({cartItems: JSON.parse(localStorage.getItem("cartItems"))});
+    }
+  }
 
   handleAddToCart = (e, product) => {
-    console.log("Adding " + product.name + " to cart.");
+    // console.log("Adding " + product.name + " to cart.");
     this.setState(state =>{
       const cartItems = state.cartItems;
       let productAlreadyInCart = false;
@@ -62,8 +64,13 @@ class App extends React.Component{
     })
   }
 
-  handleRemoveCart = () => {
-    console.log("removing from cart");
+  handleRemoveFromCart = (e, item) => {
+    // console.log("removing from cart");
+    this.setState(state =>{
+      const cartItems = state.cartItems.filter(elm => elm.id != item.id);
+      localStorage.setItem("cartItems", cartItems);
+      return {cartItems};
+    })
   }
 
   render(){
@@ -123,7 +130,7 @@ class App extends React.Component{
             <Route path="/About" component={About} />
             <Route path="/Contact" component={Contact} />
             <Route path="/Cart">
-              <Cart cartItems={this.state.cartItems} handleRemoveFromCart={this.handleRemoveCart} />
+              <Cart cartItems={this.state.cartItems} handleRemoveFromCart={this.handleRemoveFromCart} />
             </Route>
           </Switch>
           </main>
