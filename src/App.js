@@ -2,6 +2,8 @@ import React from 'react';
 
 import {Route, Switch } from 'react-router-dom'
 import { Provider } from 'react-redux'
+import { connect } from 'react-redux'
+import { addCart } from './actions/addAction'
 import store from './store'
 
 import Home from './comp/Home'
@@ -15,9 +17,9 @@ import About from './comp/About'
 import Contact from './comp/Contact'
 import Cart from './comp/Cart'
 
-import ItemDesc from './comp/Items/ItemDesc'
+// import ItemDesc from './comp/Items/ItemDesc'
 
-// import Merch from './json/merchandise.json'
+import Merch from './json/merchandise.json'
 
 /* surrounding empty tags </> are called Fragments.
 They are needed to return two sibling components.
@@ -29,17 +31,42 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      products: [],
-      filteredProducts: [],
+      products: [Merch],
+      filteredProducts: [Merch],
       cartItems: []
     }
+    this.handleAddToCart = this.handleAddToCart.bind(this);
+    this.handleRemoveCart = this.handleRemoveCart.bind(this);
   }
 
-  componentWillMount(){
-    fetch()
+  // componentWillMount(){
+  //   fetch()
+  // }
+
+  handleAddToCart = (e, product) => {
+    console.log("Adding " + product.name + " to cart.");
+    this.setState(state =>{
+      const cartItems = state.cartItems;
+      let productAlreadyInCart = false;
+      cartItems.forEach(item =>{
+        if (item.id === product.id){
+          productAlreadyInCart = true;
+          item.count++;
+        }
+      });
+      if (!productAlreadyInCart){
+        cartItems.push({...product, count: 1});
+      }
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+      return cartItems;
+    })
   }
+
+  handleRemoveCart = () => {
+    console.log("removing from cart");
+  }
+
   render(){
-
     const navLinks = [
       {
         "text": "Home",
@@ -83,26 +110,21 @@ class App extends React.Component{
         <Provider store={store}>
           <div className="background"></div>
           <NavBar
-            navLinks={ navLinks }
+            navLinks={navLinks}
+            cartItems={this.state.cartItems}
           />
           <main>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/Shop" component={Shop} />
+            <Route path="/Shop">
+              <Shop products={this.state.filteredProducts} handleAddToCart={this.handleAddToCart} />
+            </Route>
             <Route path="/Combos" component={ComboShop} />
             <Route path="/About" component={About} />
             <Route path="/Contact" component={Contact} />
             <Route path="/Cart">
-              <Cart cartItems={this.state.cartItems} handleRemoveFromCart={this.handleRemoveCart}
+              <Cart cartItems={this.state.cartItems} handleRemoveFromCart={this.handleRemoveCart} />
             </Route>
-            {/*
-              <Route path="/ItemDesc">
-                <ItemDesc {...Merch.rubbers[36]} />
-              </Route>
-              <Route path="/Item/Illumina">
-                <ItemDesc {...Merch.rubbers[2]} />
-              </Route>
-            */}
           </Switch>
           </main>
         </Provider>

@@ -21,7 +21,8 @@ When the URL is /react, this renders:
 */
 
 function NavBar(props){
-  const [ navOpen, setNavOpen ] = useState(false)
+  const [ navOpen, setNavOpen ] = useState(false);
+  console.log("NavBar props", props);
   return(
     <nav className="navRouter">
       <div className="nav-container">
@@ -40,7 +41,7 @@ function NavBar(props){
           }
           <li className="cart-link">
             <Link to="/cart" onClick={() => setNavOpen(false)}>
-              Cart <span>{props.cartProps.cartNumbers}</span>
+              Cart <span>{props.cartItems.length}</span>
               <i className=""></i>
             </Link>
           </li>

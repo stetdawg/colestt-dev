@@ -15,21 +15,21 @@ import '../scss/shop.scss'
 
 
 //component to render a single item
-const Items = (props) => {
+const Item = (props) => {
+  // console.log("Item props", props);
   return(
     <div className="shop-item">
       <div className="item-media">
-        <img src={props.item.thumb} alt="thumbnail"/></div>
-      <p className="item-name">{props.item._name}</p>
+        <img src={props.item.thumb} alt="thumbnail"/>
+      </div>
+      <p className="item-name">{props.item.name}</p>
       <div className="item-var">
-
-      <Select itemType="Color" onChange={null}>
-            <option value="red" selected>Red</option>
-            <option value="black">Black</option>
-          </Select>
-
-          </div>
-        <Button onClick={() => props.onClick(props.item._name, props.item.price)} classN="item-btn"><span className="item-price">${props.item.price}</span> | Add to Cart</Button>
+        <Select itemType="Color" onChange={null}>
+          <option value="red" selected>Red</option>
+          <option value="black">Black</option>
+        </Select>
+      </div>
+      <Button onClick={(e) => props.onClick(e, props.item)} classN="item-btn"><span className="item-price">${props.item.price}</span> | Add to Cart</Button>
     </div>
   );
 }
@@ -37,14 +37,12 @@ const Items = (props) => {
 //create a component to render item list
 
 const ItemList = (props) => {
-const g = Object.keys(props.data)
-const h = g.map((x) =>
-  <>
-    <h3> {x} </h3>
-      {props.data[x]
-        .map(x => <Items onClick={props.onClick} item={x}/>)}
-        </>)
-return h
+  // console.log("ItemList props", props);
+  return(
+    props.products[0].map(item => (
+      <Item item={item} onClick={props.onClick}/>
+    ))
+  )
 }
 
 class Shop extends React.Component{
@@ -62,19 +60,22 @@ class Shop extends React.Component{
   //   this.props.addCart(itemName, itemPrice, itemCat); // sends the info to the cart
   // }
 
-  render(props){
+  render(){
+    // console.log("Shop props", this.props);
     return(
       <div className="shop-wrapper">
         <h1>Cole's Table Tennis</h1>
         <div className="shop-sidebar">
           <h2>Shop-sidebar</h2>
-          <Filter
-          onFilterSelect={null} />
+          {/*
+            <Filter
+            onFilterSelect={null} />
+          */}
         </div>
         <div className="shop">
           <ItemList
-            onClick={this.props.addCart}
-            data={inventory}
+            onClick={this.props.handleAddToCart}
+            products={this.props.products}
           />
         </div>
       </div>
