@@ -24,8 +24,8 @@ const Item = (props) => {
       </div>
       <p className="item-name">{props.item.name}</p>
       <div className="item-var">
-        <Select itemType="Color" onChange={null}>
-          <option value="red" selected>Red</option>
+        <Select itemType="Color" defaultValue="red" onChange={null}>
+          <option value="red">Red</option>
           <option value="black">Black</option>
         </Select>
       </div>
@@ -40,7 +40,7 @@ const ItemList = (props) => {
   // console.log("ItemList props", props);
   return(
     props.products[0].map(item => (
-      <Item item={item} onClick={props.onClick}/>
+      <Item key={item.id} item={item} onClick={props.onClick}/>
     ))
   )
 }

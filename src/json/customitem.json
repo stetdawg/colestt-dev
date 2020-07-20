@@ -1,7 +1,7 @@
 [
   {
-    "key":"0", 
-    "_name" : "Stimulus Special - SALE $50 SHIPPED",
+    "id":"0",
+    "name" : "Stimulus Special - SALE $50 SHIPPED",
     "desc": " Colestt cares! I know times are hard for a lot of people. To help the masses I'm making this a really HOT deal. Also because I'm running out of everything else, and I'm sitting around bored all day and want to do something. This won't be long. Maybe 2 weeks max so get it now! Currently featuring Air Matrix in an orange and black sort of copy handle maybe trying to look like DHS. The Koto flared came in with gray handles,intracately trimmed to look something like Yasaka. The older Matrix straight I have are the classic green handle. The Koto touch blades are a slightly thinner core, koto over spruce, grey handle with yellow swoosh.Regular Koto blades are blue or yellow handle. ROUND case, tape, penholds will be gapped just over 1/2$\" on the forehand side, cut-to-fit adhesive plastics — ready to play.. ",
     "price" : 15.99,
     "weight" : 0.1,
@@ -13,8 +13,8 @@
     "thumb" : "http://colestt.com/img/blades/air-matrix.jpg"
   },
   {
-    "key":"1",
-    "_name" : "Premade Buster Combo",
+    "id":"1",
+    "name" : "Premade Buster Combo",
     "desc": " Why buy a premade when you can get a custom-made racket at the same price?\nOne of these blades combined with AirOriginals Scirrocco beats any name brand premade under $60 that I've ever seen.For the majority of people who would use this setup, 1.8 is probably the most appropriate thickness. Current touch01 handle and case are blue themed. Touch01 with with slightly thicker handle. \n Comes with round case, tape cut-to-fit adhesive plastics — ready to play.. Penholds will be gapped to just above 1/2\" on the forehand side. Touch01",
     "price" : 15.99,
     "weight" : 0.1,
@@ -26,8 +26,8 @@
     "thumb" : "http://colestt.com/img/misc/premade-buster.jpg"
   },
   {
-    "key":"2",
-    "_name" : "Beginner Combo",
+    "id":"2",
+    "name" : "Beginner Combo",
     "desc": " With a Air Touch01 Blade and thin-sponged rubbers, this is an ideal choice for beginners, kids, or anyone needing a very lightweight setup with reasonable spin and tons of control.\n With Defender it has more topspin kick and more of a control loop feel while still chopping well at 1 7 and is really more allaround than defensive.\n Burst is a somewhat tacky topsheet on the mid to firm gambler blue diamond sponge. 999t is the tackiest option, good for heavy serves and flat pushes.\nComes with round case, tape, plastic protectors — ready to play. Penholds will be gapped to just above 1/2\" on the forehand side",
     "price" : 15.99,
     "weight" : 0.1,
@@ -39,8 +39,8 @@
     "thumb" : "http://colestt.com/img/rubbers/air-defenderS.jpg"
   },
   {
-    "key":"3",
-    "_name" : "The Budget Looper",
+    "id":"3",
+    "name" : "The Budget Looper",
     "desc": "Featuring the 896 and full thickness Yinhe Mercury 2 Soft rubber, the Budget Looper is designed for the experienced topspin player working on a budget. Mercury 2 starts out sticky at first, but it quickly wears to barely grippy relying on the soft sponge for spin giving a lot of topspin control. Penholds will be gapped on the forehand side.\nComes with round case, plastic rubber protectors — ready to play. Penholds will be gapped to just above 1/2\" on the forehand side. ",
     "price" : 15.99,
     "weight" : 0.1,

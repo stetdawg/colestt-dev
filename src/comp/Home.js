@@ -11,7 +11,7 @@ function Home(props) {
             Here you'll find a selection of products for sale at great prices, as well as reviews. There are also videos on gluing and cutting rubber, and applying topsheet onto sponge.<br/>
            <b>Check out our current specials below:</b>
        </Header>
-                <Specials />
+                <Specials handleAddToCart={props.handleAddToCart}/>
          </div>
         </div>
         )

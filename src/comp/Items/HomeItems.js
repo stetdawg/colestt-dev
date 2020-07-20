@@ -10,7 +10,7 @@ import Select from '../Elements/Select'
 </div>
 
   <div className="info-panel">
-    <h1 className="item-name1">{props._name}</h1>
+    <h1 className="item-name1">{props.name}</h1>
     <p className="item-weight1">
       <b>Weight:</b> {props.weight} kg</p>
     <p className="item-weight1">
@@ -40,7 +40,7 @@ import Select from '../Elements/Select'
     </div>
 
 
-  <Button>${props.price} | Buy Now</Button>
+  <Button onClick={(e) => props.handleAddToCart(e, props)}>${props.price} | Buy Now</Button>
   </div>
   </div><hr /></>
 

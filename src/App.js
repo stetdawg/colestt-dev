@@ -39,24 +39,47 @@ class App extends React.Component{
     this.handleRemoveFromCart = this.handleRemoveFromCart.bind(this);
   }
 
-  componentWillMount(){
+  componentDidMount(){
     if (localStorage.getItem("cartItems")){
       this.setState({cartItems: JSON.parse(localStorage.getItem("cartItems"))});
     }
   }
 
   handleAddToCart = (e, product) => {
-    // console.log("Adding " + product.name + " to cart.");
+    console.log("Adding " + product.name + " to cart.");
     this.setState(state =>{
       const cartItems = state.cartItems;
       let productAlreadyInCart = false;
       cartItems.forEach(item =>{
         if (item.id === product.id){
+          console.log("This product is already in the cart. Count++");
           productAlreadyInCart = true;
           item.count++;
         }
       });
       if (!productAlreadyInCart){
+        console.log("It's not in the cart");
+        cartItems.push({...product, count: 1});
+      }
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+      return cartItems;
+    })
+  }
+
+  OLDhandleAddToCart = (e, product) => {
+    console.log("Adding " + product.name + " to cart.");
+    this.setState(state =>{
+      const cartItems = state.cartItems;
+      let productAlreadyInCart = false;
+      cartItems.forEach(item =>{
+        if (item.id === product.id){
+          console.log("This product is already in the cart. Count++");
+          productAlreadyInCart = true;
+          item.count++;
+        }
+      });
+      if (!productAlreadyInCart){
+        console.log("It's not in the cart");
         cartItems.push({...product, count: 1});
       }
       localStorage.setItem("cartItems", JSON.stringify(cartItems));
@@ -65,9 +88,9 @@ class App extends React.Component{
   }
 
   handleRemoveFromCart = (e, item) => {
-    // console.log("removing from cart");
+    console.log("Removing " + item.name + " from cart");
     this.setState(state =>{
-      const cartItems = state.cartItems.filter(elm => elm.id != item.id);
+      const cartItems = state.cartItems.filter(elm => elm.id !== item.id);
       localStorage.setItem("cartItems", cartItems);
       return {cartItems};
     })
@@ -122,7 +145,9 @@ class App extends React.Component{
           />
           <main>
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" >
+              <Home handleAddToCart={this.handleAddToCart} />
+            </Route>
             <Route path="/Shop">
               <Shop products={this.state.filteredProducts} handleAddToCart={this.handleAddToCart} />
             </Route>

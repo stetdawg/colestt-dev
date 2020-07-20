@@ -31,7 +31,7 @@ function NavBar(props){
         </div><ul className={ navOpen ? 'active' : '' }>
           {
             props.navLinks.map(link => (
-              <li>
+              <li key={link.text}>
                 <Link to={link.path} onClick={() => setNavOpen(false)}>
                   {link.text}
                   <i className={link.icon}></i>

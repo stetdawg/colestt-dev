@@ -27,10 +27,9 @@ class DisplayHomeItems extends Component {
 
 
   render() {
-
     return ( this.myArray.map(item =>
       <div className="panelChildren">
-        <HomeItems {...item}/>
+        <HomeItems {...item} handleAddToCart={this.props.handleAddToCart}/>
       </div>
     ))
   }
