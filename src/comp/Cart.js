@@ -26,7 +26,11 @@ export default class Cart extends Component{
                     <td><button onClick={(e) => this.props.handleRemoveFromCart(e, item)}>X</button></td>
                     <td>{item.name}</td>
                     <td>${item.price}</td>
-                    <td><button>-</button> {item.count} <button>+</button></td>
+                    <td>
+                      <button onClick={(e) => this.props.handleChangeCount(e, "dec", item)}>-</button>
+                      {item.count}
+                      <button onClick={(e) => this.props.handleChangeCount(e, "inc", item)}>+</button>
+                    </td>
                     <td>${item.price * item.count}</td>
                   </tr>
                 )

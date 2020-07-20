@@ -37,6 +37,7 @@ class App extends React.Component{
     }
     this.handleAddToCart = this.handleAddToCart.bind(this);
     this.handleRemoveFromCart = this.handleRemoveFromCart.bind(this);
+    this.handleChangeCount = this.handleChangeCount.bind(this);
   }
 
   componentDidMount(){
@@ -46,40 +47,17 @@ class App extends React.Component{
   }
 
   handleAddToCart = (e, product) => {
-    console.log("Adding " + product.name + " to cart.");
+    // console.log("Adding " + product.name + " to cart.");
     this.setState(state =>{
       const cartItems = state.cartItems;
       let productAlreadyInCart = false;
       cartItems.forEach(item =>{
         if (item.id === product.id){
-          console.log("This product is already in the cart. Count++");
           productAlreadyInCart = true;
           item.count++;
         }
       });
       if (!productAlreadyInCart){
-        console.log("It's not in the cart");
-        cartItems.push({...product, count: 1});
-      }
-      localStorage.setItem("cartItems", JSON.stringify(cartItems));
-      return cartItems;
-    })
-  }
-
-  OLDhandleAddToCart = (e, product) => {
-    console.log("Adding " + product.name + " to cart.");
-    this.setState(state =>{
-      const cartItems = state.cartItems;
-      let productAlreadyInCart = false;
-      cartItems.forEach(item =>{
-        if (item.id === product.id){
-          console.log("This product is already in the cart. Count++");
-          productAlreadyInCart = true;
-          item.count++;
-        }
-      });
-      if (!productAlreadyInCart){
-        console.log("It's not in the cart");
         cartItems.push({...product, count: 1});
       }
       localStorage.setItem("cartItems", JSON.stringify(cartItems));
@@ -88,12 +66,41 @@ class App extends React.Component{
   }
 
   handleRemoveFromCart = (e, item) => {
-    console.log("Removing " + item.name + " from cart");
-    this.setState(state =>{
+    // console.log("Removing " + item.name + " from cart");
+    this.setState(state => {
       const cartItems = state.cartItems.filter(elm => elm.id !== item.id);
       localStorage.setItem("cartItems", cartItems);
       return {cartItems};
     })
+  }
+
+  handleChangeCount = (e, direction, product) => {
+    const {cartItems} = this.state;
+    if(direction === "inc"){
+      // console.log("Increasing item count of " + product.name);
+      this.setState(state => {
+        cartItems.forEach(item =>{
+          if (item.id === product.id){
+            item.count++;
+          }
+        });
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+        return cartItems;
+      })
+    } else {
+      // console.log("Decreasing item count of " + product.name);
+      this.setState(state => {
+        cartItems.forEach(item =>{
+          if (item.id === product.id){
+            if (item.count !== 0){
+              item.count--;
+            }
+          }
+        });
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+        return cartItems;
+      })
+    }
   }
 
   render(){
@@ -155,7 +162,11 @@ class App extends React.Component{
             <Route path="/About" component={About} />
             <Route path="/Contact" component={Contact} />
             <Route path="/Cart">
-              <Cart cartItems={this.state.cartItems} handleRemoveFromCart={this.handleRemoveFromCart} />
+              <Cart
+                cartItems={this.state.cartItems}
+                handleRemoveFromCart={this.handleRemoveFromCart}
+                handleChangeCount={this.handleChangeCount}
+              />
             </Route>
           </Switch>
           </main>
